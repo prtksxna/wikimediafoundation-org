@@ -7,6 +7,3 @@
 [submodule "plugins/co-authors-plus"]
 	path = plugins/co-authors-plus
 	url = git@github.com:Automattic/Co-Authors-Plus.git
-[submodule "plugins/safe-redirect-manager"]
-	path = plugins/safe-redirect-manager
-	url = https://github.com/10up/safe-redirect-manager
