@@ -14,4 +14,6 @@ if ( function_exists( 'wpcom_vip_load_plugin' ) ) {
 	wpcom_vip_load_plugin( 'safe-svg' );
 
 	wpcom_vip_load_plugin( 'co-authors-plus' );
+
+	wpcom_vip_load_plugin( 'safe-redirect-manager' );
 }
