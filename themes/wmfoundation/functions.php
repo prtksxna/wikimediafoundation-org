@@ -302,7 +302,6 @@ add_filter( 'jetpack_honor_dnt_header_for_stats', '__return_true' );
  * Allow editors to manage co-authors and create guest authors.
  */
 function guest_authors_role() {
-	$role = get_role( 'editor' );
 	$role = get_role( 'administrator' );
 	$role->add_cap( 'coauthors_guest_author_manage_cap' );
 }
