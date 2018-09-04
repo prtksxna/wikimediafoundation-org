@@ -286,7 +286,7 @@ require get_template_directory() . '/inc/safe-redirect.php';
 /**
  * Filter X-hacker output.
  */
-add_filter( 'wp_head', function( $headers ) {
+add_filter( 'wp_headers', function( $headers ) {
     if ( isset( $headers['X-hacker'] ) ) {
         unset( $headers['X-hacker'] );
     }
