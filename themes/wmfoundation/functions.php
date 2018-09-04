@@ -297,3 +297,12 @@ add_filter( 'wp_headers', function( $headers ) {
  * Honor do not track requests for stats.
  */
 add_filter( 'jetpack_honor_dnt_header_for_stats', '__return_true' );
+
+/**
+ * Allow editors to manage co-authors and create guest authors.
+ */
+function dmc_modify_editor_role() {
+	$role = get_role( 'editor' );
+	$role->add_cap( 'coauthors_guest_author_manage_cap' );
+}
+add_action( 'admin_init', 'dmc_modify_editor_role' );
