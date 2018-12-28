@@ -17,19 +17,18 @@ $args = wp_parse_args(
 ?>
 
 <div class="social-share social-share-home">
-	<?php if ( ! empty( $share_text ) ) : ?>
-	<span class="h5 bold uppercase color-black"><?php echo esc_html( $share_text ); ?></span>
-	<?php endif; ?>
 	<span class="inline-social-list">
 		<?php if ( in_array( 'twitter', $services, true ) ) : ?>
 			<a href="<?php echo esc_url( wmf_get_share_url( 'twitter', $args ) ); ?>" class="color-blue">
 				<?php wmf_show_icon( 'social-twitter' ); ?>
+				<?php echo esc_html( $share_text ); ?>
 			</a>
 		<?php endif; ?>
 
 		<?php if ( in_array( 'facebook', $services, true ) ) : ?>
 			<a href="<?php echo esc_url( wmf_get_share_url( 'facebook', $args ) ); ?>" class="color-blue">
 				<?php wmf_show_icon( 'social-facebook' ); ?>
+				<?php echo esc_html( $share_text ); ?>
 			</a>
 		<?php endif; ?>
 	</span>
