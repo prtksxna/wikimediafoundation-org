@@ -25,7 +25,7 @@ $count      = 0;
 	<img src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $image_alt ); ?>" class="mar-bottom">
 	<?php endif; ?>
 	<?php if ( ! empty( $template_args['heading'] ) ) : ?>
-	<h3 class="h3"><?php echo esc_html( $template_args['heading'] ); ?></h3>
+	<h3 class="h2"><?php echo esc_html( $template_args['heading'] ); ?></h3>
 	<?php endif; ?>
 	<?php if ( ! empty( $template_args['copy'] ) ) : ?>
 	<div class="wysiwyg">

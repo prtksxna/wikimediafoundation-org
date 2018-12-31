@@ -11,21 +11,21 @@ h2,
 .h2 {
 	margin-bottom: 3.5rem;
 	@include marginBottom(40, 56, $medium-bp);
-	@include font-size(48, 27);
+	@include font-size(22, 18);
 
 	&.small {
-		@include font-size(42, 36);
+		@include font-size(22, 18);
 		@include marginBottom(40, 56, $medium-bp);
 	}
 }
 
 h3,
 .h3 {
-	font-size: rem(24);
-	@include font-size(24, 21);
+	font-size: rem(15);
+	@include font-size(15, 13);
 
 	&.small {
-		@include font-size(28, 21);
+		@include font-size(15, 13);
 	}
 }
 
@@ -55,7 +55,7 @@ h6 {
 }
 
 p {
-	@include font-size(22, 18);
+	@include font-size(15, 13);
 	line-height: 1.8;
 }
 

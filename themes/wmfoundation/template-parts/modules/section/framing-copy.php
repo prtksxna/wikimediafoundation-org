@@ -19,7 +19,7 @@ $has_title = ! empty( $template_args['pre_heading'] ) && ! empty( $template_args
 
 <?php if ( $has_title ) : ?>
 <div class="mod-margin-bottom white-bg">
-	<div class="mw-1360">
+	<div class="mw-980">
 		<?php if ( ! empty( $template_args['pre_heading'] ) ) : ?>
 		<h3 class="h3 color-gray"><?php echo esc_html( $template_args['pre_heading'] ); ?> — <span><?php echo esc_html( $template_args['rand_translation_title'] ); ?></span></h3>
 		<?php endif; ?>
@@ -29,7 +29,7 @@ $has_title = ! empty( $template_args['pre_heading'] ) && ! empty( $template_args
 	</div>
 <?php endif; ?>
 
-	<div class="flex flex-medium flex-wrap mw-1360 fifty-fifty mod-margin-bottom">
+	<div class="flex flex-medium flex-wrap mw-980 fifty-fifty">
 	<?php
 	foreach ( $template_args['modules'] as $module ) {
 		wmf_get_template_part( 'template-parts/modules/mu/text', $module );
