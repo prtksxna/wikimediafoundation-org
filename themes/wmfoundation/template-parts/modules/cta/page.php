@@ -19,16 +19,16 @@ $class    = empty( $template_args['class'] ) ? $bg_class . ' cta-secondary' : $t
 ?>
 
 <div class="w-100p cta mod-margin-bottom <?php echo esc_attr( $class ); ?>">
-	<div class="mw-1360">
-		<div class="card">
+	<div class="mw-980">
+		<div class="card flex flex-medium flex-wrap fifty-fifty">
 			<?php if ( ! empty( $image ) ) : ?>
-			<div class="bg-img-container">
-				<div class="bg-img" style="background-image: url(<?php echo esc_url( $image ); ?>);"></div>
-			</div>
+				<div class="card-content w-50p sm-img-container">
+					<div class="sm-img" style="background-image: url(<?php echo esc_url( $image ); ?>)"></div>
+				</div>
 			<?php endif; ?>
 
 			<?php if ( ! empty( $template_args['heading'] ) || ! empty( $template_args['content'] ) || ! empty( $template_args['link_uri'] ) ) : ?>
-			<div class="card-content w-45p">
+			<div class="card-content w-50p">
 
 				<?php if ( ! empty( $template_args['heading'] ) ) : ?>
 				<h2 class="h2"><?php echo esc_html( $template_args['heading'] ); ?></h2>

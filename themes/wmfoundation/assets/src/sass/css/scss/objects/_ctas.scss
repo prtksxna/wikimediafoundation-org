@@ -45,7 +45,7 @@ $highlight-width: 10px;
     }
 
     .h2 {
-      @include font-size(56, 27);
+      @include font-size(38, 32);
     }
   }
 
@@ -62,7 +62,7 @@ $highlight-width: 10px;
 }
 
 .cta-primary {
-  background: $color-pink;
+  background: $cta-bg-color;
 
   .mw-1360 {
     padding-bottom: rem(40);
@@ -87,9 +87,8 @@ $highlight-width: 10px;
   }
 
   .h2 {
-    @include highlightHeading($highlight-width, $color-pink);
-    line-height: 1.6;
-
+    color: $color-pink;
+    line-height: 1.2;
   }
 
   p:first-of-type {
@@ -234,14 +233,31 @@ $highlight-width: 10px;
   }
 }
 
+.sm-img {
+  @include duotoneInline($color-pink, 40%, screen, 1);
+  overflow: hidden;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.sm-img-container {
+  // TODO Add duotone
+}
+
 .cta-footer {
   margin-top: 5rem;
   @include marginTop(0, 80, $medium-bp);
 }
 
-// add white background to text
 .cta-description {
-  @include highlightText($highlight-width, $color-black);
+  @include font-size(22, 18);
+  line-height: 1.45;
+  color: $color-pink;
 }
 
 // move button left to align to highlight
