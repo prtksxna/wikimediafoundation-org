@@ -62,6 +62,10 @@
 	@include module-width($medium-bp, 57%);
 }
 
+.w-48p {
+	@include module-width($medium-bp, 48%);
+}
+
 .w-45p {
 	@include module-width($medium-bp, 45%);
 }
