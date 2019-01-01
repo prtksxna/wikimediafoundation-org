@@ -103,7 +103,9 @@ a.color-blue {
 	background: #000;
 	color: #fff;
 }
-
+footer.bg-black {
+	background: $footer-gray;
+}
 
 // Buttons and links
 .btn {

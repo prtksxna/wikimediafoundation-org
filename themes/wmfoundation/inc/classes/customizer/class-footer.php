@@ -81,6 +81,21 @@ class Footer extends Base {
 			)
 		);
 
+		$control_id = 'wmf_other_links_menu_label';
+		$this->customize->add_setting(
+			$control_id, array(
+				'default' => __( 'Other links', 'wmfoundation' ),
+			)
+		);
+		$this->customize->add_control(
+			$control_id, array(
+				'label'       => __( 'Other Links Menu Label', 'wmfoundation' ),
+				'description' => __( 'Label above the 1 column other links menu. This can be set in each translation to localize the button.', 'wmfoundation' ),
+				'section'     => $section_id,
+				'type'        => 'text',
+			)
+		);
+
 		$control_id = 'wmf_footer_copyright';
 		$this->customize->add_setting(
 			$control_id, array(
