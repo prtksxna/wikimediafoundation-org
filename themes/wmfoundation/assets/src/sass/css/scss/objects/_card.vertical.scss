@@ -1,16 +1,28 @@
 .card-vertical {
 
   &.card-person {
+    border-radius: 5px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+
+    .img-container {
+      height: 10rem;
+      width: 10rem;
+      margin: 2rem auto;
+      border-radius: 100%;
+      background-position: center center;
+      background-size: cover;
+    }
 
     .card-content {
       background-color: #fff;
-      margin-top: -2rem;
       position: relative;
       display: block;
-      margin: -12% 8% 0 8%;
+      margin: 0 8% 0 8%;
       z-index: 999;
-      padding: rem(20);
+      padding: 0 rem(20) rem(20) rem(20);
       text-transform: none;
+      text-align: center;
     }
   }
 }
