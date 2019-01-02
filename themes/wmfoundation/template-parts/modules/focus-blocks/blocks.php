@@ -13,6 +13,7 @@ if ( empty( $template_args['blocks'] ) || ! is_array( $template_args['blocks'] )
 
 $block_count = 0;
 
+?><div class="mw-980 flex flex-medium flex-space-between"><?php
 foreach ( $template_args['blocks'] as $block ) {
 	if ( empty( $block ) || ! is_array( $block ) ) {
 		continue;
@@ -24,3 +25,4 @@ foreach ( $template_args['blocks'] as $block ) {
 
 	wmf_get_template_part( 'template-parts/modules/focus-blocks/block', $block );
 }
+?></div><?php
