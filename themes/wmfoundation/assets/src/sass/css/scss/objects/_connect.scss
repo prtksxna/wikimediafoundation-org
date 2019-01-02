@@ -25,15 +25,6 @@
     padding: 1rem;
   }
 
-  .contact-link {
-    color: $color-blue;
-    font-weight: bold;
-  }
-
-  .contact-link::after {
-    content: ' →';
-  }
-
   .social-list {
 
     li {
