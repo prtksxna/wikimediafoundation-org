@@ -1,3 +1,6 @@
+.related-news-container {
+  padding: 4rem 0;
+}
 .news-categories {
   border-top: 1px solid $color-ltgray;
   border-bottom: 1px solid $color-ltgray;
@@ -243,6 +246,8 @@
       .img-container {
         position: relative;
         margin-bottom: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
 
         .bg-img {
           @include aspect-ratio(16, 9);
@@ -262,7 +267,6 @@
 
       .card-content,
       .card-heading {
-        width: 90%;
         margin: 0 auto;
       }
 
@@ -275,7 +279,7 @@
         h3 {
           display: flex;
           align-items: flex-end;
-          @include font-size(28, 20);
+          @include font-size(18, 16);
         }
 
         &:hover,
@@ -289,7 +293,9 @@
       .date {
         display: block;
         text-transform: none;
-        @include font-size(18, 14);
+        font-weight: bold;
+        color: $wmui-color-base30;
+        @include font-size(14, 12);
       }
     }
   }
