@@ -15,7 +15,7 @@ Credits::get_instance()->resume();
 <div class="card card-vertical w-50p">
 	<a href="<?php the_permalink(); ?>">
 		<?php if ( ! empty( $image ) ) : ?>
-		<div class="img-container">
+		<div class="img-container rounded shadow">
 			<div class="bg-img" style="background-image: url(<?php echo esc_url( $image ); ?>);">
 		<?php endif; ?>
 		<?php if ( ! empty( $image ) ) : ?>

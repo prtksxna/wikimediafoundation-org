@@ -25,7 +25,7 @@ $fact_width = 3 === count( $template_args['facts'] ) ? 'w-32p' : 'w-45p';
 		foreach ( $template_args['facts'] as $i => $fact ) :
 			$fact_width = 0 !== $i ? $fact_width . ' hide-sm' : $fact_width;
 			?>
-		<div class="fact-inner module-mu <?php echo esc_attr( $fact_width ); ?> mar-bottom_lg">
+		<div class="fact-inner rounded module-mu <?php echo esc_attr( $fact_width ); ?> mar-bottom_lg">
 			<div class="fact-text-wrap">
 				<?php if ( ! empty( $fact['heading'] ) ) : ?>
 				<h2 class="fact-stat-lg"><?php echo esc_html( $fact['heading'] ); ?></h2>

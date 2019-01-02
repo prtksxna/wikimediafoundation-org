@@ -18,7 +18,7 @@ $class = empty( $template_args['class'] ) ? 'img-right-content-left' : $template
 
 ?>
 
-<div class="w-32p mod-margin-bottom_sm focus-block">
+<div class="w-32p mod-margin-bottom_sm focus-block rounded shadow">
 	<div class="">
 		<div class="card">
 			<?php if ( ! empty( $image ) ) : ?>

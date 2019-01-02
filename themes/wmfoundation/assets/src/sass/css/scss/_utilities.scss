@@ -109,6 +109,12 @@ a.color-blue {
 footer.bg-black {
 	background: $footer-gray;
 }
+.rounded {
+	border-radius: 5px;
+}
+.shadow {
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15)
+}
 
 // Buttons and links
 .arrow-link {

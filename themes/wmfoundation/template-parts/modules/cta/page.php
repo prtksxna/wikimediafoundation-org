@@ -23,7 +23,7 @@ $class    = empty( $template_args['class'] ) ? $bg_class . ' cta-secondary' : $t
 		<div class="card flex flex-medium flex-wrap fifty-fifty">
 			<?php if ( ! empty( $image ) ) : ?>
 				<div class="card-content w-50p sm-img-container">
-					<div class="sm-img" style="background-image: url(<?php echo esc_url( $image ); ?>)"></div>
+					<div class="sm-img rounded" style="background-image: url(<?php echo esc_url( $image ); ?>)"></div>
 				</div>
 			<?php endif; ?>
 

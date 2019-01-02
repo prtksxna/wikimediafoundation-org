@@ -23,7 +23,7 @@ $class = empty( $template_args['class'] ) ? '_map' : $template_args['class'];
 
 ?>
 
-<div class="w-32p home-project-list-item home-project-list-item--gray">
+<div class="w-32p home-project-list-item home-project-list-item--gray rounded">
 	<a href="<?php echo esc_url( $template_args['link_uri'] ); ?>">
 		<div class="home-project-list-item-content">
 			<?php if ( ! empty( $image ) ) : ?>

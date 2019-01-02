@@ -49,7 +49,7 @@ $contact_link_text = ! empty( $template_args['contact_link_text'] ) ? $template_
 
 		<div class="flex flex-medium flex-space-between">
 
-			<div class="module-mu w-48p">
+			<div class="module-mu w-48p rounded">
 				<?php wmf_show_icon( 'mail' ); ?>
 				<?php if ( ! empty( $template_args['subscribe_heading'] ) ) : ?>
 					<h3 class="h2"><?php echo esc_html( $template_args['subscribe_heading'] ); ?></h3>
@@ -108,7 +108,7 @@ $contact_link_text = ! empty( $template_args['contact_link_text'] ) ? $template_
 				</div>
 			</div><!-- End .multi-use -->
 
-			<div class="module-mu w-48p">
+			<div class="module-mu w-48p rounded">
 				<?php wmf_show_icon( 'mail' ); ?>
 				<?php if ( ! empty( $template_args['contact_heading'] ) ) : ?>
 					<h3 class="h2"><?php echo esc_html( $template_args['contact_heading'] ); ?></h3>
