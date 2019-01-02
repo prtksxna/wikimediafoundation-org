@@ -108,6 +108,16 @@ footer.bg-black {
 }
 
 // Buttons and links
+.arrow-link {
+	color: $color-blue;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.arrow-link::after {
+	content: ' →';
+}
+
 .btn {
 
 	// Colors
