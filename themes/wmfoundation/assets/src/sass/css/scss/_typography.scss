@@ -196,16 +196,12 @@ article {
 	}
 }
 
-.page-intro-text {
-	color: $color-gray;
-}
-
 .page-intro-text,
 .page-intro-text p,
 .page-intro-text a,
 .page-intro-text li {
-	@include font-size(24, 21);
-	@include line-height(50, 32);
+	@include font-size(18, 16);
+	@include line-height(29, 25);
 
 }
 

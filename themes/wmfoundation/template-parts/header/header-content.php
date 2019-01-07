@@ -48,7 +48,7 @@ $allowed_tags['time'] = true;
 	<?php endif; ?>
 
 	<?php if ( ! empty( $title ) ) : ?>
-	<h1 class="mar-bottom"><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
+	<h1 class="mar-bottom w-50p"><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
 	<?php endif; ?>
 
 	<?php if ( ! empty( $alt_title ) ) : ?>
@@ -62,7 +62,7 @@ $allowed_tags['time'] = true;
 	<?php endif; ?>
 
 	<?php if ( is_front_page() ) : ?>
-		<div class="page-intro mod-margin-bottom wysiwyg">
+		<div class="page-intro mod-margin-bottom wysiwyg w-75p alignright">
 			<div>
 				<h2><?php echo esc_html( get_post_meta( get_the_ID(), 'sub_title', true ) ); ?></h2>
 
