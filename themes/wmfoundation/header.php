@@ -30,7 +30,8 @@ $wmf_translations         = wmf_get_translations();
 
 	<header class="<?php echo esc_attr( wmf_get_header_container_class() ); ?>" role="banner">
 
-		<?php get_template_part( 'template-parts/header/background' ); ?>
+		<!-- TODO This is the texture on the header -->
+		<!-- <?php get_template_part( 'template-parts/header/background' ); ?> -->
 		<?php if ( false !== $wmf_translations ) : ?>
 			<div class="translation-bar">
 			<div class="translation-bar-inner mw-1360">
@@ -71,16 +72,17 @@ $wmf_translations         = wmf_get_translations();
 		</div>
 		<?php endif; ?>
 
-		<div class="header-inner mw-1360">
-			<?php if ( ! is_front_page() ) : ?>
-			<div class="site-main-nav">
+		<div class="header-inner mw-980">
+			<div class="site-main-nav flex flex-medium flex-align-center">
+				<div class="logo-container logo-container_lg">
+					<?php get_template_part( 'template-parts/header/logo' ); ?>
+				</div>
 				<div class="logo-container logo-container_sm">
 					<?php get_template_part( 'template-parts/header/logo' ); ?>
 				</div>
-				<?php get_template_part( 'template-parts/header/nav-container' ); ?>
+				<!-- <?php get_template_part( 'template-parts/header/nav-container' ); ?> -->
 				<?php get_template_part( 'template-parts/header/navigation' ); ?>
 			</div>
-			<?php endif; ?>
 			<?php wmf_translation_alert(); ?>
 
 <?php

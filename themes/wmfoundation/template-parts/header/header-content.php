@@ -20,13 +20,6 @@ $allowed_tags['time'] = true;
 ?>
 
 <div class="header-content mar-bottom_lg">
-
-	<?php if ( is_front_page() ) : ?>
-	<div class="logo-nav-container">
-		<?php get_template_part( 'template-parts/header/logo-home' ); ?>
-	</div>
-	<?php endif; ?>
-
 	<?php if ( ! empty( $h4_title ) ) : ?>
 	<h2 class="h4 uppercase eyebrow">
 		<?php if ( ! empty( $h4_link ) ) : ?>
@@ -66,5 +59,18 @@ $allowed_tags['time'] = true;
 	<div class="post-meta h4">
 		<?php echo wp_kses( $meta, $allowed_tags ); ?>
 	</div>
+	<?php endif; ?>
+
+	<?php if ( is_front_page() ) : ?>
+		<div class="page-intro mod-margin-bottom wysiwyg">
+			<div>
+				<h2><?php echo esc_html( get_post_meta( get_the_ID(), 'sub_title', true ) ); ?></h2>
+
+				<div class="page-intro-text">
+					<?php the_content(); ?>
+				</div>
+
+			</div>
+		</div>
 	<?php endif; ?>
 </div>

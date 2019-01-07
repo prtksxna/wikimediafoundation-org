@@ -15,11 +15,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
-
-  @media (min-width: 1024px) {
-    margin-bottom: 1.5rem;
-  }
 }
 
 // When search is open.
@@ -110,8 +105,12 @@
   position: relative;
   z-index: 99;
   color: $color-blue;
+  background: #fff;
+  border-radius: 2px;
+  border: 1px solid $color-blue;
   align-items: center;
-  @include padding(10, 24, 10, 16);
+  @include padding(4, 7, 4, 7);
+  margin-left: 1rem;
   transition: 0.4s all;
   &:hover {
     background: #2516B5;
@@ -164,7 +163,8 @@
 }
 
 .search-label {
-  color: $color-light-turquoise;
+  color: $color-blue;
+  display: none;
   transition: 0.3s all;
 
   &:hover {
@@ -181,8 +181,5 @@
 }
 
 .search-toggle {
-  color: $color-light-turquoise;
+  color: $color-blue;
 }
-
-
-

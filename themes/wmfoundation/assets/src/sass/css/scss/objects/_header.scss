@@ -11,8 +11,6 @@ $header-bp-mw: 1049px;
 
 
 .header-default {
-	color: #fff;
-	background: $color-blue;
 	position: relative;
 	@include marginBottom(40, 80, $medium-bp);
 
@@ -34,6 +32,17 @@ $header-bp-mw: 1049px;
 		&:last-child {
 			margin-right: 0;
 		}
+
+		&.current_page_item {
+			border-bottom: 2px solid $color-blue;
+		}
+
+		a {
+      font-size: 13px;
+      font-weight: bold;
+      color: $color-blue;
+			text-transform: lowercase;
+    }
 	}
 
 
@@ -387,7 +396,3 @@ $header-bp-mw: 1049px;
 		@include pinkTextShadow();
 	}
 }
-
-
-
-
