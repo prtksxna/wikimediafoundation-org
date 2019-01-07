@@ -47,9 +47,20 @@ $allowed_tags['time'] = true;
 		</h2>
 	<?php endif; ?>
 
-	<?php if ( ! empty( $title ) ) : ?>
-	<h1 class="mar-bottom w-50p"><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
-	<?php endif; ?>
+	<?php if ( is_front_page() ) { ?>
+		<?php if ( ! empty( $title ) ) : ?>
+			<h1 class="mar-bottom w-50p"><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
+		<?php endif; ?>
+	<?php } else { ?>
+		<div class="flex flex-medium page-landing">
+			<div class="w-50p">
+				<h1><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
+			</div>
+			<div class="page-intro-text w-50p">
+				<?php the_content(); ?>
+			</div>
+		</div>
+	<?php } ?>
 
 	<?php if ( ! empty( $alt_title ) ) : ?>
 		<h2 class="h1 mar-bottom"><?php echo wp_kses( $alt_title, array( 'span' => array( 'class' ) ) ); ?></h2>

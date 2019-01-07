@@ -15,7 +15,8 @@ $header-bp-mw: 1049px;
 	@include marginBottom(40, 80, $medium-bp);
 
 	@media (min-width: $header-bp) and (max-height: 930px) {
-		min-height: 100vh;
+		// TODO remove all min-heights in this stylesheet?
+		//min-height: 100vh;
 	}
 	@media (max-width: $medium-bp) {
 		padding-bottom: 10px;
@@ -44,7 +45,6 @@ $header-bp-mw: 1049px;
 			text-transform: lowercase;
     }
 	}
-
 
 
 	&.h1-highlighted {
@@ -185,18 +185,21 @@ $header-bp-mw: 1049px;
 				position: relative;
 				z-index: 9;
 
-				@media (min-width: $header-bp) {
-					max-width: 75%;
+				h2 {
+					border-bottom: 2px solid black;
+					text-transform: lowercase;
+					@include font-size(38, 32);
+					font-weight: 500;
 				}
 			}
 
-			.eyebrow {
-				@include blueTextShadow();
+			h1 {
+				@include font-size(47, 36);
+				font-weight: normal;
 			}
 
-			h1 {
-				@include highlightHeading(10px, $color-blue);
-				line-height: 1.7;
+			.page-landing .page-intro-text p {
+				@include font-size(22, 18);
 			}
 		}
 
@@ -253,15 +256,15 @@ $header-bp-mw: 1049px;
 		position: relative;
 
 		@media (min-width: $header-bp) and (max-height: 930px) {
-			min-height: calc(100vh - 80px);
+			//min-height: calc(100vh - 80px);
 		}
 
 		@media (min-height: 931px) {
-			min-height: rem(850);
+			//min-height: rem(850);
 		}
 
 		@media (max-width: $header-bp-mw) {
-			min-height: initial;
+			//min-height: initial;
 		}
 
 		&.nav-open {

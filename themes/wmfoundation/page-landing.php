@@ -28,9 +28,10 @@ while ( have_posts() ) {
 	}
 	?>
 
-<div class="page-intro mw-1360 mod-margin-bottom wysiwyg">
+<?php // TODO: Check if this can be removed, now that this content is in the header ?>
+<!-- <div class="page-intro mw-1360 mod-margin-bottom wysiwyg">
 	<?php get_template_part( 'template-parts/page/page', 'intro' ); ?>
-</div>
+</div> -->
 
 	<?php
 	$modules = array(
