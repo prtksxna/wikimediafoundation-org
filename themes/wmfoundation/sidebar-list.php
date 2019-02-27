@@ -23,9 +23,7 @@ if ( empty( $template_args ) ) {
 		?>
 		<li class="toc-link-item">
 			<a class="toc-link niceScroll" href="#section-<?php echo esc_attr( $i + 1 ); ?>">
-				<span class="bold uppercase">
 					<?php echo esc_html( $list_section['title'] ); ?>
-				</span>
 			</a>
 		</li>
 	<?php endforeach; ?>
