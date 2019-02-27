@@ -39,9 +39,9 @@ $count      = 0;
 
 			$class = ( $count > 1 && $count === $link_count ) ? 'mar-bottom_lg' : 'mar-bottom';
 			?>
-		<div class="link-list hover-highlight uppercase <?php echo esc_attr( $class ); ?>">
+		<div class="link-list <?php echo esc_attr( $class ); ?>">
 			<!-- Single link -->
-			<a href="<?php echo esc_url( $link['link_url'] ); ?>"><?php echo esc_html( $link['link_text'] ); ?></a>
+			<a class="arrow-link" href="<?php echo esc_url( $link['link_url'] ); ?>"><?php echo esc_html( $link['link_text'] ); ?></a>
 		</div>
 		<?php endforeach; ?>
 	<?php endif; ?>
