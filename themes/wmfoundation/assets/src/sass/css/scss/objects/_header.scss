@@ -372,15 +372,8 @@ $header-bp-mw: 1049px;
 
 
 .header-default.header-pink {
-  color: #fff;
-  background: $color-pink;
   position: relative;
   @include marginBottom(40, 80, $medium-bp);
-
-    h1 {
-      color: $color-pink;
-      background: #fff;
-     }
 
   .header-inner.nav-open {
     background: $color-pink;
@@ -396,6 +389,10 @@ $header-bp-mw: 1049px;
   	color: #9CFFE7;
 	}
 	.eyebrow {
-		@include pinkTextShadow();
+		color: $color-pink;
+	}
+
+	.header-content h2 {
+		border-color: $color-pink;
 	}
 }
