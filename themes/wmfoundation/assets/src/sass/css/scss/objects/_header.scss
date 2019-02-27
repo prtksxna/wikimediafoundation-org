@@ -186,7 +186,7 @@ $header-bp-mw: 1049px;
 				z-index: 9;
 
 				h2 {
-					border-bottom: 2px solid black;
+					border-bottom: 3px solid $wmui-color-base0;
 					text-transform: lowercase;
 					@include font-size(38, 32);
 					font-weight: 500;

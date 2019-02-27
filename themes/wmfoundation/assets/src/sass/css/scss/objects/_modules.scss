@@ -37,6 +37,11 @@
 		&:nth-child(even) {
 			@include paddingLeft(0, 40, $medium-bp);
 		}
+
+		.h2 {
+			padding-top: 0.5rem;
+			border-top: 3px solid $wmui-color-base0;
+		}
 	}
 
 	&.w-50p + .w-32p {
