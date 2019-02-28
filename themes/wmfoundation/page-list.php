@@ -27,17 +27,17 @@ while ( have_posts() ) :
 		wmf_get_template_part( 'template-parts/header/page-noimage', $template_args );
 	}
 	?>
-<div class="mw-1360 mod-margin-bottom flex flex-medium">
+<div class="mw-980 mod-margin-bottom flex flex-medium">
+	<div class="module-mu w-32p">
+		<?php get_sidebar( 'list' ); ?>
+	</div>
+
 	<div class="w-68p">
 		<div class="page-intro mod-margin-bottom wysiwyg">
 			<?php get_template_part( 'template-parts/page/page', 'intro' ); ?>
 		</div>
 
 		<?php get_template_part( 'template-parts/page/page', 'list' ); ?>
-	</div>
-
-	<div class="module-mu w-32p">
-		<?php get_sidebar( 'list' ); ?>
 	</div>
 </div>
 	<?php

@@ -209,6 +209,15 @@ article {
 	@include linkHighlight($color-turquoise, #000, 4, 4, 24, 30, $medium-bp);
 }
 
+.page-template-page-list main {
+	h2 {
+		border-bottom: 2px solid $wmui-color-base0;
+	}
+
+	.h2 {
+		margin-bottom: 0;
+	}
+}
 
 // functional styles
 .link-inline {

@@ -3,6 +3,7 @@
 	p a,
 	li a {
 		//$highlightColor, $highlightTextColor, $underlineThicknessMobile, $underlineThicknessDesktop, $highlightHeightMobile, $highlightHeightDesktop, $desktopBreakpoint
-		@include linkHighlight($link-highlight-color, #000, 4, 4, 24, 30, $medium-bp);
+		//@include linkHighlight($link-highlight-color, #000, 4, 4, 24, 30, $medium-bp);
+		color: $color-blue;
 	}
 }
