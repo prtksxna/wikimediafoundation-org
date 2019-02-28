@@ -21,10 +21,9 @@ $allowed_tags['time'] = true;
 
 <div class="header-content mar-bottom_lg">
 	<?php if ( ! empty( $h4_title ) ) : ?>
-	<h2 class="h4 uppercase eyebrow">
+	<h2 class="h4 eyebrow">
 		<?php if ( ! empty( $h4_link ) ) : ?>
-		<a href="<?php echo esc_url( $h4_link ); ?>">
-			<?php wmf_show_icon( 'arrow-back', 'icon-white material' ); ?>
+		<a class="back-arrow-link" href="<?php echo esc_url( $h4_link ); ?>">
 		<?php endif; ?>
 			<?php echo esc_html( $h4_title ); ?>
 		<?php if ( ! empty( $h4_link ) ) : ?>
@@ -36,7 +35,7 @@ $allowed_tags['time'] = true;
 	<?php if ( is_home() && ! empty( $h2_title ) ) : ?>
 		<h2 class="h1 eyebrow"><?php echo esc_html( $h2_title ); ?></h2>
 	<?php elseif ( ! empty( $h2_title ) ) : ?>
-		<h2 class="h2 uppercase eyebrow">
+		<h2 class="h2 eyebrow">
 			<?php if ( ! empty( $h2_link ) ) : ?>
 			<a href="<?php echo esc_url( $h2_link ); ?>">
 				<?php endif; ?>

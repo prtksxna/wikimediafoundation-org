@@ -54,6 +54,11 @@ $header-bp-mw: 1049px;
 		}
 	}
 
+	h1 {
+		@include font-size(47, 36);
+		font-weight: normal;
+	}
+
 	// Header content positioning classes
 	.bg-pattern-container {
 		position: absolute;
@@ -193,11 +198,6 @@ $header-bp-mw: 1049px;
 				}
 			}
 
-			h1 {
-				@include font-size(47, 36);
-				font-weight: normal;
-			}
-
 			.page-landing .page-intro-text p {
 				@include font-size(22, 18);
 			}
@@ -307,9 +307,27 @@ $header-bp-mw: 1049px;
 	.eyebrow {
 		margin-bottom: 1rem;
 
+		a.back-arrow-link {
+			@include font-size(16, 14);
+			text-transform: lowercase;
+		}
+
+		a.back-arrow-link::before {
+			content: '← ';
+		}
+
+		&.h2 {
+			border-bottom: 3px solid $wmui-color-base0;
+			text-transform: lowercase;
+			@include font-size(38, 32);
+			font-weight: 500;
+		}
+
+
 		a {
+			color: $color-blue;
 			&:hover {
-				color: $color-turquoise;
+				text-decoration: underline;
 			}
 		}
 	}
