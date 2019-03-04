@@ -388,6 +388,28 @@ $header-bp-mw: 1049px;
 	}
 }
 
+.header-role {
+	border-bottom: 3px solid $wmui-color-base0;
+
+	h1 {
+		text-transform: lowercase;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	.post-meta {
+		margin: 0;
+	}
+
+	a {
+		color: $color-blue;
+	}
+
+	.side-list {
+		margin-bottom: 10px;
+	}
+}
+
 
 .header-default.header-pink {
   position: relative;
