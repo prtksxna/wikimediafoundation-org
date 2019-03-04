@@ -14,7 +14,7 @@ while ( have_posts() ) {
 	$parent_page = get_option( 'page_for_posts' );
 
 	wmf_get_template_part(
-		'template-parts/header/page-noimage', array(
+		'template-parts/header/page-single', array(
 			'h4_link'   => get_the_permalink( $parent_page ),
 			'h4_title'  => get_the_title( $parent_page ),
 			'h1_title'  => get_the_title(),
@@ -23,7 +23,7 @@ while ( have_posts() ) {
 	);
 
 	wmf_get_template_part(
-		'template-parts/thumbnail-framed',
+		'template-parts/thumbnail-full',
 		array(
 			'inner_image' => get_post_thumbnail_id(),
 		)
@@ -31,16 +31,17 @@ while ( have_posts() ) {
 	?>
 
 	<?php if ( ! empty( $intro ) ) : ?>
-	<div class="article-title mw-900">
+	<div class="article-title mw-980">
 		<h3 class="h3"><?php echo wp_kses_post( $intro ); ?></h3>
 	</div>
 	<?php endif; ?>
 
-	<article class="mw-900 wysiwyg">
+	<article class="mw-980 wysiwyg">
+		<?php get_template_part( 'template-parts/header/social-aside' ); ?>
 		<?php the_content(); ?>
 	</article>
 
-	<div class="article-footer mw-900 mod-margin-bottom">
+	<div class="article-footer mw-980 mod-margin-bottom">
 		<?php get_template_part( 'template-parts/post-categories' ); ?>
 
 		<?php
