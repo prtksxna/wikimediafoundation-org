@@ -18,7 +18,7 @@ $bg_class = empty( $template_args['background_color'] ) || 'blue' === $template_
 $class    = empty( $template_args['class'] ) ? $bg_class . ' cta-primary' : $template_args['class'];
 ?>
 
-<div class="w-100p cta mod-margin-bottom <?php echo esc_attr( $class ); ?>">
+<div class="w-100p cta mod-margin-bottom_sm <?php echo esc_attr( $class ); ?>">
 	<div class="mw-980">
 		<div class="card flex flex-medium flex-wrap fifty-fifty">
 			<?php if ( ! empty( $image ) ) : ?>
