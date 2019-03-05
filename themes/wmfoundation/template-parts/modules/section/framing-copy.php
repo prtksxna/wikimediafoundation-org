@@ -29,7 +29,7 @@ $has_title = ! empty( $template_args['pre_heading'] ) && ! empty( $template_args
 	</div>
 <?php endif; ?>
 
-	<div class="flex flex-medium flex-wrap mw-980 fifty-fifty">
+	<div class="flex flex-medium flex-wrap mw-980 fifty-fifty mod-margin-bottom">
 	<?php
 	foreach ( $template_args['modules'] as $module ) {
 		wmf_get_template_part( 'template-parts/modules/mu/text', $module );
