@@ -32,7 +32,7 @@ $has_caption     = ! empty( $caption ) || ! empty( $credit );
 </div>
 
 <?php if ( $has_caption ) : ?>
-<div class="img-caption mw-900">
+<div class="img-caption mw-980">
 	<?php if ( ! empty( $caption ) ) : ?>
 		<span class="photo-caption"><?php echo wp_kses_post( $caption ); ?></span>
 	<?php endif; ?>

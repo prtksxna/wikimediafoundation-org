@@ -189,7 +189,8 @@ article {
 
 	.img-caption {
 		color: $color-ltgray;
-		font-style: italic;
+		margin-top: 1rem;
+
 		a {
 			transition: 0.3s all;
 			&:hover {
