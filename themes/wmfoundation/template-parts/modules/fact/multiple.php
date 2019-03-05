@@ -18,7 +18,7 @@ $fact_width = 3 === count( $template_args['facts'] ) ? 'w-32p' : 'w-45p';
 
 ?>
 
-<div class="fact-container bg-img--yellow mod-margin-bottom">
+<div class="fact-container">
 
 	<div class="mw-980 flex flex-medium flex-wrap flex-space-between">
 		<?php
