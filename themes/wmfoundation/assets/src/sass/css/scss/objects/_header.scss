@@ -388,6 +388,13 @@ $header-bp-mw: 1049px;
 	}
 }
 
+.header-single {
+	h1 {
+		@include font-size(38, 32);
+		font-weight: 500;
+	}
+}
+
 .header-role {
 	border-bottom: 3px solid $wmui-color-base0;
 
