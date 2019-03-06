@@ -72,8 +72,8 @@ $wmf_translations         = wmf_get_translations();
 		</div>
 		<?php endif; ?>
 
-		<div class="header-inner mw-980">
-			<div class="site-main-nav flex flex-medium flex-align-center">
+		<div class="top-nav">
+			<div class="site-main-nav flex flex-medium flex-align-center mw-980">
 				<div class="logo-container logo-container_lg">
 					<?php get_template_part( 'template-parts/header/logo' ); ?>
 				</div>
@@ -83,6 +83,8 @@ $wmf_translations         = wmf_get_translations();
 				<!-- <?php get_template_part( 'template-parts/header/nav-container' ); ?> -->
 				<?php get_template_part( 'template-parts/header/navigation' ); ?>
 			</div>
+		</div>
+		<div class="header-inner mw-980">
 			<?php wmf_translation_alert(); ?>
 
 <?php

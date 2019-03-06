@@ -7,8 +7,7 @@ $header-bp-mw: 1023px;
 
 .header-home {
   position: relative;
-  background: rgb(244,223,255);
-  background: linear-gradient( 180deg, rgba(244,223,255,1) 0%, rgba(255,255,255,1) 100%);
+  background: $color-white;
 
   @media (min-width: $header-bp) and (max-height: 930px) {
     min-height: 100vh;
@@ -118,6 +117,7 @@ $header-bp-mw: 1023px;
       .header-content {
         position: relative;
         z-index: 9;
+        margin-top: 150px;
 
         @media (min-width: $header-bp) {
           margin-bottom: rem(200);

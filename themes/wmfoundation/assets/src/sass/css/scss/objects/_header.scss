@@ -42,7 +42,6 @@ $header-bp-mw: 1049px;
       font-size: 13px;
       font-weight: bold;
       color: $color-blue;
-			text-transform: lowercase;
     }
 	}
 
@@ -189,6 +188,7 @@ $header-bp-mw: 1049px;
 			.header-content {
 				position: relative;
 				z-index: 9;
+				margin-top: 150px;
 
 				h2 {
 					border-bottom: 3px solid $wmui-color-base0;
