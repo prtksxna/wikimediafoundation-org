@@ -88,6 +88,7 @@
 .search-bar-container {
   width: 125px;
   transition: width 0.4s ease-in-out;
+  display: none;
   .search-submit {
     opacity: 0;
   }
