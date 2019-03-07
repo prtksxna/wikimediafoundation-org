@@ -55,6 +55,10 @@
   height: rem(100);
   overflow: hidden;
   padding-right: rem(15);
+
+  img {
+    border-radius: 5px;
+  }
 }
 .photo-credit-img {
   height: 100%;
