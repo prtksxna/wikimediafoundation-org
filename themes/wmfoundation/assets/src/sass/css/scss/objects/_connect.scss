@@ -5,6 +5,15 @@
   .module-mu {
     border: 1px solid $wmui-color-base80;
     padding: 1.5rem;
+
+    .wysiwyg,
+    .h2 {
+      margin-bottom: 0.75rem;
+    }
+
+    &.gray-module {
+      background: #f8f9fa;
+    }
   }
 
   .icon {
@@ -16,6 +25,7 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding-left: 1rem;
+    background: #fff;
   }
 
   .email-signup .btn {
