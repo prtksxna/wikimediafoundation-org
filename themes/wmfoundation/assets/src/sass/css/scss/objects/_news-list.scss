@@ -255,7 +255,6 @@
 
           &:after {
             transition: 0.3s all;
-            @include black-gradient-vertical();
           }
 
           &.headline-hover:after {
