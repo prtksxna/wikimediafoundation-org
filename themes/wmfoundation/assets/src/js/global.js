@@ -1,6 +1,8 @@
 /**
  * Generic site JavaScript.
  */
+
+/* eslint-disable */
 jQuery(window).on('scroll', function () {
   if ( jQuery(this).scrollTop() > 0 ) {
     jQuery('.top-nav').addClass('pinned');
@@ -8,3 +10,4 @@ jQuery(window).on('scroll', function () {
     jQuery('.top-nav').removeClass('pinned');
   }
 })
+/* eslint-enable */
