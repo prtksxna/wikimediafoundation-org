@@ -113,6 +113,10 @@ footer.bg-black {
 	border-radius: 5px;
 }
 .shadow {
+	border: 1px solid #e5e5e5;
+	transition: all 250ms ease;
+}
+.shadow:hover {
 	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15)
 }
 
