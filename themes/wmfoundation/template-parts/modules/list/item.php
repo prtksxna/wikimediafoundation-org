@@ -28,7 +28,7 @@ $link        = ! empty( $template_data['link'] ) ? $template_data['link'] : '';
 
 	<div>
 		<?php if ( ! empty( $title ) ) : ?>
-		<h3 class="h2 link-external">
+		<h3 class="link-external">
 
 			<?php if ( ! empty( $link ) ) : ?>
 			<a href="<?php echo esc_url( $link ); ?>">
@@ -49,7 +49,7 @@ $link        = ! empty( $template_data['link'] ) ? $template_data['link'] : '';
 
 		<?php
 		if ( ! empty( $subhead ) ) :
-			echo wp_kses_post( wpautop( sprintf( '<p class="mar-bottom bold">%s</p>', $subhead ) ) );
+			echo wp_kses_post( wpautop( sprintf( '<p class="mar-bottom color-gray">%s</p>', $subhead ) ) );
 		endif;
 		?>
 

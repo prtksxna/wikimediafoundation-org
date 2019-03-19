@@ -63,14 +63,15 @@
 	list-style-type: none;
 }
 .toc-link {
-	@include font-size(16, 14);
 	display:block;
+	padding-left: 20px;
 	margin-bottom: 15px;
-	color: $color-blue;
+	color:$color-gray;
 
 
   &.-active {
     color: #000;
+		border-left: 4px solid $color-turquoise;
   }
 }
 
@@ -120,3 +121,6 @@
 		margin-bottom: 0;
 	}
 }
+
+
+

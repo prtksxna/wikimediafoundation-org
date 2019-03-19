@@ -39,7 +39,7 @@ $contact_link_text = ! empty( $template_args['contact_link_text'] ) ? $template_
 ?>
 
 <div class="connect-container white-bg mod-margin-bottom">
-	<div class="mw-980">
+	<div class="mw-1360">
 		<?php if ( ! empty( $template_args['pre_heading'] ) ) : ?>
 			<h3 class="h3 color-gray uppercase"><?php echo esc_html( $template_args['pre_heading'] ); ?> — <span><?php echo esc_html( $template_args['rand_translation_title'] ); ?></span></h3>
 		<?php endif; ?>
@@ -47,12 +47,11 @@ $contact_link_text = ! empty( $template_args['contact_link_text'] ) ? $template_
 			<h2 class="h2"><?php echo esc_html( $template_args['heading'] ); ?></h2>
 		<?php endif; ?>
 
-		<div class="flex flex-medium flex-space-between">
+		<div class="flex flex-medium">
 
-			<div class="module-mu w-48p rounded gray-module">
-				<?php wmf_show_icon( 'mail' ); ?>
+			<div class="module-mu w-50p">
 				<?php if ( ! empty( $template_args['subscribe_heading'] ) ) : ?>
-					<h3 class="h2"><?php echo esc_html( $template_args['subscribe_heading'] ); ?></h3>
+					<h3 class="h3"><?php echo esc_html( $template_args['subscribe_heading'] ); ?></h3>
 				<?php endif; ?>
 				<?php if ( ! empty( $template_args['subscribe_content'] ) ) : ?>
 					<div class="wysiwyg">
@@ -62,14 +61,8 @@ $contact_link_text = ! empty( $template_args['contact_link_text'] ) ? $template_
 				<div class="email-signup">
 					<form action="<?php echo esc_url( $template_args['subscribe_action'] ); ?>" method="post" target="_blank">
 						<label for="wmf-subscribe-input-email" class="sr-only"><?php echo esc_html( $template_args['subscribe_placeholder'] ); ?></label>
-						<div class="flex flex-medium flex-wrap fifty-fifty">
-							<div class="w-68p">
-								<input id="wmf-subscribe-input-email" type="email" placeholder="<?php echo esc_attr( $template_args['subscribe_placeholder'] ); ?>" name="EMAIL" required>
-							</div>
-							<div class="w-32p">
-								<button class="btn btn-blue" type="submit" name="button"><?php echo esc_html( $template_args['subscribe_button'] ); ?></button>
-							</div>
-						</div>
+						<input id="wmf-subscribe-input-email" type="email" placeholder="<?php echo esc_attr( $template_args['subscribe_placeholder'] ); ?>" name="EMAIL" required>
+						<?php wmf_show_icon( 'mail' ); ?>
 						<?php if ( ! empty( $template_args['subscribe_additional_fields'] ) ) : ?>
 						<div class="field-group input-group">
 							<?php
@@ -104,14 +97,14 @@ $contact_link_text = ! empty( $template_args['contact_link_text'] ) ? $template_
 							?>
 						</div>
 						<?php endif; ?>
+						<button class="btn btn-pink" type="submit" name="button"><?php echo esc_html( $template_args['subscribe_button'] ); ?></button>
 					</form>
 				</div>
 			</div><!-- End .multi-use -->
 
-			<div class="module-mu w-48p rounded">
-				<?php wmf_show_icon( 'person' ); ?>
+			<div class="module-mu w-32p">
 				<?php if ( ! empty( $template_args['contact_heading'] ) ) : ?>
-					<h3 class="h2"><?php echo esc_html( $template_args['contact_heading'] ); ?></h3>
+					<h3 class="h3"><?php echo esc_html( $template_args['contact_heading'] ); ?></h3>
 				<?php endif; ?>
 				<?php if ( ! empty( $template_args['contact_content'] ) ) : ?>
 					<div class="wysiwyg">
@@ -119,11 +112,14 @@ $contact_link_text = ! empty( $template_args['contact_link_text'] ) ? $template_
 					</div>
 				<?php endif; ?>
 				<?php if ( ! empty( $contact_link_href ) ) : ?>
+				<div class="link-list hover-highlight uppercase">
 					<!-- Single link -->
-					<a class="arrow-link" href="<?php echo esc_url( $contact_link_href ); ?>" target="_blank"><?php echo esc_attr( $contact_link_text ); ?></a>
+					<a href="<?php echo esc_url( $contact_link_href ); ?>" target="_blank"><?php echo esc_attr( $contact_link_text ); ?></a>
+				</div>
 				<?php endif; ?>
-				<?php wmf_get_template_part( 'template-parts/modules/social/follow', $template_args, 'horizontal' ); ?>
 			</div><!-- End .multi-use -->
+
+			<?php wmf_get_template_part( 'template-parts/modules/social/follow', $template_args, 'vertical' ); ?>
 		</div>
 	</div>
 </div>

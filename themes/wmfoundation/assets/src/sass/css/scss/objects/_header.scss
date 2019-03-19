@@ -11,12 +11,13 @@ $header-bp-mw: 1049px;
 
 
 .header-default {
+	color: #fff;
+	background: $color-blue;
 	position: relative;
 	@include marginBottom(40, 80, $medium-bp);
 
 	@media (min-width: $header-bp) and (max-height: 930px) {
-		// TODO remove all min-heights in this stylesheet?
-		//min-height: 100vh;
+		min-height: 100vh;
 	}
 	@media (max-width: $medium-bp) {
 		padding-bottom: 10px;
@@ -33,17 +34,8 @@ $header-bp-mw: 1049px;
 		&:last-child {
 			margin-right: 0;
 		}
-
-		&.current_page_item {
-			border-bottom: 2px solid $color-blue;
-		}
-
-		a {
-      font-size: 13px;
-      font-weight: bold;
-      color: $color-blue;
-    }
 	}
+
 
 
 	&.h1-highlighted {
@@ -51,11 +43,6 @@ $header-bp-mw: 1049px;
 			color: $color-blue;
 			background: #fff;
 		}
-	}
-
-	h1 {
-		@include font-size(47, 36);
-		font-weight: normal;
 	}
 
 	// Header content positioning classes
@@ -188,18 +175,19 @@ $header-bp-mw: 1049px;
 			.header-content {
 				position: relative;
 				z-index: 9;
-				margin-top: 150px;
 
-				h2 {
-					border-bottom: 3px solid $wmui-color-base0;
-					text-transform: lowercase;
-					@include font-size(38, 32);
-					font-weight: 500;
+				@media (min-width: $header-bp) {
+					max-width: 75%;
 				}
 			}
 
-			.page-landing .page-intro-text p {
-				@include font-size(22, 18);
+			.eyebrow {
+				@include blueTextShadow();
+			}
+
+			h1 {
+				@include highlightHeading(10px, $color-blue);
+				line-height: 1.7;
 			}
 		}
 
@@ -256,15 +244,15 @@ $header-bp-mw: 1049px;
 		position: relative;
 
 		@media (min-width: $header-bp) and (max-height: 930px) {
-			//min-height: calc(100vh - 80px);
+			min-height: calc(100vh - 80px);
 		}
 
 		@media (min-height: 931px) {
-			//min-height: rem(850);
+			min-height: rem(850);
 		}
 
 		@media (max-width: $header-bp-mw) {
-			//min-height: initial;
+			min-height: initial;
 		}
 
 		&.nav-open {
@@ -307,27 +295,9 @@ $header-bp-mw: 1049px;
 	.eyebrow {
 		margin-bottom: 1rem;
 
-		a.back-arrow-link {
-			@include font-size(16, 14);
-			text-transform: lowercase;
-		}
-
-		a.back-arrow-link::before {
-			content: '← ';
-		}
-
-		&.h2 {
-			border-bottom: 3px solid $wmui-color-base0;
-			text-transform: lowercase;
-			@include font-size(38, 32);
-			font-weight: 500;
-		}
-
-
 		a {
-			color: $color-blue;
 			&:hover {
-				text-decoration: underline;
+				color: $color-turquoise;
 			}
 		}
 	}
@@ -388,41 +358,17 @@ $header-bp-mw: 1049px;
 	}
 }
 
-.header-single {
-	margin-top: 150px;
-
-	h1 {
-		@include font-size(38, 32);
-		font-weight: 500;
-	}
-}
-
-.header-role {
-	border-bottom: 3px solid $wmui-color-base0;
-
-	h1 {
-		text-transform: lowercase;
-		font-weight: 500;
-		margin: 0;
-	}
-
-	.post-meta {
-		margin: 0;
-	}
-
-	a {
-		color: $color-blue;
-	}
-
-	.side-list {
-		margin-bottom: 10px;
-	}
-}
-
 
 .header-default.header-pink {
+  color: #fff;
+  background: $color-pink;
   position: relative;
   @include marginBottom(40, 80, $medium-bp);
+
+    h1 {
+      color: $color-pink;
+      background: #fff;
+     }
 
   .header-inner.nav-open {
     background: $color-pink;
@@ -438,10 +384,10 @@ $header-bp-mw: 1049px;
   	color: #9CFFE7;
 	}
 	.eyebrow {
-		color: $color-pink;
-	}
-
-	.header-content h2 {
-		border-color: $color-pink;
+		@include pinkTextShadow();
 	}
 }
+
+
+
+

@@ -15,20 +15,20 @@ $image = ! empty( $template_args['image'] ) ? $template_args['image'] : '';
 $image = is_numeric( $image ) ? wp_get_attachment_image_url( $image, 'large' ) : $image;
 
 $bg_class = empty( $template_args['background_color'] ) || 'blue' === $template_args['background_color'] ? 'bg-img--blue btn-pink' : 'bg-img--turquoise btn-blue';
-$class    = empty( $template_args['class'] ) ? $bg_class . ' cta-primary' : $template_args['class'];
+$class    = empty( $template_args['class'] ) ? $bg_class . ' cta-secondary' : $template_args['class'];
 ?>
 
-<div class="w-100p cta mod-margin-bottom_sm <?php echo esc_attr( $class ); ?>">
-	<div class="mw-980">
-		<div class="card flex flex-medium flex-wrap fifty-fifty">
+<div class="w-100p cta mod-margin-bottom <?php echo esc_attr( $class ); ?>">
+	<div class="mw-1360">
+		<div class="card">
 			<?php if ( ! empty( $image ) ) : ?>
-				<div class="card-content w-50p sm-img-container">
-					<div class="sm-img rounded" style="background-image: url(<?php echo esc_url( $image ); ?>)"></div>
-				</div>
+			<div class="bg-img-container">
+				<div class="bg-img" style="background-image: url(<?php echo esc_url( $image ); ?>);"></div>
+			</div>
 			<?php endif; ?>
 
 			<?php if ( ! empty( $template_args['heading'] ) || ! empty( $template_args['content'] ) || ! empty( $template_args['link_uri'] ) ) : ?>
-			<div class="card-content w-50p">
+			<div class="card-content w-45p">
 
 				<?php if ( ! empty( $template_args['heading'] ) ) : ?>
 				<h2 class="h2"><?php echo esc_html( $template_args['heading'] ); ?></h2>

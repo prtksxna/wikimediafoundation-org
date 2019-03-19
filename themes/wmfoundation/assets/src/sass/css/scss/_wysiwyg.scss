@@ -3,18 +3,6 @@
 	p a,
 	li a {
 		//$highlightColor, $highlightTextColor, $underlineThicknessMobile, $underlineThicknessDesktop, $highlightHeightMobile, $highlightHeightDesktop, $desktopBreakpoint
-		//@include linkHighlight($link-highlight-color, #000, 4, 4, 24, 30, $medium-bp);
-		color: $color-blue;
+		@include linkHighlight($color-turquoise, #000, 4, 4, 24, 30, $medium-bp);
 	}
-}
-
-.single-post .wysiwyg h1,
-.single-post .wysiwyg h2,
-.single-post .wysiwyg h3,
-.single-post .wysiwyg h4,
-.single-post .wysiwyg li,
-.single-post .wysiwyg p {
-	font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
-	@include font-size(18, 14);
-	line-height: 31px;
 }

@@ -11,21 +11,21 @@ h2,
 .h2 {
 	margin-bottom: 3.5rem;
 	@include marginBottom(40, 56, $medium-bp);
-	@include font-size(22, 18);
+	@include font-size(48, 27);
 
 	&.small {
-		@include font-size(22, 18);
+		@include font-size(42, 36);
 		@include marginBottom(40, 56, $medium-bp);
 	}
 }
 
 h3,
 .h3 {
-	font-size: rem(15);
-	@include font-size(15, 13);
+	font-size: rem(24);
+	@include font-size(24, 21);
 
 	&.small {
-		@include font-size(15, 13);
+		@include font-size(28, 21);
 	}
 }
 
@@ -55,8 +55,8 @@ h6 {
 }
 
 p {
-	@include font-size(15, 13);
-	line-height: 1.466;
+	@include font-size(22, 18);
+	line-height: 1.8;
 }
 
 .p {
@@ -196,12 +196,16 @@ article {
 	}
 }
 
+.page-intro-text {
+	color: $color-gray;
+}
+
 .page-intro-text,
 .page-intro-text p,
 .page-intro-text a,
 .page-intro-text li {
-	@include font-size(18, 16);
-	@include line-height(29, 25);
+	@include font-size(24, 21);
+	@include line-height(50, 32);
 
 }
 
@@ -209,15 +213,6 @@ article {
 	@include linkHighlight($color-turquoise, #000, 4, 4, 24, 30, $medium-bp);
 }
 
-.page-template-page-list main {
-	h2 {
-		border-bottom: 2px solid $wmui-color-base0;
-	}
-
-	.h2 {
-		margin-bottom: 0;
-	}
-}
 
 // functional styles
 .link-inline {

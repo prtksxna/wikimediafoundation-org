@@ -2,50 +2,10 @@
 // Connect
 .connect-container {
 
-  .module-mu {
-    border: 1px solid $wmui-color-base80;
-    padding: 1.5rem;
-
-    .wysiwyg,
-    .h2 {
-      margin-bottom: 0.75rem;
-    }
-
-    &.gray-module {
-      background: #f8f9fa;
-    }
-  }
-
-  .icon {
-    margin: 0;
-  }
-
-  .email-signup #wmf-subscribe-input-email {
-    box-sizing: border-box;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding-left: 1rem;
-    background: #fff;
-  }
-
-  .email-signup .btn {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding: 1rem;
-  }
-
   .social-list {
 
     li {
-      display: inline-block;
-      font-size: 1rem;
-      font-weight: bold;
-      margin-right: 4rem;
-    }
-
-    svg.icon {
-      height: 1rem;
-      width: 1rem;
+      width: 100%;
     }
   }
 

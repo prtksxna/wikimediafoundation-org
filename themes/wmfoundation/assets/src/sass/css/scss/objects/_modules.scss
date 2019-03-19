@@ -37,16 +37,6 @@
 		&:nth-child(even) {
 			@include paddingLeft(0, 40, $medium-bp);
 		}
-
-		.h2 {
-			padding-top: 0.5rem;
-			margin-bottom: 1rem;
-			border-top: 3px solid $wmui-color-base0;
-
-			&.no-border {
-				border-top: none;
-			}
-		}
 	}
 
 	&.w-50p + .w-32p {
@@ -179,16 +169,13 @@
 	line-height: 1.8;
 
 	time {
-		margin: 0 1rem;
+		display: block;
 	}
 }
 
 // Page Intro
 .page-intro {
-	margin-top: 15rem;
-	h2 {
-		margin: 0;
-	}
+
 	.btn {
 		margin-top: 1.5rem;
 	}
@@ -370,31 +357,8 @@ a.hover-img-zoom {
 	}
 }
 
-// Social module on single post
-.social-share-aside {
-	width: 120px;
-	margin-left: -120px;
-	float: left;
 
-	ul {
-		list-style: none;
 
-		.icon {
-			height: 30px;
-		}
-
-		a {
-			width: 50px;
-			height: 50px;
-			box-sizing: border-box;
-			display: block;
-			line-height: 40px;
-			text-align: center;
-			border-radius: 100%;
-			border: 1px solid $color-blue;
-		}
-	}
-}
 
 // Fifty fifty module (4 up, each 50%)
 .fifty-fifty {
@@ -445,3 +409,4 @@ a.hover-img-zoom {
 	border-top: 1px solid $color-ltgray;
 	@include paddingTop(64, 112, $medium-bp);
 }
+

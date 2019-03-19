@@ -6,26 +6,13 @@
   }
 }
 
-.join-movement {
-  text-align: center;
-  @include font-size(18, 16);
-  line-height: 1.6;
-  margin: 0 auto;
-  color: $color-black;
-
-  .btn {
-    margin-top: 1rem;
-    text-transform: none;
-  }
-}
-
 .people {
 
   .person-name {
     text-transform: none;
     color: #000;
-    @include marginBottom(4, 8, $medium-bp);
-    @include font-size(15, 13);
+    @include marginBottom(8, 16, $medium-bp);
+    @include font-size(21, 20);
   }
 
   .person-title {

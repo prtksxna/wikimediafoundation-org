@@ -100,18 +100,14 @@
 .fact-inner {
   position: relative;
   z-index: 999;
-  border: 1px solid $wmui-color-base80;
-  padding: rem(20);
+}
+
+.fact-inner.w-32p {
+  padding-right: rem(40);
+  padding-left: rem(40);
 }
 
 .fact-stat-lg {
-  @include font-size(48, 26);
-  letter-spacing: -0.24px;
-  font-weight: 600;
+  @include font-size(64, 30);
   margin-bottom: 0;
-}
-
-.fact {
-  @include font-size(15, 12);
-  letter-spacing: -0.08px;
 }

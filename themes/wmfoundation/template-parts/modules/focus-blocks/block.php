@@ -18,8 +18,8 @@ $class = empty( $template_args['class'] ) ? 'img-right-content-left' : $template
 
 ?>
 
-<div class="w-32p mod-margin-bottom_sm focus-block rounded shadow">
-	<div class="">
+<div class="w-100p cta mod-margin-bottom_sm cta-secondary bg-img--turquoise <?php echo esc_attr( $class ); ?>">
+	<div class="mw-1360">
 		<div class="card">
 			<?php if ( ! empty( $image ) ) : ?>
 			<div class="bg-img-container">
@@ -27,20 +27,25 @@ $class = empty( $template_args['class'] ) ? 'img-right-content-left' : $template
 			</div>
 			<?php endif; ?>
 
-			<div class="card-content ">
+			<div class="card-content w-45p">
 
 				<?php if ( ! empty( $template_args['heading'] ) ) : ?>
-				<h2 class="h2"><?php echo esc_html( $template_args['heading'] ); ?></h2>
+				<div class="mar-bottom">
+					<h2 class="h2"><?php echo esc_html( $template_args['heading'] ); ?></h2>
+				</div>
 				<?php endif; ?>
 
 				<?php if ( ! empty( $template_args['content'] ) ) : ?>
 				<div class="mar-bottom">
-					<p ><?php echo esc_html( $template_args['content'] ); ?></p>
+					<p class="cta-description"><?php echo esc_html( $template_args['content'] ); ?></p>
 				</div>
 				<?php endif; ?>
 
 				<?php if ( ! empty( $template_args['link_uri'] ) && ! empty( $template_args['link_text'] ) ) : ?>
-					<a class="arrow-link" href="<?php echo esc_url( $template_args['link_uri'] ); ?>"><?php echo esc_html( $template_args['link_text'] ); ?></a>
+				<div class="uppercase">
+					<!-- Single link -->
+					<a class="btn btn-white cta-btn" href="<?php echo esc_url( $template_args['link_uri'] ); ?>"><?php echo esc_html( $template_args['link_text'] ); ?></a>
+				</div>
 				<?php endif; ?>
 
 			</div>

@@ -23,8 +23,14 @@ $class = empty( $template_args['class'] ) ? '_map' : $template_args['class'];
 
 ?>
 
-<div class="w-32p home-project-list-item home-project-list-item--gray rounded">
+<div class="w-50p home-project-list-item home-project-list-item<?php echo esc_attr( $class ); ?>">
 	<a href="<?php echo esc_url( $template_args['link_uri'] ); ?>">
+		<?php if ( ! empty( $bg_image ) ) : ?>
+		<div class="bg-img-container">
+			<div class="bg-img" style="background-image: url(<?php echo esc_url( $bg_image ); ?>);"></div>
+		</div>
+		<?php endif; ?>
+
 		<div class="home-project-list-item-content">
 			<?php if ( ! empty( $image ) ) : ?>
 			<div class="home-project-logo">
@@ -33,11 +39,11 @@ $class = empty( $template_args['class'] ) ? '_map' : $template_args['class'];
 			<?php endif; ?>
 
 			<?php if ( ! empty( $template_args['heading'] ) ) : ?>
-			<h3 class="h3 mar-bottom"><?php echo esc_html( $template_args['heading'] ); ?></h3>
+			<p class="h3 color-white mar-bottom"><?php echo esc_html( $template_args['heading'] ); ?></p>
 			<?php endif; ?>
 
 			<?php if ( ! empty( $template_args['content'] ) ) : ?>
-				<p><?php echo esc_html( $template_args['content'] ); ?></p>
+				<p class="color-white"><?php echo esc_html( $template_args['content'] ); ?></p>
 			<?php endif; ?>
 		</div>
 	</a>

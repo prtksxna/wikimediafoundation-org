@@ -28,9 +28,9 @@ $wmf_movement_affiliates_menu_label = get_theme_mod( 'wmf_movement_affiliates_me
 $wmf_footer_copyright               = get_theme_mod( 'wmf_footer_copyright', __( 'This work is licensed under a <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a> unported license. Some images under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>.', 'wmfoundation' ) );
 ?>
 <footer class="bg-black">
-	<div class="footer-inner mw-980">
+	<div class="footer-inner mw-1360">
 
-		<div class="footer-row">
+		<div class="footer-row flex flex-medium ">
 			<div class="footer-logo-container">
 				<div class="logo-container">
 					<?php
@@ -57,11 +57,11 @@ $wmf_footer_copyright               = get_theme_mod( 'wmf_footer_copyright', __(
 				</div>
 			</div>
 
-			<div class="w-55p about-wmf">
+			<div class="w-55p bold about-wmf">
 				<?php if ( ! empty( $wmf_footer_text ) ) : ?>
 				<p><?php echo esc_html( $wmf_footer_text ); ?></p>
 				<?php endif; ?>
-				<!-- <p>
+				<p>
 					<?php
 					if ( has_nav_menu( 'footer-under-text' ) ) {
 						wp_nav_menu(
@@ -95,19 +95,19 @@ $wmf_footer_copyright               = get_theme_mod( 'wmf_footer_copyright', __(
 						</a>
 						<?php endif ?>
 					</span>
-				</p> -->
+				</p>
 			</div>
 		</div>
 
 		<div class="footer-row flex flex-medium projects-affiliation">
-			<div class="w-50p">
-				<h2 class="h3"><?php echo esc_html( $wmf_projects_menu_label ); ?></h2>
+			<div class="w-68p flex flex-xlarge ">
+				<h2 class="h3 w-25p"><?php echo esc_html( $wmf_projects_menu_label ); ?></h2>
 				<?php
 				if ( has_nav_menu( 'footer-projects' ) ) {
 					wp_nav_menu(
 						array(
 							'theme_location' => 'footer-projects',
-							'menu_class'     => 'lists-wrap flex flex-all',
+							'menu_class'     => 'lists-wrap w-75p flex flex-all',
 							'container'      => '',
 							'items_wrap'     => '<div id="%1$s" class="%2$s"><ul class="w-32p">%3$s</ul></div>',
 							'walker'         => new WMF\Walkers\Columns(),
@@ -117,9 +117,9 @@ $wmf_footer_copyright               = get_theme_mod( 'wmf_footer_copyright', __(
 				?>
 			</div>
 
-			<div class="w-25p">
-				<h2 class="h3"><?php echo esc_html( $wmf_movement_affiliates_menu_label ); ?></h2>
-				<div class="lists-wrap">
+			<div class="w-32p flex flex-xlarge">
+				<h2 class="h3 w-50p"><?php echo esc_html( $wmf_movement_affiliates_menu_label ); ?></h2>
+				<div class="lists-wrap w-50p">
 					<?php
 					if ( has_nav_menu( 'footer-affiliates' ) ) {
 						wp_nav_menu(
@@ -133,28 +133,22 @@ $wmf_footer_copyright               = get_theme_mod( 'wmf_footer_copyright', __(
 					?>
 				</div>
 			</div>
-
-			<div class="w-25p">
-				<h2 class="h3"><?php echo esc_html( $wmf_other_links_menu_label ); ?></h2>
-				<div class="lists-wrap">
-					<?php
-					if ( has_nav_menu( 'footer-legal' ) ) {
-						wp_nav_menu(
-							array(
-								'theme_location' => 'footer-legal',
-								'menu_class'     => '',
-								'container'      => '',
-							)
-						);
-					}
-					?>
-				</div>
-			</div>
-
 		</div>
 	</div><!-- end .footer-inner -->
 
-	<div class="footer-legal color-gray mw-980">
+	<div class="footer-legal color-gray mw-1360">
+		<?php
+		if ( has_nav_menu( 'footer-legal' ) ) {
+			wp_nav_menu(
+				array(
+					'theme_location' => 'footer-legal',
+					'menu_class'     => 'list-inline bold',
+					'container'      => '',
+				)
+			);
+		}
+		?>
+
 		<p>
 			<?php
 			echo wp_kses(

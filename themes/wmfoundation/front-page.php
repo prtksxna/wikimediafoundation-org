@@ -28,6 +28,24 @@ while ( have_posts() ) {
 	}
 
 	?>
+<div class="site-main-nav home-subnav mw-1360 white-bg">
+	<div class="logo-container logo-container_sm">
+		<?php get_template_part( 'template-parts/header/logo' ); ?>
+	</div>
+	<?php get_template_part( 'template-parts/header/nav-container' ); ?>
+	<?php get_template_part( 'template-parts/header/navigation' ); ?>
+</div>
+
+<div class="page-intro mw-1360 mod-margin-bottom wysiwyg">
+	<div>
+		<h2><?php echo esc_html( $subtitle ); ?></h2>
+
+		<div class="page-intro-text">
+			<?php the_content(); ?>
+		</div>
+
+	</div>
+</div>
 	<?php
 
 	$modules = array(

@@ -70,7 +70,7 @@ a.color-blue {
 	color: $color-ltgray;
 }
 .color-gray {
-	color: $wmui-color-base30;
+	color: $color-gray;
 }
 .color-black {
 	color: $color-black;
@@ -99,80 +99,40 @@ a.color-blue {
 .bg-gray {
 	background: $color-gray;
 }
-.bg-ltgray {
-	background: $wmui-color-base80;
-}
 .bg-black {
 	background: #000;
 	color: #fff;
 }
-footer.bg-black {
-	background: $footer-gray;
-}
-.rounded {
-	border-radius: 5px;
-}
-.shadow {
-	border: 1px solid #e5e5e5;
-	transition: all 250ms ease;
-}
-.shadow:hover {
-	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15)
-}
+
 
 // Buttons and links
-.arrow-link {
-	color: $color-blue;
-	font-size: 15px;
-	font-weight: bold;
-}
-
-.arrow-link::after {
-	content: ' →';
-}
-
 .btn {
 
 	// Colors
 	&.btn-blue {
-		@include button($color-blue, $color-blue, $color-white, $color-white, 11px 1.5rem, .6rem 1rem);
-		&:hover {
-			box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.21);
-		}
+		@include button($color-blue, $color-dk-purple, $color-white, $color-white, 11px 1.5rem, .6rem 1rem);
 	}
 
 	&.btn-white {
-		@include button($color-white, $color-white, $color-blue, $color-blue, 11px 1.5rem, .6rem 1rem);
-		&:hover {
-			box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.21);
-		}
+		@include button($color-white, $color-blue, $color-blue, $color-white, 11px 1.5rem, .6rem 1rem);
 		font-size: 20px;
 	}
 
 	&.btn-pink {
-		@include button($color-pink, $color-pink, $color-white, $color-white, 11px 1.5rem, .6rem 1rem);
-		&:hover {
-			box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.21);
-		}
+		@include button($color-pink, $color-purple, $color-white, $color-white, 11px 1.5rem, .6rem 1rem);
 	}
 }
 
 // Control button color from module parent container - like for CTAs
 .btn-blue {
 	.btn {
-		@include button($color-blue, $color-blue, $color-white, $color-white, 11px 1.5rem, .6rem 1rem);
-		&:hover {
-			box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.21);
-		}
+		@include button($color-blue, $color-dk-purple, $color-white, $color-white, 11px 1.5rem, .6rem 1rem);
 	}
 }
 
 .btn-pink {
 	.btn {
-		@include button($color-pink, $color-pink, $color-white, $color-white, .8rem 1.5rem, .6rem 1rem);
-		&:hover {
-			box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.21);
-		}
+		@include button($color-pink, $color-purple, $color-white, $color-white, .8rem 1.5rem, .6rem 1rem);
 	}
 }
 

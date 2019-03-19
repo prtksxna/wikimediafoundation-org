@@ -2,12 +2,6 @@
 
 // Photo Credits
 .photo-credits {
-  overflow-wrap: break-word;
-
-  &.white-bg {
-    padding-top: 0;
-    border-top: none;
-  }
 
   .h3 {
     margin-bottom: 2rem;
@@ -15,8 +9,7 @@
   }
 
   p {
-    @include font-size(13, 11);
-    line-height: 1.2;
+    @include font-size(16, 12);
   }
 
   a {
@@ -54,11 +47,7 @@
   width: rem(100);
   height: rem(100);
   overflow: hidden;
-  padding-right: rem(15);
-
-  img {
-    border-radius: 5px;
-  }
+  margin-right: rem(15);
 }
 .photo-credit-img {
   height: 100%;

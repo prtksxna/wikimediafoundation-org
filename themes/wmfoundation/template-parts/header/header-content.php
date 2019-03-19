@@ -20,10 +20,18 @@ $allowed_tags['time'] = true;
 ?>
 
 <div class="header-content mar-bottom_lg">
+
+	<?php if ( is_front_page() ) : ?>
+	<div class="logo-nav-container">
+		<?php get_template_part( 'template-parts/header/logo-home' ); ?>
+	</div>
+	<?php endif; ?>
+
 	<?php if ( ! empty( $h4_title ) ) : ?>
-	<h2 class="h4 eyebrow">
+	<h2 class="h4 uppercase eyebrow">
 		<?php if ( ! empty( $h4_link ) ) : ?>
-		<a class="back-arrow-link" href="<?php echo esc_url( $h4_link ); ?>">
+		<a href="<?php echo esc_url( $h4_link ); ?>">
+			<?php wmf_show_icon( 'arrow-back', 'icon-white material' ); ?>
 		<?php endif; ?>
 			<?php echo esc_html( $h4_title ); ?>
 		<?php if ( ! empty( $h4_link ) ) : ?>
@@ -35,7 +43,7 @@ $allowed_tags['time'] = true;
 	<?php if ( is_home() && ! empty( $h2_title ) ) : ?>
 		<h2 class="h1 eyebrow"><?php echo esc_html( $h2_title ); ?></h2>
 	<?php elseif ( ! empty( $h2_title ) ) : ?>
-		<h2 class="h2 eyebrow">
+		<h2 class="h2 uppercase eyebrow">
 			<?php if ( ! empty( $h2_link ) ) : ?>
 			<a href="<?php echo esc_url( $h2_link ); ?>">
 				<?php endif; ?>
@@ -46,20 +54,9 @@ $allowed_tags['time'] = true;
 		</h2>
 	<?php endif; ?>
 
-	<?php if ( is_front_page() ) { ?>
-		<?php if ( ! empty( $title ) ) : ?>
-			<h1 class="mar-bottom w-50p"><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
-		<?php endif; ?>
-	<?php } else { ?>
-		<div class="flex flex-medium page-landing fifty-fifty">
-			<div class="module-mu w-50p">
-				<h1><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
-			</div>
-			<div class="page-intro-text module-mu w-50p">
-				<?php the_content(); ?>
-			</div>
-		</div>
-	<?php } ?>
+	<?php if ( ! empty( $title ) ) : ?>
+	<h1 class="mar-bottom"><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
+	<?php endif; ?>
 
 	<?php if ( ! empty( $alt_title ) ) : ?>
 		<h2 class="h1 mar-bottom"><?php echo wp_kses( $alt_title, array( 'span' => array( 'class' ) ) ); ?></h2>
@@ -69,18 +66,5 @@ $allowed_tags['time'] = true;
 	<div class="post-meta h4">
 		<?php echo wp_kses( $meta, $allowed_tags ); ?>
 	</div>
-	<?php endif; ?>
-
-	<?php if ( is_front_page() ) : ?>
-		<div class="page-intro mod-margin-bottom wysiwyg w-75p alignright">
-			<div>
-				<h2><?php echo esc_html( get_post_meta( get_the_ID(), 'sub_title', true ) ); ?></h2>
-
-				<div class="page-intro-text">
-					<?php the_content(); ?>
-				</div>
-
-			</div>
-		</div>
 	<?php endif; ?>
 </div>

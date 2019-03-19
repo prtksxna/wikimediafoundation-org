@@ -23,18 +23,19 @@ $project_class = '_map';
 ?>
 
 <div class="w-100p mod-margin-bottom home-project-list-container">
-	<div class="mw-980 std-mod mod-margin-bottom">
-		<?php if ( ! empty( $title ) ) : ?>
-			<h3 class="h3 color-gray uppercase"><?php echo esc_html( $title ); ?> — <span><?php echo esc_html( $rand_translation_title ); ?></span></h3>
-		<?php endif; ?>
-		<div class="flex flex-medium flex-space-between home-project-list">
-			<div class="w-32p home-project-list-item  home-project-list-item_blue">
+	<div class="mw-1360 std-mod mod-margin-bottom">
+		<div class="flex flex-medium home-project-list">
+			<div class="w-50p home-project-list-item  home-project-list-item_blue">
+				<?php if ( ! empty( $title ) ) : ?>
+					<h3 class="h3 color-white"><?php echo esc_html( $title ); ?> — <span><?php echo esc_html( $rand_translation_title ); ?></span></h3>
+				<?php endif; ?>
+
 				<?php if ( ! empty( $template_args['heading'] ) ) : ?>
-				<h2><?php echo esc_html( $template_args['heading'] ); ?></h2>
+				<p class="h3 color-white mar-bottom_lg"><?php echo esc_html( $template_args['heading'] ); ?></p>
 				<?php endif; ?>
 
 				<?php if ( ! empty( $template_args['content'] ) ) : ?>
-				<p class="mar-bottom_lg">
+				<p class="color-white mar-bottom_lg">
 					<?php
 					echo wp_kses(
 						$template_args['content'], array(
@@ -49,7 +50,9 @@ $project_class = '_map';
 				<?php endif; ?>
 
 				<?php if ( ! empty( $template_args['link_uri'] ) && ! empty( $template_args['link_text'] ) ) : ?>
-				<a class="arrow-link" href="<?php echo esc_url( $template_args['link_uri'] ); ?>"><?php echo esc_html( $template_args['link_text'] ); ?></a>
+				<div class="link-list hover-highlight uppercase color-white">
+					<a href="<?php echo esc_url( $template_args['link_uri'] ); ?>"><?php echo esc_html( $template_args['link_text'] ); ?></a>
+				</div>
 				<?php endif; ?>
 			</div>
 			<?php

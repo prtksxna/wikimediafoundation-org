@@ -1,7 +1,3 @@
-.related-news-container {
-  padding: 4rem 0;
-}
-
 .news-categories {
   border-top: 1px solid $color-ltgray;
   border-bottom: 1px solid $color-ltgray;
@@ -255,6 +251,7 @@
 
           &:after {
             transition: 0.3s all;
+            @include black-gradient-vertical();
           }
 
           &.headline-hover:after {
@@ -265,6 +262,7 @@
 
       .card-content,
       .card-heading {
+        width: 90%;
         margin: 0 auto;
       }
 
@@ -277,7 +275,7 @@
         h3 {
           display: flex;
           align-items: flex-end;
-          @include font-size(18, 16);
+          @include font-size(28, 20);
         }
 
         &:hover,
@@ -291,9 +289,7 @@
       .date {
         display: block;
         text-transform: none;
-        font-weight: bold;
-        color: $wmui-color-base30;
-        @include font-size(14, 12);
+        @include font-size(18, 14);
       }
     }
   }

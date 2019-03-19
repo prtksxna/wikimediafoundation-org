@@ -6,8 +6,9 @@ $header-bp-mw: 1023px;
 }
 
 .header-home {
+  color: #fff;
+  background: $color-blue;
   position: relative;
-  background: $color-white;
 
   @media (min-width: $header-bp) and (max-height: 930px) {
     min-height: 100vh;
@@ -23,12 +24,6 @@ $header-bp-mw: 1023px;
     margin-right: 1rem;
     &:last-child {
       margin-right: 0;
-    }
-
-    a {
-      font-size: 13px;
-      font-weight: bold;
-      color: $color-blue;
     }
   }
 
@@ -117,9 +112,10 @@ $header-bp-mw: 1023px;
       .header-content {
         position: relative;
         z-index: 9;
-        margin-top: 150px;
 
         @media (min-width: $header-bp) {
+          max-width: 60%;
+          margin-top:rem(100);
           margin-bottom: rem(200);
         }
       }
@@ -129,8 +125,8 @@ $header-bp-mw: 1023px;
       }
 
       h1 {
-        @include font-size(38,28);
-        color: $color-blue;
+        @include highlightHeading(10px, $color-blue);
+        line-height: 1.5;
       }
     }
 
@@ -402,3 +398,6 @@ $header-bp-mw: 1023px;
     }
   }
 }
+
+
+

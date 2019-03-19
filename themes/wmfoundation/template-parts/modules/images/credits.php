@@ -17,9 +17,9 @@ $header = get_theme_mod( 'wmf_image_credit_header', __( 'Photo credits', 'wmfoun
 
 <div class="photo-credits white-bg mod-margin-bottom">
 
-	<div class="mw-980">
+	<div class="mw-1360">
 		<?php if ( ! empty( $header ) ) : ?>
-		<h3 class="h2"><?php echo esc_html( $header ); ?></h3>
+		<h3 class="h3"><?php echo esc_html( $header ); ?></h3>
 		<?php endif; ?>
 
 		<div class="flex flex-all flex-wrap color-gray">

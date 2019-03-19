@@ -43,8 +43,8 @@ if ( ! $featured_posts->have_posts() ) {
 	return;
 }
 ?>
-<div class="w-100p bg-white related-news-container mod-margin-bottom bg-ltgray">
-	<div class="mw-980 std-mod">
+<div class="w-100p bg-white related-news-container mod-margin-bottom white-bg">
+	<div class="mw-1360 std-mod">
 		<h3 class="h3 color-gray"><?php echo esc_html( $title ); ?> —&nbsp;<span><?php echo esc_html( $rand_translation_title ); ?>&nbsp;</span></h3>
 
 		<?php if ( ! empty( $subtitle ) ) : ?>

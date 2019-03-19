@@ -18,8 +18,6 @@ $image_alt = is_numeric( $image ) ? wp_get_attachment_image( $image )->src : '';
 $links      = ! empty( $template_args['links'] ) ? $template_args['links'] : array();
 $link_count = count( $links );
 $count      = 0;
-
-$h3_class = is_front_page() ? 'no-border' : '';
 ?>
 
 <div class="module-mu w-50p">
@@ -27,7 +25,7 @@ $h3_class = is_front_page() ? 'no-border' : '';
 	<img src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $image_alt ); ?>" class="mar-bottom">
 	<?php endif; ?>
 	<?php if ( ! empty( $template_args['heading'] ) ) : ?>
-	<h3 class="h2 <?php echo $h3_class; ?>"><?php echo esc_html( $template_args['heading'] ); ?></h3>
+	<h3 class="h3"><?php echo esc_html( $template_args['heading'] ); ?></h3>
 	<?php endif; ?>
 	<?php if ( ! empty( $template_args['copy'] ) ) : ?>
 	<div class="wysiwyg">
@@ -41,9 +39,9 @@ $h3_class = is_front_page() ? 'no-border' : '';
 
 			$class = ( $count > 1 && $count === $link_count ) ? 'mar-bottom_lg' : 'mar-bottom';
 			?>
-		<div class="link-list <?php echo esc_attr( $class ); ?>">
+		<div class="link-list hover-highlight uppercase <?php echo esc_attr( $class ); ?>">
 			<!-- Single link -->
-			<a class="arrow-link" href="<?php echo esc_url( $link['link_url'] ); ?>"><?php echo esc_html( $link['link_text'] ); ?></a>
+			<a href="<?php echo esc_url( $link['link_url'] ); ?>"><?php echo esc_html( $link['link_text'] ); ?></a>
 		</div>
 		<?php endforeach; ?>
 	<?php endif; ?>

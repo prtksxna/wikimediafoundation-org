@@ -1,0 +1,62 @@
+// People cards
+.people-container {
+  @media (max-width: 767px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.join-movement {
+  text-align: center;
+  @include font-size(18, 16);
+  line-height: 1.6;
+  margin: 0 auto;
+  color: $color-black;
+
+  .btn {
+    margin-top: 1rem;
+    text-transform: none;
+  }
+}
+
+.people {
+
+  .person-name {
+    text-transform: none;
+    color: #000;
+    @include marginBottom(4, 8, $medium-bp);
+    @include font-size(15, 13);
+  }
+
+  .person-title {
+    line-height: 1.2;
+
+    @media (min-width: $medium-bp) {
+      line-height: 1.5;
+    }
+  }
+
+  &.slider-on-mobile {
+
+    @media (max-width: 767px) {
+      overflow: hidden;
+
+      &:focus {
+        outline: none;
+      }
+
+      // Enable flickity slider
+      &:after {
+        content: 'flickity';
+        display: none;
+      }
+
+      .card {
+        max-width: 85%;
+        margin-right: 1rem;
+      }
+
+
+    }
+  }
+}
