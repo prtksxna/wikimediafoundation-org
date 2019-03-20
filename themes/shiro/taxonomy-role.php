@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 get_header();
@@ -29,8 +29,8 @@ if ( ! empty( $profile_parent_page ) ) {
 $display_intro = get_term_meta( $current_term_id, 'display_intro', true );
 
 if ( ! empty( $display_intro ) ) {
-	$description  = get_theme_mod( 'wmf_profile_archive_text', __( 'The Wikimedia Foundation is part of a broad global network of individuals, organizations, chapters, clubs and communities who together work to create the most powerful examples of volunteer collaboration and open content sharing in the world today.', 'wmfoundation' ) );
-	$button_label = get_theme_mod( 'wmf_profile_archive_button', __( 'We\'re Hiring', 'wmfoundation' ) );
+	$description  = get_theme_mod( 'wmf_profile_archive_text', __( 'The Wikimedia Foundation is part of a broad global network of individuals, organizations, chapters, clubs and communities who together work to create the most powerful examples of volunteer collaboration and open content sharing in the world today.', 'shiro' ) );
+	$button_label = get_theme_mod( 'wmf_profile_archive_button', __( 'We\'re Hiring', 'shiro' ) );
 	$button_link  = get_theme_mod( 'wmf_profile_archive_button_link', '#' );
 }
 

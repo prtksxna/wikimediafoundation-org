@@ -4,7 +4,7 @@
  *
  * Used on Landing Page and Home Page template.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $context = is_front_page() ? 'home' : get_the_ID();

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 use WMF\Images\Credits;
@@ -21,7 +21,7 @@ while ( have_posts() ) :
 	$parent_name     = '';
 	$parent_link     = '';
 	$role            = get_the_terms( get_the_ID(), 'role' );
-	$default_heading = get_theme_mod( 'wmf_related_profiles_heading', __( 'Other members of ', 'wmfoundation' ) );
+	$default_heading = get_theme_mod( 'wmf_related_profiles_heading', __( 'Other members of ', 'shiro' ) );
 
 	if ( ! empty( $role ) && ! is_wp_error( $role ) ) {
 		$team_name = $role[0]->name;

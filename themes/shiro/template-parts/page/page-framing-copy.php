@@ -4,7 +4,7 @@
  *
  * Used on Landing Page and Home Page template.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $framing_copy  = get_post_meta( get_the_ID(), 'framing_copy', true );

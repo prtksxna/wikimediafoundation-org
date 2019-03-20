@@ -4,7 +4,7 @@
  *
  * Event though this is "page" it can also be used on News Posts
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args = array(

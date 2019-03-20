@@ -2,7 +2,7 @@
 /**
  * Profile sorter.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Profiles;

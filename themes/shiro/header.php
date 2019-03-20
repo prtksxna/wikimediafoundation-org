@@ -6,12 +6,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 use WMF\Images\Credits;
 
-$wmf_translation_selected = get_theme_mod( 'wmf_selected_translation_copy', __( 'Languages', 'wmfoundation' ) );
+$wmf_translation_selected = get_theme_mod( 'wmf_selected_translation_copy', __( 'Languages', 'shiro' ) );
 $wmf_translations         = wmf_get_translations();
 ?><!doctype html>
 <html <?php language_attributes(); ?>>
@@ -25,8 +25,8 @@ $wmf_translations         = wmf_get_translations();
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wmfoundation' ); ?></a>
-	<a class="skip-link screen-reader-text" href="#menu-header-menu"><?php esc_html_e( 'Skip to navigation', 'wmfoundation' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'shiro' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#menu-header-menu"><?php esc_html_e( 'Skip to navigation', 'shiro' ); ?></a>
 
 	<header class="<?php echo esc_attr( wmf_get_header_container_class() ); ?>" role="banner">
 

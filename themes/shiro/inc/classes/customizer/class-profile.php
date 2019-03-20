@@ -2,7 +2,7 @@
 /**
  * Profile Pages Customizer.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Customizer;
@@ -22,7 +22,7 @@ class Profile extends Base {
 		$section_id = 'wmf_profile_content';
 		$this->customize->add_section(
 			$section_id, array(
-				'title'    => __( 'Profile Pages', 'wmfoundation' ),
+				'title'    => __( 'Profile Pages', 'shiro' ),
 				'priority' => 70,
 			)
 		);
@@ -31,8 +31,8 @@ class Profile extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Profiles Parent Page', 'wmfoundation' ),
-				'description' => __( 'This changes the parent link at the top of individual profile pages like Staff & Contractors.', 'wmfoundation' ),
+				'label'       => __( 'Profiles Parent Page', 'shiro' ),
+				'description' => __( 'This changes the parent link at the top of individual profile pages like Staff & Contractors.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'select',
 				'choices'     => $this->page_choices(),
@@ -43,8 +43,8 @@ class Profile extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Community Profiles Parent Page', 'wmfoundation' ),
-				'description' => __( 'This changes the parent link at the top of the Wikimedia Community profile.', 'wmfoundation' ),
+				'label'       => __( 'Community Profiles Parent Page', 'shiro' ),
+				'description' => __( 'This changes the parent link at the top of the Wikimedia Community profile.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'select',
 				'choices'     => $this->page_choices(),
@@ -54,12 +54,12 @@ class Profile extends Base {
 		$control_id = 'wmf_profile_archive_text';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'The Wikimedia Foundation is part of a broad global network of individuals, organizations, chapters, clubs and communities who together work to create the most powerful examples of volunteer collaboration and open content sharing in the world today.', 'wmfoundation' ),
+				'default' => __( 'The Wikimedia Foundation is part of a broad global network of individuals, organizations, chapters, clubs and communities who together work to create the most powerful examples of volunteer collaboration and open content sharing in the world today.', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Profiles List Page Text', 'wmfoundation' ),
+				'label'   => __( 'Profiles List Page Text', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'textarea',
 			)
@@ -68,12 +68,12 @@ class Profile extends Base {
 		$control_id = 'wmf_profile_archive_button';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'We\'re Hiring', 'wmfoundation' ),
+				'default' => __( 'We\'re Hiring', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Profiles List Page Button Label', 'wmfoundation' ),
+				'label'   => __( 'Profiles List Page Button Label', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -83,7 +83,7 @@ class Profile extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Profiles List Page Button Link', 'wmfoundation' ),
+				'label'   => __( 'Profiles List Page Button Link', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -92,12 +92,12 @@ class Profile extends Base {
 		$control_id = 'wmf_related_profiles_heading';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Other members of ', 'wmfoundation' ),
+				'default' => __( 'Other members of ', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Related Profiles default headline', 'wmfoundation' ),
+				'label'   => __( 'Related Profiles default headline', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)

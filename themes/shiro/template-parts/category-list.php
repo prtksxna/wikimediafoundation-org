@@ -2,7 +2,7 @@
 /**
  * List of categories that refreshes page with category filter.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $post_id             = get_option( 'page_for_posts' );

@@ -2,7 +2,7 @@
 /**
  * Read More links for categories in post
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $post_categories = wp_get_object_terms(

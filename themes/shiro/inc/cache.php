@@ -2,7 +2,7 @@
 /**
  * Functions related to clearing cache when updates are made.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**

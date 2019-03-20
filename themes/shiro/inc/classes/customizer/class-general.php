@@ -2,7 +2,7 @@
 /**
  * General Customizer.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Customizer;
@@ -20,7 +20,7 @@ class General extends Base {
 		$panel_id = 'wmf_general';
 		$this->customize->add_panel(
 			$panel_id, array(
-				'title'    => __( 'General', 'wmfoundation' ),
+				'title'    => __( 'General', 'shiro' ),
 				'priority' => 70,
 			)
 		);
@@ -29,7 +29,7 @@ class General extends Base {
 		$section_id = 'wmf_general_rtl';
 		$this->customize->add_section(
 			$section_id, array(
-				'title'    => __( 'RTL Support', 'wmfoundation' ),
+				'title'    => __( 'RTL Support', 'shiro' ),
 				'priority' => 10,
 				'panel'    => $panel_id,
 			)
@@ -39,8 +39,8 @@ class General extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Enable RTL', 'wmfoundation' ),
-				'description' => __( 'If checked, this will cause the front end of site to shift from left to right to right to left display.', 'wmfoundation' ),
+				'label'       => __( 'Enable RTL', 'shiro' ),
+				'description' => __( 'If checked, this will cause the front end of site to shift from left to right to right to left display.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'checkbox',
 			)
@@ -50,7 +50,7 @@ class General extends Base {
 		$section_id = 'wmf_general_labels';
 		$this->customize->add_section(
 			$section_id, array(
-				'title'    => __( 'Labels & Headings', 'wmfoundation' ),
+				'title'    => __( 'Labels & Headings', 'shiro' ),
 				'priority' => 70,
 				'panel'    => $panel_id,
 			)
@@ -60,13 +60,13 @@ class General extends Base {
 			$control_id = 'wmf_incomplete_translation';
 			$this->customize->add_setting(
 				$control_id, array(
-					'default' => __( 'This content has not yet been translated into the current language.', 'wmfoundation' ),
+					'default' => __( 'This content has not yet been translated into the current language.', 'shiro' ),
 				)
 			);
 			$this->customize->add_control(
 				$control_id, array(
-					'label'       => __( 'Incomplete Translation Notice', 'wmfoundation' ),
-					'description' => __( 'Shows in the header if the content has not been marked as having a complete translation.', 'wmfoundation' ),
+					'label'       => __( 'Incomplete Translation Notice', 'shiro' ),
+					'description' => __( 'Shows in the header if the content has not been marked as having a complete translation.', 'shiro' ),
 					'section'     => $section_id,
 					'type'        => 'text',
 				)
@@ -76,13 +76,13 @@ class General extends Base {
 		$control_id = 'wmf_featured_post_pre_heading';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'NEWS', 'wmfoundation' ),
+				'default' => __( 'NEWS', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Featured Post Pre Heading', 'wmfoundation' ),
-				'description' => __( 'Shows above featured posts module in landing page and the home page.', 'wmfoundation' ),
+				'label'       => __( 'Featured Post Pre Heading', 'shiro' ),
+				'description' => __( 'Shows above featured posts module in landing page and the home page.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -91,13 +91,13 @@ class General extends Base {
 		$control_id = 'wmf_projects_pre_heading';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Projects', 'wmfoundation' ),
+				'default' => __( 'Projects', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Projects Pre Heading', 'wmfoundation' ),
-				'description' => __( 'Shows above projects module in landing page and the home page.', 'wmfoundation' ),
+				'label'       => __( 'Projects Pre Heading', 'shiro' ),
+				'description' => __( 'Shows above projects module in landing page and the home page.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -106,13 +106,13 @@ class General extends Base {
 		$control_id = 'wmf_off_site_links_pre_heading';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'ELSEWHERE IN WIKIMEDIA', 'wmfoundation' ),
+				'default' => __( 'ELSEWHERE IN WIKIMEDIA', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Off Site Links Pre Heading', 'wmfoundation' ),
-				'description' => __( 'Shows above off site links module throughout the site.', 'wmfoundation' ),
+				'label'       => __( 'Off Site Links Pre Heading', 'shiro' ),
+				'description' => __( 'Shows above off site links module throughout the site.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -121,13 +121,13 @@ class General extends Base {
 		$control_id = 'wmf_related_pages_pre_heading';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Related', 'wmfoundation' ),
+				'default' => __( 'Related', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Related Pages Pre Heading', 'wmfoundation' ),
-				'description' => __( 'Shows above related pages module throughout the site.', 'wmfoundation' ),
+				'label'       => __( 'Related Pages Pre Heading', 'shiro' ),
+				'description' => __( 'Shows above related pages module throughout the site.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -136,13 +136,13 @@ class General extends Base {
 		$control_id = 'wmf_image_credit_header';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Photo credits', 'wmfoundation' ),
+				'default' => __( 'Photo credits', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Photo Credits Heading', 'wmfoundation' ),
-				'description' => __( 'Shows above photo credits module throughout the site.', 'wmfoundation' ),
+				'label'       => __( 'Photo Credits Heading', 'shiro' ),
+				'description' => __( 'Shows above photo credits module throughout the site.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -152,7 +152,7 @@ class General extends Base {
 		$section_id = 'wmf_general_support_module';
 		$this->customize->add_section(
 			$section_id, array(
-				'title'    => __( 'Support Module', 'wmfoundation' ),
+				'title'    => __( 'Support Module', 'shiro' ),
 				'priority' => 70,
 				'panel'    => $panel_id,
 			)
@@ -163,8 +163,8 @@ class General extends Base {
 		$this->customize->add_control(
 			new \WP_Customize_Media_Control(
 				$this->customize, $control_id, array(
-					'label'       => __( 'Image', 'wmfoundation' ),
-					'description' => __( 'Image should be 16:9 aspect ratio with min width of 1200px for best appearance. The image will automatically crop to that size if larger.', 'wmfoundation' ),
+					'label'       => __( 'Image', 'shiro' ),
+					'description' => __( 'Image should be 16:9 aspect ratio with min width of 1200px for best appearance. The image will automatically crop to that size if larger.', 'shiro' ),
 					'section'     => $section_id,
 				)
 			)
@@ -174,7 +174,7 @@ class General extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Heading', 'wmfoundation' ),
+				'label'   => __( 'Heading', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -184,7 +184,7 @@ class General extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Content', 'wmfoundation' ),
+				'label'   => __( 'Content', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'textarea',
 			)
@@ -194,7 +194,7 @@ class General extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'CTA Link URI', 'wmfoundation' ),
+				'label'   => __( 'CTA Link URI', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -204,7 +204,7 @@ class General extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'CTA Link Text', 'wmfoundation' ),
+				'label'   => __( 'CTA Link Text', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -214,7 +214,7 @@ class General extends Base {
 		$section_id = 'wmf_404_page';
 		$this->customize->add_section(
 			$section_id, array(
-				'title'    => __( '404 Page', 'wmfoundation' ),
+				'title'    => __( '404 Page', 'shiro' ),
 				'priority' => 70,
 				'panel'    => $panel_id,
 			)
@@ -225,8 +225,8 @@ class General extends Base {
 		$this->customize->add_control(
 			new \WP_Customize_Media_Control(
 				$this->customize, $control_id, array(
-					'label'       => __( 'Background Image', 'wmfoundation' ),
-					'description' => __( 'Displayed in header.', 'wmfoundation' ),
+					'label'       => __( 'Background Image', 'shiro' ),
+					'description' => __( 'Displayed in header.', 'shiro' ),
 					'section'     => $section_id,
 				)
 			)
@@ -235,12 +235,12 @@ class General extends Base {
 		$control_id = 'wmf_404_message';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( '404 Error', 'wmfoundation' ),
+				'default' => __( '404 Error', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Header message', 'wmfoundation' ),
+				'label'   => __( 'Header message', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -249,12 +249,12 @@ class General extends Base {
 		$control_id = 'wmf_404_title';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Imagine a world in which there is a page here', 'wmfoundation' ),
+				'default' => __( 'Imagine a world in which there is a page here', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Header title', 'wmfoundation' ),
+				'label'   => __( 'Header title', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -267,7 +267,7 @@ class General extends Base {
 				$this->customize,
 				$control_id,
 				array(
-					'label'   => __( 'Content', 'wmfoundation' ),
+					'label'   => __( 'Content', 'shiro' ),
 					'section' => $section_id,
 				)
 			)
@@ -276,12 +276,12 @@ class General extends Base {
 		$control_id = 'wmf_404_search_text';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Or try a search instead', 'wmfoundation' ),
+				'default' => __( 'Or try a search instead', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Text above search bar', 'wmfoundation' ),
+				'label'   => __( 'Text above search bar', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)

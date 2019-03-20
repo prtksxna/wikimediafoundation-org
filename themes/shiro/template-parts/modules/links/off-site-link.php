@@ -2,7 +2,7 @@
 /**
  * Handles off site link item.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args = wmf_get_template_data();

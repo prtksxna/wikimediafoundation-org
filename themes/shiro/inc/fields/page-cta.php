@@ -2,7 +2,7 @@
 /**
  * Fieldmanager Fields for Page Specific CTA
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**
@@ -13,25 +13,25 @@ function wmf_page_cta_fields() {
 		array(
 			'name'     => 'page_cta',
 			'children' => array(
-				'image'            => new Fieldmanager_Media( __( 'Image', 'wmfoundation' ) ),
-				'heading'          => new Fieldmanager_Textfield( __( 'Section Heading', 'wmfoundation' ) ),
-				'content'          => new Fieldmanager_RichTextArea( __( 'Content', 'wmfoundation' ) ),
-				'link_uri'         => new Fieldmanager_Link( __( 'Share URI', 'wmfoundation' ) ),
-				'link_text'        => new Fieldmanager_Textfield( __( 'Message', 'wmfoundation' ) ),
+				'image'            => new Fieldmanager_Media( __( 'Image', 'shiro' ) ),
+				'heading'          => new Fieldmanager_Textfield( __( 'Section Heading', 'shiro' ) ),
+				'content'          => new Fieldmanager_RichTextArea( __( 'Content', 'shiro' ) ),
+				'link_uri'         => new Fieldmanager_Link( __( 'Share URI', 'shiro' ) ),
+				'link_text'        => new Fieldmanager_Textfield( __( 'Message', 'shiro' ) ),
 				'background_color' => new Fieldmanager_Radios(
 					array(
-						'label'         => __( 'Color', 'wmfoundation' ),
+						'label'         => __( 'Color', 'shiro' ),
 						'default_value' => 'blue',
 						'options'       => array(
-							'blue'  => __( 'Blue', 'wmfoundation' ),
-							'green' => __( 'Green', 'wmfoundation' ),
+							'blue'  => __( 'Blue', 'shiro' ),
+							'green' => __( 'Green', 'shiro' ),
 						),
 					)
 				),
 			),
 		)
 	);
-	$cta->add_meta_box( __( 'Page CTA', 'wmfoundation' ), array( 'page', 'post' ) );
+	$cta->add_meta_box( __( 'Page CTA', 'shiro' ), array( 'page', 'post' ) );
 }
 add_action( 'fm_post_post', 'wmf_page_cta_fields' );
 add_action( 'fm_post_page', 'wmf_page_cta_fields' );

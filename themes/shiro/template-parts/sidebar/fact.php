@@ -2,7 +2,7 @@
 /**
  * Individual fact in default page sidebar
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_data = wmf_get_template_data();

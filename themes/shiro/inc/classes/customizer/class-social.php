@@ -2,7 +2,7 @@
 /**
  * Header Customizer.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Customizer;
@@ -20,7 +20,7 @@ class Social extends Base {
 		$section_id = 'wmf_social';
 		$this->customize->add_section(
 			$section_id, array(
-				'title'    => __( 'Social', 'wmfoundation' ),
+				'title'    => __( 'Social', 'shiro' ),
 				'priority' => 70,
 			)
 		);
@@ -28,13 +28,13 @@ class Social extends Base {
 		$control_id = 'wmf_social_follow_text';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Follow', 'wmfoundation' ),
+				'default' => __( 'Follow', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Follow Text', 'wmfoundation' ),
-				'description' => __( 'This is used above follow links in multiple modules.', 'wmfoundation' ),
+				'label'       => __( 'Follow Text', 'shiro' ),
+				'description' => __( 'This is used above follow links in multiple modules.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -43,13 +43,13 @@ class Social extends Base {
 		$control_id = 'wmf_social_share_text';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Share', 'wmfoundation' ),
+				'default' => __( 'Share', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Share Text', 'wmfoundation' ),
-				'description' => __( 'This is used above share links in multiple modules.', 'wmfoundation' ),
+				'label'       => __( 'Share Text', 'shiro' ),
+				'description' => __( 'This is used above share links in multiple modules.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -63,7 +63,7 @@ class Social extends Base {
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Twitter @', 'wmfoundation' ),
+				'label'   => __( 'Twitter @', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -73,7 +73,7 @@ class Social extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Twitter URI', 'wmfoundation' ),
+				'label'   => __( 'Twitter URI', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -82,12 +82,12 @@ class Social extends Base {
 		$control_id = 'wmf_facebook_label';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Facebook', 'wmfoundation' ),
+				'default' => __( 'Facebook', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Facebook Label', 'wmfoundation' ),
+				'label'   => __( 'Facebook Label', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -97,7 +97,7 @@ class Social extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Facebook URI', 'wmfoundation' ),
+				'label'   => __( 'Facebook URI', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -106,12 +106,12 @@ class Social extends Base {
 		$control_id = 'wmf_instagram_label';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Instagram', 'wmfoundation' ),
+				'default' => __( 'Instagram', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Instagram Label', 'wmfoundation' ),
+				'label'   => __( 'Instagram Label', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -121,7 +121,7 @@ class Social extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Instagram URI', 'wmfoundation' ),
+				'label'   => __( 'Instagram URI', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -130,12 +130,12 @@ class Social extends Base {
 		$control_id = 'wmf_blog_label';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Wikimedia Blog', 'wmfoundation' ),
+				'default' => __( 'Wikimedia Blog', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Blog Label', 'wmfoundation' ),
+				'label'   => __( 'Blog Label', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -144,7 +144,7 @@ class Social extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Blog URI', 'wmfoundation' ),
+				'label'   => __( 'Blog URI', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)

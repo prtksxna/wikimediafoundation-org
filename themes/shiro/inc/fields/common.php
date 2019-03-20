@@ -2,7 +2,7 @@
 /**
  * Fieldmanager Fields for Landing page template
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**
@@ -13,14 +13,14 @@ function wmf_intro_field() {
 		array(
 			'name'          => 'share_links',
 			'options'       => array(
-				'twitter'  => __( 'Twitter', 'wmfoundation' ),
-				'facebook' => __( 'Facebook', 'wmfoundation' ),
+				'twitter'  => __( 'Twitter', 'shiro' ),
+				'facebook' => __( 'Facebook', 'shiro' ),
 			),
 			'default_value' => array( 'twitter', 'facebook' ),
 		)
 	);
 
-	$social->add_meta_box( __( 'Share This Post On:', 'wmfoundation' ), array( 'post', 'page' ) );
+	$social->add_meta_box( __( 'Share This Post On:', 'shiro' ), array( 'post', 'page' ) );
 }
 add_action( 'fm_post_page', 'wmf_intro_field' );
 add_action( 'fm_post_post', 'wmf_intro_field' );

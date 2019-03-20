@@ -2,7 +2,7 @@
 /**
  * Contact Customizer.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Customizer;
@@ -20,7 +20,7 @@ class Connect extends Base {
 		$panel_id = 'wmf_connect';
 		$this->customize->add_panel(
 			$panel_id, array(
-				'title'    => __( 'Connect', 'wmfoundation' ),
+				'title'    => __( 'Connect', 'shiro' ),
 				'priority' => 70,
 			)
 		);
@@ -29,7 +29,7 @@ class Connect extends Base {
 		$section_id = 'wmf_contact_headings';
 		$this->customize->add_section(
 			$section_id, array(
-				'title'    => __( 'Main Headings', 'wmfoundation' ),
+				'title'    => __( 'Main Headings', 'shiro' ),
 				'priority' => 70,
 				'panel'    => $panel_id,
 			)
@@ -38,12 +38,12 @@ class Connect extends Base {
 		$control_id = 'wmf_connect_pre_heading';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Connect', 'wmfoundation' ),
+				'default' => __( 'Connect', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Pre Heading', 'wmfoundation' ),
+				'label'   => __( 'Pre Heading', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -52,12 +52,12 @@ class Connect extends Base {
 		$control_id = 'wmf_connect_heading';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Stay up-to-date on our work.', 'wmfoundation' ),
+				'default' => __( 'Stay up-to-date on our work.', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Heading', 'wmfoundation' ),
+				'label'   => __( 'Heading', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -67,7 +67,7 @@ class Connect extends Base {
 		$section_id = 'wmf_contact_subscribe';
 		$this->customize->add_section(
 			$section_id, array(
-				'title'    => __( 'Subscribe Box', 'wmfoundation' ),
+				'title'    => __( 'Subscribe Box', 'shiro' ),
 				'priority' => 70,
 				'panel'    => $panel_id,
 			)
@@ -76,12 +76,12 @@ class Connect extends Base {
 		$control_id = 'wmf_subscribe_heading';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Subscribe to our newsletter', 'wmfoundation' ),
+				'default' => __( 'Subscribe to our newsletter', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Heading', 'wmfoundation' ),
+				'label'   => __( 'Heading', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -94,7 +94,7 @@ class Connect extends Base {
 				$this->customize,
 				$control_id,
 				array(
-					'label'   => __( 'Content', 'wmfoundation' ),
+					'label'   => __( 'Content', 'shiro' ),
 					'section' => $section_id,
 				)
 			)
@@ -104,7 +104,7 @@ class Connect extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Subscribe form action URL', 'wmfoundation' ),
+				'label'   => __( 'Subscribe form action URL', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -114,7 +114,7 @@ class Connect extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Subscribe form additional fields', 'wmfoundation' ),
+				'label'   => __( 'Subscribe form additional fields', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'textarea',
 			)
@@ -123,12 +123,12 @@ class Connect extends Base {
 		$control_id = 'wmf_subscribe_placeholder';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Email address', 'wmfoundation' ),
+				'default' => __( 'Email address', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Email Placeholder', 'wmfoundation' ),
+				'label'   => __( 'Email Placeholder', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -137,12 +137,12 @@ class Connect extends Base {
 		$control_id = 'wmf_subscribe_button';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Subscribe', 'wmfoundation' ),
+				'default' => __( 'Subscribe', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Button Text', 'wmfoundation' ),
+				'label'   => __( 'Button Text', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -152,7 +152,7 @@ class Connect extends Base {
 		$section_id = 'wmf_contact_contact';
 		$this->customize->add_section(
 			$section_id, array(
-				'title'    => __( 'Contact Box', 'wmfoundation' ),
+				'title'    => __( 'Contact Box', 'shiro' ),
 				'priority' => 70,
 				'panel'    => $panel_id,
 			)
@@ -162,7 +162,7 @@ class Connect extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Heading', 'wmfoundation' ),
+				'label'   => __( 'Heading', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -175,7 +175,7 @@ class Connect extends Base {
 				$this->customize,
 				$control_id,
 				array(
-					'label'   => __( 'Content', 'wmfoundation' ),
+					'label'   => __( 'Content', 'shiro' ),
 					'section' => $section_id,
 				)
 			)
@@ -185,8 +185,8 @@ class Connect extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Link', 'wmfoundation' ),
-				'description' => __( 'This can be a URI or email address.', 'wmfoundation' ),
+				'label'       => __( 'Link', 'shiro' ),
+				'description' => __( 'This can be a URI or email address.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -196,8 +196,8 @@ class Connect extends Base {
 		$this->customize->add_setting( $control_id );
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Link Text', 'wmfoundation' ),
-				'description' => __( 'If this is empty, the Link value will be used automatically.', 'wmfoundation' ),
+				'label'       => __( 'Link Text', 'shiro' ),
+				'description' => __( 'If this is empty, the Link value will be used automatically.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)

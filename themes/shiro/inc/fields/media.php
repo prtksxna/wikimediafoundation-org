@@ -2,7 +2,7 @@
 /**
  * Fieldmanager Fields for credits in media attachments.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**
@@ -17,17 +17,17 @@ function wmf_add_media_custom_fields( $attachment_fields, $post ) {
 
 	$attachment_fields['credit_author'] = array(
 		'value' => ! empty( $credit_info['author'] ) ? esc_html( $credit_info['author'] ) : '',
-		'label' => __( 'Author', 'wmfoundation' ),
+		'label' => __( 'Author', 'shiro' ),
 	);
 
 	$attachment_fields['credit_license'] = array(
 		'value' => ! empty( $credit_info['license'] ) ? esc_html( $credit_info['license'] ) : '',
-		'label' => __( 'License', 'wmfoundation' ),
+		'label' => __( 'License', 'shiro' ),
 	);
 
 	$attachment_fields['credit_url'] = array(
 		'value' => ! empty( $credit_info['url'] ) ? esc_url( $credit_info['url'] ) : '',
-		'label' => __( 'Credit URL', 'wmfoundation' ),
+		'label' => __( 'Credit URL', 'shiro' ),
 	);
 
 	return $attachment_fields;

@@ -4,7 +4,7 @@
  *
  * Even though this is "page" it can also be used on News Posts
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args          = get_post_meta( get_the_ID(), 'off_site_links', true );

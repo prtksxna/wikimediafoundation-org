@@ -2,7 +2,7 @@
 /**
  * Template for a an image inside of another image frame.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $data = wmf_get_template_data();

@@ -2,7 +2,7 @@
 /**
  * Handles projects wrapper and loop.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args = wmf_get_template_data();
@@ -15,7 +15,7 @@ if (
 }
 
 
-$title                  = get_theme_mod( 'wmf_projects_pre_heading', __( 'Projects', 'wmfoundation' ) );
+$title                  = get_theme_mod( 'wmf_projects_pre_heading', __( 'Projects', 'shiro' ) );
 $rand_translation_title = wmf_get_random_translation( 'wmf_projects_pre_heading' );
 
 $project_class = '_map';

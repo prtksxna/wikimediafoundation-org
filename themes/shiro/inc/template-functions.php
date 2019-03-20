@@ -2,7 +2,7 @@
 /**
  * Additional features to allow styling of the templates
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**

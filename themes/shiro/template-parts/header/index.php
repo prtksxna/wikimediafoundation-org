@@ -4,7 +4,7 @@
  *
  * This closes out the parent header component for baseline templates
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 ?>

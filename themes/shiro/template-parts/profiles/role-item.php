@@ -2,7 +2,7 @@
 /**
  * Output for individual role item on taxonomy page
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $post_data = wmf_get_template_data();

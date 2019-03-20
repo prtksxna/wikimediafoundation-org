@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**
@@ -18,10 +18,10 @@ function wmf_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on wmfoundation, use a find and replace
-	 * to change 'wmfoundation' to the name of your theme in all the template files.
+	 * If you're building a theme based on shiro, use a find and replace
+	 * to change 'shiro' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'wmfoundation', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'shiro', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -51,11 +51,11 @@ function wmf_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'header'            => esc_html__( 'Header', 'wmfoundation' ),
-			'footer-under-text' => esc_html__( 'Footer Under Text', 'wmfoundation' ),
-			'footer-projects'   => esc_html__( 'Footer Projects', 'wmfoundation' ),
-			'footer-affiliates' => esc_html__( 'Footer Movement Affiliates', 'wmfoundation' ),
-			'footer-legal'      => esc_html__( 'Footer Legal', 'wmfoundation' ),
+			'header'            => esc_html__( 'Header', 'shiro' ),
+			'footer-under-text' => esc_html__( 'Footer Under Text', 'shiro' ),
+			'footer-projects'   => esc_html__( 'Footer Projects', 'shiro' ),
+			'footer-affiliates' => esc_html__( 'Footer Movement Affiliates', 'shiro' ),
+			'footer-legal'      => esc_html__( 'Footer Legal', 'shiro' ),
 		)
 	);
 
@@ -104,7 +104,7 @@ add_action( 'after_setup_theme', 'wmf_setup' );
 function wmf_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'wmfoundation' ),
+			'name'          => esc_html__( 'Sidebar', 'shiro' ),
 			'id'            => 'sidebar-1',
 			'description'   => '',
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -120,25 +120,25 @@ add_action( 'widgets_init', 'wmf_widgets_init' );
  * Enqueue scripts and styles.
  */
 function wmf_scripts() {
-	wp_enqueue_style( 'wmfoundation-style', get_stylesheet_uri(), array(), '1.0' );
+	wp_enqueue_style( 'shiro-style', get_stylesheet_uri(), array(), '1.0' );
 
 	if ( get_theme_mod( 'wmf_enable_rtl' ) ) {
-		wp_enqueue_style( 'wmfoundation-style-rtl', get_stylesheet_directory_uri() . '/rtl.css', array(), '1.0' );
+		wp_enqueue_style( 'shiro-style-rtl', get_stylesheet_directory_uri() . '/rtl.css', array(), '1.0' );
 	}
 
-	wp_enqueue_script( 'wmfoundation-flickity', get_stylesheet_directory_uri() . '/assets/dist/flickity-min.js', array( 'jquery' ), '0.0.1', true );
-	wp_enqueue_script( 'wmfoundation-svg4everybody', get_stylesheet_directory_uri() . '/assets/dist/svg4everybody.min.js', array( 'jquery' ), '0.0.1', true );
-	wp_enqueue_script( 'wmfoundation-stickyfill', get_stylesheet_directory_uri() . '/assets/dist/stickyfill.min.js', array( 'jquery' ), '0.0.1', true );
-	wp_enqueue_script( 'wmfoundation-script', get_stylesheet_directory_uri() . '/assets/dist/scripts.min.js', array( 'jquery', 'wmfoundation-flickity', 'wmfoundation-stickyfill', 'wmfoundation-svg4everybody' ), '0.0.1', true );
+	wp_enqueue_script( 'shiro-flickity', get_stylesheet_directory_uri() . '/assets/dist/flickity-min.js', array( 'jquery' ), '0.0.1', true );
+	wp_enqueue_script( 'shiro-svg4everybody', get_stylesheet_directory_uri() . '/assets/dist/svg4everybody.min.js', array( 'jquery' ), '0.0.1', true );
+	wp_enqueue_script( 'shiro-stickyfill', get_stylesheet_directory_uri() . '/assets/dist/stickyfill.min.js', array( 'jquery' ), '0.0.1', true );
+	wp_enqueue_script( 'shiro-script', get_stylesheet_directory_uri() . '/assets/dist/scripts.min.js', array( 'jquery', 'shiro-flickity', 'shiro-stickyfill', 'shiro-svg4everybody' ), '0.0.1', true );
 
 	wp_localize_script(
-		'wmfoundation-script', 'wmfoundation', array(
+		'shiro-script', 'shiro', array(
 			'ajax_url' => admin_url( 'admin-ajax.php' ),
 		)
 	);
 
 	wp_localize_script(
-		'wmfoundation-script', 'wmfrtl', array(
+		'shiro-script', 'wmfrtl', array(
 			'enable' => get_theme_mod( 'wmf_enable_rtl' ) ? true : false,
 		)
 	);
@@ -194,14 +194,14 @@ add_filter( 'register_post_type_args', 'wmf_edit_page_post_type', 10, 2 );
  */
 function wmf_admin_scripts() {
 	wp_enqueue_style(
-		'wmfoundation-editor',
+		'shiro-editor',
 		get_stylesheet_directory_uri() . '/assets/dist/admin/admin.css',
 		array(),
 		filemtime( trailingslashit( get_stylesheet_directory() ) . 'assets/dist/admin/admin.css' )
 	);
 
 	wp_enqueue_script(
-		'wmfoundation-editor-js',
+		'shiro-editor-js',
 		get_stylesheet_directory_uri() . '/assets/src/admin/post-meta.js',
 		array( 'jquery' ),
 		filemtime( trailingslashit( get_stylesheet_directory() ) . 'assets/src/admin/post-meta.js' ),
@@ -209,7 +209,7 @@ function wmf_admin_scripts() {
 	);
 
 	wp_enqueue_script(
-		'wmfoundation-media-js',
+		'shiro-media-js',
 		get_stylesheet_directory_uri() . '/assets/src/admin/media.js',
 		array( 'jquery' ),
 		filemtime( trailingslashit( get_stylesheet_directory() ) . 'assets/src/admin/media.js' ),

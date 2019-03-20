@@ -4,7 +4,7 @@
  *
  * Pull profile ID and other meta and pass it along to template
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args = get_post_meta( get_the_ID(), 'featured_profile', true );

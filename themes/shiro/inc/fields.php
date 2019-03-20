@@ -2,7 +2,7 @@
 /**
  * Setup some baseline custom fields functions
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**

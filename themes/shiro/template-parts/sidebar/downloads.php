@@ -2,11 +2,11 @@
 /**
  * List of downloads in default page sidebar
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $downloads       = wmf_get_template_data();
-$downloads_title = get_theme_mod( 'wmf_downloads_header', __( 'Downloads', 'wmfoundation' ) );
+$downloads_title = get_theme_mod( 'wmf_downloads_header', __( 'Downloads', 'shiro' ) );
 
 if ( empty( $downloads ) ) {
 	return;

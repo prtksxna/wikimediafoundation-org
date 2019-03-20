@@ -2,7 +2,7 @@
 /**
  * Handles Support Module CTA.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $image_id = get_theme_mod( 'wmf_support_image' );

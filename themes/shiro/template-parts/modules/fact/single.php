@@ -2,7 +2,7 @@
 /**
  * Handles page fact module for a single fact.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args = wmf_get_template_data();

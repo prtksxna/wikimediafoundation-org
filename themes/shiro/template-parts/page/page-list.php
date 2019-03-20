@@ -2,7 +2,7 @@
 /**
  * Pulls in data for list template
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args = get_post_meta( get_the_ID(), 'list', true );

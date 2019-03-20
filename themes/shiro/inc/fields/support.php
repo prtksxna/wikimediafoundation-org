@@ -2,7 +2,7 @@
 /**
  * Fieldmanager Fields for Off Site Links Module
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**
@@ -12,11 +12,11 @@ function wmf_support_fields() {
 	$support = new Fieldmanager_Checkbox(
 		array(
 			'name'        => 'hide_support_module',
-			'label'       => __( 'Hide Support Module', 'wmfoundation' ),
-			'description' => __( 'If enabled, the support module will not be shown with this content.', 'wmfoundation' ),
+			'label'       => __( 'Hide Support Module', 'shiro' ),
+			'description' => __( 'If enabled, the support module will not be shown with this content.', 'shiro' ),
 		)
 	);
-	$support->add_meta_box( __( 'Support Module', 'wmfoundation' ), array( 'page', 'post', 'profile' ) );
+	$support->add_meta_box( __( 'Support Module', 'shiro' ), array( 'page', 'post', 'profile' ) );
 }
 add_action( 'fm_post_post', 'wmf_support_fields' );
 add_action( 'fm_post_page', 'wmf_support_fields' );

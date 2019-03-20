@@ -4,7 +4,7 @@
  *
  * This is a temporary data store for passing data into a template partial.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**

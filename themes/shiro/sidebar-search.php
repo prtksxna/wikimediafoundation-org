@@ -2,7 +2,7 @@
 /**
  * Search results sidebar
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $post_types         = array();

@@ -2,7 +2,7 @@
 /**
  * Adds meta translations to translation metabox.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Translations;
@@ -194,14 +194,14 @@ class Metaboxes {
 	 * @param \object $data           The data about the metadata from \Fieldmanager_Field.
 	 */
 	public function radio_field( $opt_label, $meta_data, $data ) {
-		$selected_value = __( 'Not set', 'wmfoundation' );
+		$selected_value = __( 'Not set', 'shiro' );
 
 		foreach ( $data->data as $opts ) {
 			$selected_value = $meta_data === $opts['value'] ? $opts['name'] : $selected_value;
 		}
 
 		// Translators: The placeholder is for the selected value.
-		printf( '<p><strong>%1$s</strong>: %2$s</p>', esc_html( $opt_label ), sprintf( esc_html__( 'Selected value is: %s', 'wmfoundation' ), esc_html( $selected_value ) ) );
+		printf( '<p><strong>%1$s</strong>: %2$s</p>', esc_html( $opt_label ), sprintf( esc_html__( 'Selected value is: %s', 'shiro' ), esc_html( $selected_value ) ) );
 	}
 
 	/**
@@ -214,7 +214,7 @@ class Metaboxes {
 	public function media_field( $opt_label, $meta_data, $remote_blog_id ) {
 		switch_to_blog( $remote_blog_id );
 
-		$text = empty( $meta_data ) ? __( 'Image not selected', 'wmfoundation' ) : __( 'Selected image is:', 'wmfoundation' );
+		$text = empty( $meta_data ) ? __( 'Image not selected', 'shiro' ) : __( 'Selected image is:', 'shiro' );
 
 		printf(
 			'<p><strong>%1$s</strong>: %2$s</p>%3$s', esc_html( $opt_label ), esc_html( $text ), wp_get_attachment_image(
@@ -242,7 +242,7 @@ class Metaboxes {
 		$text_area = sprintf(
 			'<textarea class="large-text" cols="80" rows="%d$1" placeholder="%2$s" readonly>%3$s</textarea>',
 			esc_attr( $rows ),
-			esc_attr_x( 'No content yet.', 'placeholder for empty translation textarea', 'wmfoundation' ),
+			esc_attr_x( 'No content yet.', 'placeholder for empty translation textarea', 'shiro' ),
 			esc_textarea( $meta_data )
 		);
 		printf( '<p><strong>%1$s</strong>:</p>%2$s', esc_html( $opt_label ), $text_area ); // WPCS: xss ok.
@@ -255,7 +255,7 @@ class Metaboxes {
 	 * @param mixed  $meta_data The metadata.
 	 */
 	public function checkbox_field( $opt_label, $meta_data ) {
-		$text = empty( $meta_data ) ? __( 'Is not checked', 'wmfoundation' ) : __( 'Is checked', 'wmfoundation' );
+		$text = empty( $meta_data ) ? __( 'Is not checked', 'shiro' ) : __( 'Is checked', 'shiro' );
 		printf( '<p><strong>%1$s</strong>: %2$s</p>', esc_html( $opt_label ), esc_html( $text ) );
 	}
 
@@ -296,7 +296,7 @@ class Metaboxes {
 					'Checked option is:',
 					'Checked options are:',
 					count( $checked ),
-					'wmfoundation'
+					'shiro'
 				)
 			), esc_html( implode( ', ', $checked ) )
 		);
@@ -315,7 +315,7 @@ class Metaboxes {
 		}
 
 		foreach ( $meta_data as $group_item ) {
-			printf( '<div class="wmf-translation-group"><strong class="wmf-translation-group-heading">%s</strong>', esc_html__( 'Group', 'wmfoundation' ) );
+			printf( '<div class="wmf-translation-group"><strong class="wmf-translation-group-heading">%s</strong>', esc_html__( 'Group', 'shiro' ) );
 			foreach ( $group_item as $single_key => $single_value ) {
 				if ( ! empty( $data->children[ $single_key ] ) ) {
 					$this->show_remote_meta( $remote_blog_id, $single_value, $data->children[ $single_key ] );

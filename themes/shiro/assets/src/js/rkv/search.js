@@ -32,7 +32,7 @@
 
 		$.ajax({
 			type: 'POST',
-			url: wmfoundation.ajax_url,
+			url: shiro.ajax_url,
 			data: data,
 			success: function( result ) {
 				var resultData = result.data || {};

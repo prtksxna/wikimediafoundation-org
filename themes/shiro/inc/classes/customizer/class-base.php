@@ -2,7 +2,7 @@
 /**
  * Theme Customizer.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Customizer;

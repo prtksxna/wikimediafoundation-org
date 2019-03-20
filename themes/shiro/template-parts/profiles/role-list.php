@@ -2,7 +2,7 @@
 /**
  * Adds a list of Roles
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $post_list = wmf_get_template_data();

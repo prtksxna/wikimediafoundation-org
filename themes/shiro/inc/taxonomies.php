@@ -2,7 +2,7 @@
 /**
  * List of taxonomies
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**
@@ -21,28 +21,28 @@ function wmf_add_taxonomies() {
 
 	// Profiles.
 	$profile_type_labels = array(
-		'name'                       => __( 'Roles', 'wmfoundation' ),
-		'singular_name'              => _x( 'Role', 'taxonomy general name', 'wmfoundation' ),
-		'search_items'               => __( 'Search Roles', 'wmfoundation' ),
-		'popular_items'              => __( 'Popular Roles', 'wmfoundation' ),
-		'all_items'                  => __( 'All Roles', 'wmfoundation' ),
-		'parent_item'                => __( 'Parent Role', 'wmfoundation' ),
-		'parent_item_colon'          => __( 'Parent Role:', 'wmfoundation' ),
-		'edit_item'                  => __( 'Edit Role', 'wmfoundation' ),
-		'update_item'                => __( 'Update Role', 'wmfoundation' ),
-		'view_item'                  => __( 'View Role', 'wmfoundation' ),
-		'add_new_item'               => __( 'New Role', 'wmfoundation' ),
-		'new_item_name'              => __( 'New Role', 'wmfoundation' ),
-		'separate_items_with_commas' => __( 'Separate Roles with commas', 'wmfoundation' ),
-		'add_or_remove_items'        => __( 'Add or remove Roles', 'wmfoundation' ),
-		'choose_from_most_used'      => __( 'Choose from the most used Roles', 'wmfoundation' ),
-		'not_found'                  => __( 'No Roles found.', 'wmfoundation' ),
-		'no_terms'                   => __( 'No Roles', 'wmfoundation' ),
-		'menu_name'                  => __( 'Roles', 'wmfoundation' ),
-		'items_list_navigation'      => __( 'Roles list navigation', 'wmfoundation' ),
-		'items_list'                 => __( 'Roles list', 'wmfoundation' ),
-		'most_used'                  => _x( 'Most Used', 'profile-type', 'wmfoundation' ),
-		'back_to_items'              => __( '&larr; Back to Roles', 'wmfoundation' ),
+		'name'                       => __( 'Roles', 'shiro' ),
+		'singular_name'              => _x( 'Role', 'taxonomy general name', 'shiro' ),
+		'search_items'               => __( 'Search Roles', 'shiro' ),
+		'popular_items'              => __( 'Popular Roles', 'shiro' ),
+		'all_items'                  => __( 'All Roles', 'shiro' ),
+		'parent_item'                => __( 'Parent Role', 'shiro' ),
+		'parent_item_colon'          => __( 'Parent Role:', 'shiro' ),
+		'edit_item'                  => __( 'Edit Role', 'shiro' ),
+		'update_item'                => __( 'Update Role', 'shiro' ),
+		'view_item'                  => __( 'View Role', 'shiro' ),
+		'add_new_item'               => __( 'New Role', 'shiro' ),
+		'new_item_name'              => __( 'New Role', 'shiro' ),
+		'separate_items_with_commas' => __( 'Separate Roles with commas', 'shiro' ),
+		'add_or_remove_items'        => __( 'Add or remove Roles', 'shiro' ),
+		'choose_from_most_used'      => __( 'Choose from the most used Roles', 'shiro' ),
+		'not_found'                  => __( 'No Roles found.', 'shiro' ),
+		'no_terms'                   => __( 'No Roles', 'shiro' ),
+		'menu_name'                  => __( 'Roles', 'shiro' ),
+		'items_list_navigation'      => __( 'Roles list navigation', 'shiro' ),
+		'items_list'                 => __( 'Roles list', 'shiro' ),
+		'most_used'                  => _x( 'Most Used', 'profile-type', 'shiro' ),
+		'back_to_items'              => __( '&larr; Back to Roles', 'shiro' ),
 	);
 
 	$profile_type_args = wp_parse_args(
@@ -50,7 +50,7 @@ function wmf_add_taxonomies() {
 			'labels'  => $profile_type_labels,
 			'rewrite' => array(
 				'with_front' => false,
-				'slug'       => __( 'role', 'wmfoundation' ),
+				'slug'       => __( 'role', 'shiro' ),
 			),
 		)
 	);
@@ -61,7 +61,7 @@ function wmf_add_taxonomies() {
 		'public'            => false,
 		'rewrite'           => false,
 		'show_admin_column' => ! wmf_is_main_site(),
-		'label'             => __( 'Translation Status', 'wmfoundation' ),
+		'label'             => __( 'Translation Status', 'shiro' ),
 	);
 	register_taxonomy( 'translation-status', array( 'post', 'page', 'profile' ), $translation_status_type_args );
 }

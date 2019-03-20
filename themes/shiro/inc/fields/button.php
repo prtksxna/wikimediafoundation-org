@@ -2,7 +2,7 @@
 /**
  * Adds button option to Landing and List Templates.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**
@@ -17,11 +17,11 @@ function wmf_button_fields() {
 		array(
 			'name'     => 'intro_button',
 			'children' => array(
-				'title' => new Fieldmanager_TextField( __( 'Title', 'wmfoundation' ) ),
-				'link'  => new Fieldmanager_Link( __( 'Link', 'wmfoundation' ) ),
+				'title' => new Fieldmanager_TextField( __( 'Title', 'shiro' ) ),
+				'link'  => new Fieldmanager_Link( __( 'Link', 'shiro' ) ),
 			),
 		)
 	);
-	$button->add_meta_box( __( 'Intro Button', 'wmfoundation' ), array( 'page' ) );
+	$button->add_meta_box( __( 'Intro Button', 'shiro' ), array( 'page' ) );
 }
 add_action( 'fm_post_page', 'wmf_button_fields', 5 );

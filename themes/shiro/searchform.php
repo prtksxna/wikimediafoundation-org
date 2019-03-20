@@ -2,11 +2,11 @@
 /**
  * The template for displaying search form.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
-$wmf_search_button      = get_theme_mod( 'wmf_search_button_copy', __( 'Search', 'wmfoundation' ) );
-$wmf_search_placeholder = get_theme_mod( 'wmf_search_placeholder_copy', __( 'Enter search terms', 'wmfoundation' ) );
+$wmf_search_button      = get_theme_mod( 'wmf_search_button_copy', __( 'Search', 'shiro' ) );
+$wmf_search_placeholder = get_theme_mod( 'wmf_search_placeholder_copy', __( 'Enter search terms', 'shiro' ) );
 ?>
 
 <div class="search-bar-container">

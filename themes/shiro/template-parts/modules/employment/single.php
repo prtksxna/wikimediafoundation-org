@@ -2,7 +2,7 @@
 /**
  * Handles employment listing wrapper for a single listing.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args = wmf_get_template_data();

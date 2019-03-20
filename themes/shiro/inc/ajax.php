@@ -2,7 +2,7 @@
 /**
  * Ajax actions and hooks.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**

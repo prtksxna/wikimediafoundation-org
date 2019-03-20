@@ -4,7 +4,7 @@
  *
  * Used on Landing Page and Home Page template.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args = get_post_meta( get_the_ID(), 'page_facts', true );

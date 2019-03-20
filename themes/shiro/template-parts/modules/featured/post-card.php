@@ -2,7 +2,7 @@
 /**
  * Handles Featured Post card output.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 use WMF\Images\Credits;

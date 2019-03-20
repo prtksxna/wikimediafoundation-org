@@ -2,7 +2,7 @@
 /**
  * Adds Header logo
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $wmf_header_image = get_header_image();

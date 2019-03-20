@@ -2,7 +2,7 @@
 /**
  * Setup Social share module
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 if (

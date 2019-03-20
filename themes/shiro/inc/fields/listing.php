@@ -2,7 +2,7 @@
 /**
  * Fieldmanager Fields for Listing Module
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**
@@ -17,24 +17,24 @@ function wmf_listing_fields() {
 		array(
 			'name'     => 'listings',
 			'children' => array(
-				'heading'  => new Fieldmanager_Textfield( __( 'Heading', 'wmfoundation' ) ),
+				'heading'  => new Fieldmanager_Textfield( __( 'Heading', 'shiro' ) ),
 				'listings' => new Fieldmanager_Group(
 					array(
-						'add_more_label' => __( 'Add Listing', 'wmfoundation' ),
+						'add_more_label' => __( 'Add Listing', 'shiro' ),
 						'sortable'       => true,
 						'limit'          => 3,
 						'children'       => array(
-							'heading'   => new Fieldmanager_Textfield( __( 'Heading', 'wmfoundation' ) ),
-							'content'   => new Fieldmanager_Textfield( __( 'Content', 'wmfoundation' ) ),
-							'link'      => new Fieldmanager_Textfield( __( 'CTA URI', 'wmfoundation' ) ),
-							'link_text' => new Fieldmanager_Textfield( __( 'CTA Text', 'wmfoundation' ) ),
+							'heading'   => new Fieldmanager_Textfield( __( 'Heading', 'shiro' ) ),
+							'content'   => new Fieldmanager_Textfield( __( 'Content', 'shiro' ) ),
+							'link'      => new Fieldmanager_Textfield( __( 'CTA URI', 'shiro' ) ),
+							'link_text' => new Fieldmanager_Textfield( __( 'CTA Text', 'shiro' ) ),
 						),
 					)
 				),
 			),
 		)
 	);
-	$listing->add_meta_box( __( 'Employment Listings', 'wmfoundation' ), array( 'page', 'profile' ) );
+	$listing->add_meta_box( __( 'Employment Listings', 'shiro' ), array( 'page', 'profile' ) );
 }
 add_action( 'fm_post_page', 'wmf_listing_fields' );
 add_action( 'fm_post_profile', 'wmf_listing_fields' );

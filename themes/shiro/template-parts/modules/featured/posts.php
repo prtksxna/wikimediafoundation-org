@@ -2,14 +2,14 @@
 /**
  * Handles Featured Posts output for home and landing pages.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args = wmf_get_template_data();
 
 $context  = empty( $template_args['context'] ) ? '' : $template_args['context'];
 $subtitle = empty( $template_args['subtitle'] ) ? '' : $template_args['subtitle'];
-$title    = get_theme_mod( 'wmf_featured_post_pre_heading', __( 'NEWS', 'wmfoundation' ) );
+$title    = get_theme_mod( 'wmf_featured_post_pre_heading', __( 'NEWS', 'shiro' ) );
 
 $rand_translation_title = wmf_get_random_translation( 'wmf_featured_post_pre_heading' );
 

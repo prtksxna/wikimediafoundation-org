@@ -4,7 +4,7 @@
  *
  * This is specific to the landing page template.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args = get_post_meta( get_the_ID(), 'social_share', true );

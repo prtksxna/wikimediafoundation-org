@@ -2,7 +2,7 @@
 /**
  * Post Customizer.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Customizer;
@@ -22,7 +22,7 @@ class Post extends Base {
 		$section_id = 'wmf_post_content';
 		$this->customize->add_section(
 			$section_id, array(
-				'title'    => __( 'Post Settings', 'wmfoundation' ),
+				'title'    => __( 'Post Settings', 'shiro' ),
 				'priority' => 60,
 			)
 		);
@@ -30,13 +30,13 @@ class Post extends Base {
 		$control_id = 'wmf_related_posts_title';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Related', 'wmfoundation' ),
+				'default' => __( 'Related', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Related Posts Section Title', 'wmfoundation' ),
-				'description' => __( 'This displays at the bottom of each single post.', 'wmfoundation' ),
+				'label'       => __( 'Related Posts Section Title', 'shiro' ),
+				'description' => __( 'This displays at the bottom of each single post.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -45,12 +45,12 @@ class Post extends Base {
 		$control_id = 'wmf_related_posts_description';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Read further in the pursuit of knowledge', 'wmfoundation' ),
+				'default' => __( 'Read further in the pursuit of knowledge', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Related Posts Section Description', 'wmfoundation' ),
+				'label'   => __( 'Related Posts Section Description', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'textarea',
 			)

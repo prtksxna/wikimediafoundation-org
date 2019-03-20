@@ -2,7 +2,7 @@
 /**
  * Handles simple text CTA module.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args = wmf_get_template_data();

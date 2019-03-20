@@ -2,7 +2,7 @@
 /**
  * Adds Header for default pages
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $page_header_data = wmf_get_template_data();

@@ -2,13 +2,13 @@
 /**
  * Adds Header navigation
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 
-$wmf_donate_button = get_theme_mod( 'wmf_donate_now_copy', __( 'Donate Now', 'wmfoundation' ) );
+$wmf_donate_button = get_theme_mod( 'wmf_donate_now_copy', __( 'Donate Now', 'shiro' ) );
 $wmf_donate_uri    = get_theme_mod( 'wmf_donate_now_uri', '#' );
-$wmf_menu_button = get_theme_mod( 'wmf_menu_button_copy', __( 'MENU', 'wmfoundation' ) );
+$wmf_menu_button = get_theme_mod( 'wmf_menu_button_copy', __( 'MENU', 'shiro' ) );
 
 ?>
 

@@ -2,7 +2,7 @@
 /**
  * Fieldmanager Fields for Landing page template
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**
@@ -18,26 +18,26 @@ function wmf_profiles_module() {
 	$custom_fields = array(
 		'name'     => 'profiles',
 		'children' => array(
-			'pre_heading'  => new Fieldmanager_Textfield( __( 'Section Pre-heading', 'wmfoundation' ) ),
-			'headline'     => new Fieldmanager_Textfield( __( 'Headline', 'wmfoundation' ) ),
-			'description'  => new Fieldmanager_TextArea( __( 'Description', 'wmfoundation' ) ),
-			'button_label' => new Fieldmanager_Textfield( __( 'Button Label', 'wmfoundation' ) ),
-			'button_link'  => new Fieldmanager_Link( __( 'Button Link', 'wmfoundation' ) ),
+			'pre_heading'  => new Fieldmanager_Textfield( __( 'Section Pre-heading', 'shiro' ) ),
+			'headline'     => new Fieldmanager_Textfield( __( 'Headline', 'shiro' ) ),
+			'description'  => new Fieldmanager_TextArea( __( 'Description', 'shiro' ) ),
+			'button_label' => new Fieldmanager_Textfield( __( 'Button Label', 'shiro' ) ),
+			'button_link'  => new Fieldmanager_Link( __( 'Button Link', 'shiro' ) ),
 		),
 	);
 
 	if ( 'fm_post_page' === current_filter() || $is_front_page ) {
 		$custom_fields['children']['profiles_list'] = new Fieldmanager_Checkboxes(
 			array(
-				'label'       => __( 'List of Profiles to pull from', 'wmfoundation' ),
-				'description' => __( 'Select as many as are applicable. 3 profiles will be selected from this list each time the page loads.', 'wmfoundation' ),
+				'label'       => __( 'List of Profiles to pull from', 'shiro' ),
+				'description' => __( 'Select as many as are applicable. 3 profiles will be selected from this list each time the page loads.', 'shiro' ),
 				'options'     => wmf_get_profiles_options(),
 			)
 		);
 	}
 
 	$social = new Fieldmanager_Group( $custom_fields );
-	$social->add_meta_box( __( 'Profiles', 'wmfoundation' ), array( 'page', 'profile' ) );
+	$social->add_meta_box( __( 'Profiles', 'shiro' ), array( 'page', 'profile' ) );
 }
 add_action( 'fm_post_page', 'wmf_profiles_module' );
 add_action( 'fm_post_profile', 'wmf_profiles_module' );

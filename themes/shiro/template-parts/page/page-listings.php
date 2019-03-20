@@ -4,7 +4,7 @@
  *
  * Used on Landing Page template and Profile Page.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args = get_post_meta( get_the_ID(), 'listings', true );

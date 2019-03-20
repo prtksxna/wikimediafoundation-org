@@ -2,7 +2,7 @@
 /**
  * Fieldmanager Fields for List page template
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**
@@ -17,11 +17,11 @@ function wmf_related_pages() {
 		array(
 			'name'     => 'related_pages',
 			'children' => array(
-				'title' => new Fieldmanager_TextField( __( 'Headline', 'wmfoundation' ) ),
+				'title' => new Fieldmanager_TextField( __( 'Headline', 'shiro' ) ),
 				'links' => new Fieldmanager_Checkboxes(
 					array(
-						'label'       => __( 'List of Posts to pull from', 'wmfoundation' ),
-						'description' => __( 'Select as many as are applicable. Three posts will be selected from this list for display.', 'wmfoundation' ),
+						'label'       => __( 'List of Posts to pull from', 'shiro' ),
+						'description' => __( 'Select as many as are applicable. Three posts will be selected from this list for display.', 'shiro' ),
 						'options'     => wmf_get_pages_options(),
 					)
 				),
@@ -29,6 +29,6 @@ function wmf_related_pages() {
 		)
 	);
 
-	$related_pages->add_meta_box( __( 'Related Pages', 'wmfoundation' ), 'page' );
+	$related_pages->add_meta_box( __( 'Related Pages', 'shiro' ), 'page' );
 }
 add_action( 'fm_post_page', 'wmf_related_pages' );

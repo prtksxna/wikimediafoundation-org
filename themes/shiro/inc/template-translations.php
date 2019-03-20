@@ -2,7 +2,7 @@
 /**
  * Custom template tags to handle translation for this theme.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 // Actions and filters.
@@ -178,7 +178,7 @@ function wmf_translation_alert() {
 		return; // This has been marked as translation complete, no alert to show.
 	}
 
-	$alert = get_theme_mod( 'wmf_incomplete_translation', __( 'This content has not yet been translated into the current language.', 'wmfoundation' ) );
+	$alert = get_theme_mod( 'wmf_incomplete_translation', __( 'This content has not yet been translated into the current language.', 'shiro' ) );
 
 	printf( '<div class="alert alert-warning" role="alert">%s</div>', esc_html( $alert ) );
 }

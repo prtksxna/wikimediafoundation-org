@@ -2,7 +2,7 @@
 /**
  * Autoload the classes.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF;

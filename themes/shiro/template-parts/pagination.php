@@ -2,11 +2,11 @@
 /**
  * Adding pagination links
  *
- * @package wmfoundation
+ * @package shiro
  */
 
-$newer = get_theme_mod( 'wmf_pagination_newer', __( 'Newer', 'wmfoundation' ) );
-$older = get_theme_mod( 'wmf_pagination_older', __( 'Older', 'wmfoundation' ) );
+$newer = get_theme_mod( 'wmf_pagination_newer', __( 'Newer', 'shiro' ) );
+$older = get_theme_mod( 'wmf_pagination_older', __( 'Older', 'shiro' ) );
 
 $previous_arrow = '<i><svg width="54" height="16" viewBox="0 0 54 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>Scroll Arrow</title>

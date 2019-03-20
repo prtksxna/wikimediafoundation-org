@@ -2,7 +2,7 @@
 /**
  * Adds translation roles.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Roles;
@@ -23,7 +23,7 @@ class Translator extends Base {
 	 */
 	public function set_role_data() {
 		$this->role_data = array(
-			'name'        => __( 'Translator', 'wmfoundation' ),
+			'name'        => __( 'Translator', 'shiro' ),
 			'clone'       => 'editor',
 			'remove_caps' => array(
 				'create_posts',

@@ -2,7 +2,7 @@
 /**
  * Modifications for Safe Redirect plugin.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 // Make redirects case sensitive.

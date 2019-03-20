@@ -41,9 +41,9 @@
   },
   "themeConfig": {
     "rename": {
-      "prefix": "wmfoundation",
-      "text_domain": "wmfoundation",
-      "directory": "wmfoundation"
+      "prefix": "shiro",
+      "text_domain": "shiro",
+      "directory": "shiro"
     },
     "bootstrap": false
   }

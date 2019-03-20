@@ -2,7 +2,7 @@
 /**
  * Adds publish actions and controls translation status.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Translations;
@@ -93,10 +93,10 @@ class Flow {
 	 */
 	public function register_translation_status_terms() {
 		$terms = array(
-			'new'      => __( 'Needs Translation (new)', 'wmfoundation' ),
-			'update'   => __( 'Needs Translation (update)', 'wmfoundation' ),
-			'progress' => __( 'In Progress', 'wmfoundation' ),
-			'complete' => __( 'Complete', 'wmfoundation' ),
+			'new'      => __( 'Needs Translation (new)', 'shiro' ),
+			'update'   => __( 'Needs Translation (update)', 'shiro' ),
+			'progress' => __( 'In Progress', 'shiro' ),
+			'complete' => __( 'Complete', 'shiro' ),
 		);
 
 		foreach ( $terms as $key => $term ) {
@@ -150,7 +150,7 @@ class Flow {
 		?>
 		<label for="translate_post_global">
 			<input type="checkbox" name="_translate_post_global" value="1" id="translate_post_global" />
-			<?php esc_html_e( 'Translate post', 'wmfoundation' ); ?>
+			<?php esc_html_e( 'Translate post', 'shiro' ); ?>
 		</label>
 		<?php
 	}
@@ -160,11 +160,11 @@ class Flow {
 	 */
 	public function in_progress_action() {
 		?>
-<p><strong><?php esc_html_e( 'Translation Status:', 'wmfoundation' ); ?></strong> <?php echo esc_html( $this->translation_status() ); ?></p>
+<p><strong><?php esc_html_e( 'Translation Status:', 'shiro' ); ?></strong> <?php echo esc_html( $this->translation_status() ); ?></p>
 <label for="translation_in_progress">
 	<input type="checkbox" name="_translation_in_progress" value="1" id="translation_in_progress"
 		<?php checked( 1, get_post_meta( get_the_ID(), '_translation_in_progress', true ) ); ?>>
-		<?php esc_html_e( 'Translation in progress', 'wmfoundation' ); ?>
+		<?php esc_html_e( 'Translation in progress', 'shiro' ); ?>
 </label>
 		<?php
 	}

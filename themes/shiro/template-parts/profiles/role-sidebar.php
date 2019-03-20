@@ -2,7 +2,7 @@
 /**
  * Adds a sidebar to the roles archive page
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $post_list = wmf_get_template_data();

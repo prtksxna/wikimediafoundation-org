@@ -2,7 +2,7 @@
 /**
  * Template for individual item in list
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_data = wmf_get_template_data();

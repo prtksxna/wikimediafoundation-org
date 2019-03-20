@@ -2,7 +2,7 @@
 /**
  * Adds Header background
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 if ( ! is_page() && ! is_404() && ! is_home() ) {

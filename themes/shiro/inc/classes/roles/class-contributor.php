@@ -2,7 +2,7 @@
 /**
  * Edit Contributor role.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Roles;

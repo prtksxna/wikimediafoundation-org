@@ -2,7 +2,7 @@
 /**
  * Query related functions.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**

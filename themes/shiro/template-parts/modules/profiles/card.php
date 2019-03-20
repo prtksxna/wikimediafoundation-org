@@ -2,7 +2,7 @@
 /**
  * Profile card
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_data = wmf_get_template_data();
@@ -43,7 +43,7 @@ $img_id = ! empty( $template_data['img_id'] ) ? $template_data
 							'%1$s',
 							'%1$s, %2$s',
 							$count,
-							'wmfoundation'
+							'shiro'
 						),
 						// @codingStandardsIgnoreEnd.
 						empty( $role ) ? esc_html( $team ) : esc_html( $role ),

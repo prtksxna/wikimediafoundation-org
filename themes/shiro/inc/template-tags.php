@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 if ( ! function_exists( 'wmf_entry_footer' ) ) :
@@ -15,17 +15,17 @@ if ( ! function_exists( 'wmf_entry_footer' ) ) :
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'wmfoundation' ) );
+			$categories_list = get_the_category_list( esc_html__( ', ', 'shiro' ) );
 			if ( $categories_list && wmf_categorized_blog() ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'wmfoundation' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'shiro' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'wmfoundation' ) );
+			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'shiro' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'wmfoundation' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'shiro' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 
@@ -35,7 +35,7 @@ if ( ! function_exists( 'wmf_entry_footer' ) ) :
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'wmfoundation' ),
+						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'shiro' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -163,7 +163,7 @@ function wmf_get_current_url() {
  */
 function wmf_byline() {
 	if ( function_exists( 'coauthors_links' ) ) {
-		return coauthors_posts_links( null, null, __( 'By ', 'wmfoundation' ), '', false );
+		return coauthors_posts_links( null, null, __( 'By ', 'shiro' ), '', false );
 	} else {
 		return get_the_author_link();
 	}

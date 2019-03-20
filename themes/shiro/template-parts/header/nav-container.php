@@ -2,7 +2,7 @@
 /**
  * Partial for Search and Donate button
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 ?>

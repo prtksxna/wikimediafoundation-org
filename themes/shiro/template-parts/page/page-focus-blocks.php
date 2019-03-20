@@ -4,7 +4,7 @@
  *
  * Used on the Home Page template.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $template_args = array(

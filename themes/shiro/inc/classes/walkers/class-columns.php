@@ -2,7 +2,7 @@
 /**
  * Walker class for making multicolumn menus.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Walkers;

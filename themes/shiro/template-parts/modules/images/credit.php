@@ -2,7 +2,7 @@
 /**
  * Handles simple text CTA module.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $image_id = wmf_get_template_data();

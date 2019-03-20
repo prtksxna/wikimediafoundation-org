@@ -2,7 +2,7 @@
 /**
  * Page Customizer.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Customizer;
@@ -20,7 +20,7 @@ class Page extends Base {
 		$section_id = 'wmf_page_content';
 		$this->customize->add_section(
 			$section_id, array(
-				'title'    => __( 'Page Settings', 'wmfoundation' ),
+				'title'    => __( 'Page Settings', 'shiro' ),
 				'priority' => 60,
 			)
 		);
@@ -28,13 +28,13 @@ class Page extends Base {
 		$control_id = 'wmf_no_results_title';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Nothing Found', 'wmfoundation' ),
+				'default' => __( 'Nothing Found', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'No Results Title', 'wmfoundation' ),
-				'description' => __( 'This displays on archive and search pages when there are no results found.', 'wmfoundation' ),
+				'label'       => __( 'No Results Title', 'shiro' ),
+				'description' => __( 'This displays on archive and search pages when there are no results found.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -43,12 +43,12 @@ class Page extends Base {
 		$control_id = 'wmf_no_results_description';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Sorry, but no results were found. Perhaps searching can help.', 'wmfoundation' ),
+				'default' => __( 'Sorry, but no results were found. Perhaps searching can help.', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'No Results Description', 'wmfoundation' ),
+				'label'   => __( 'No Results Description', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'textarea',
 			)
@@ -57,13 +57,13 @@ class Page extends Base {
 		$control_id = 'wmf_pagination_newer';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Newer', 'wmfoundation' ),
+				'default' => __( 'Newer', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Newer Posts Copy', 'wmfoundation' ),
-				'description' => __( 'This displays in pagination sections in a link for newer posts.', 'wmfoundation' ),
+				'label'       => __( 'Newer Posts Copy', 'shiro' ),
+				'description' => __( 'This displays in pagination sections in a link for newer posts.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -72,13 +72,13 @@ class Page extends Base {
 		$control_id = 'wmf_pagination_older';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Older', 'wmfoundation' ),
+				'default' => __( 'Older', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Older Posts Copy', 'wmfoundation' ),
-				'description' => __( 'This displays in pagination sections in a link for older posts.', 'wmfoundation' ),
+				'label'       => __( 'Older Posts Copy', 'shiro' ),
+				'description' => __( 'This displays in pagination sections in a link for older posts.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -87,13 +87,13 @@ class Page extends Base {
 		$control_id = 'wmf_downloads_header';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Downloads', 'wmfoundation' ),
+				'default' => __( 'Downloads', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Downloads Section Header', 'wmfoundation' ),
-				'description' => __( 'This displays in the sidebar before the downloads list.', 'wmfoundation' ),
+				'label'       => __( 'Downloads Section Header', 'shiro' ),
+				'description' => __( 'This displays in the sidebar before the downloads list.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)

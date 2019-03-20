@@ -2,7 +2,7 @@
 /**
  * Theme Customizer Rich Text custom control.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Customizer;

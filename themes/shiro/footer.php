@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 use WMF\Images\Credits;
@@ -19,13 +19,13 @@ if ( ! is_archive() && ! is_home() ) {
 </main>
 
 <?php
-$wmf_footer_text                    = get_theme_mod( 'wmf_footer_text', __( 'The Wikimedia Foundation, Inc is a nonprofit charitable organization dedicated to encouraging the growth, development and distribution of free, multilingual content, and to providing the full content of these wiki-based projects to the public free of charge.', 'wmfoundation' ) );
+$wmf_footer_text                    = get_theme_mod( 'wmf_footer_text', __( 'The Wikimedia Foundation, Inc is a nonprofit charitable organization dedicated to encouraging the growth, development and distribution of free, multilingual content, and to providing the full content of these wiki-based projects to the public free of charge.', 'shiro' ) );
 $wmf_twitter_url                    = get_theme_mod( 'wmf_twitter_url' );
 $wmf_facebook_url                   = get_theme_mod( 'wmf_facebook_url' );
 $wmf_instagram_url                  = get_theme_mod( 'wmf_instagram_url' );
-$wmf_projects_menu_label            = get_theme_mod( 'wmf_projects_menu_label', __( 'Projects', 'wmfoundation' ) );
-$wmf_movement_affiliates_menu_label = get_theme_mod( 'wmf_movement_affiliates_menu_label', __( 'Movement Affiliates', 'wmfoundation' ) );
-$wmf_footer_copyright               = get_theme_mod( 'wmf_footer_copyright', __( 'This work is licensed under a <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a> unported license. Some images under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>.', 'wmfoundation' ) );
+$wmf_projects_menu_label            = get_theme_mod( 'wmf_projects_menu_label', __( 'Projects', 'shiro' ) );
+$wmf_movement_affiliates_menu_label = get_theme_mod( 'wmf_movement_affiliates_menu_label', __( 'Movement Affiliates', 'shiro' ) );
+$wmf_footer_copyright               = get_theme_mod( 'wmf_footer_copyright', __( 'This work is licensed under a <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a> unported license. Some images under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>.', 'shiro' ) );
 ?>
 <footer class="bg-black">
 	<div class="footer-inner mw-980">
@@ -39,7 +39,7 @@ $wmf_footer_copyright               = get_theme_mod( 'wmf_footer_copyright', __(
 					if ( empty( $wmf_footer_image ) ) :
 						?>
 					<svg width="279" height="62" viewBox="0 0 279 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title><?php esc_html_e( 'Wikimedia Foundation', 'wmfoundation' ); ?></title>
+						<title><?php esc_html_e( 'Wikimedia Foundation', 'shiro' ); ?></title>
 						<g transform="translate(1992 17360)">
 							<g id="Horizontal Logo">
 								<g id="Horizontal Logo">
@@ -78,19 +78,19 @@ $wmf_footer_copyright               = get_theme_mod( 'wmf_footer_copyright', __(
 					<span class="inline-social-list">
 						<?php if ( ! empty( $wmf_twitter_url ) ) : ?>
 						<a href="<?php echo esc_url( $wmf_twitter_url ); ?>" class="teal" target="_blank">
-							<span class="sr-only"><?php esc_html_e( 'Twitter', 'wmfoundation' ); ?></span>
+							<span class="sr-only"><?php esc_html_e( 'Twitter', 'shiro' ); ?></span>
 							<?php wmf_show_icon( 'social-twitter' ); ?>
 						</a>
 						<?php endif ?>
 						<?php if ( ! empty( $wmf_facebook_url ) ) : ?>
 						<a href="<?php echo esc_url( $wmf_facebook_url ); ?>" class="teal" target="_blank">
-							<span class="sr-only"><?php esc_html_e( 'Facebook', 'wmfoundation' ); ?></span>
+							<span class="sr-only"><?php esc_html_e( 'Facebook', 'shiro' ); ?></span>
 							<?php wmf_show_icon( 'social-facebook' ); ?>
 						</a>
 						<?php endif ?>
 						<?php if ( ! empty( $wmf_instagram_url ) ) : ?>
 						<a href="<?php echo esc_url( $wmf_instagram_url ); ?>" class="teal" target="_blank">
-							<span class="sr-only"><?php esc_html_e( 'Instagram', 'wmfoundation' ); ?></span>
+							<span class="sr-only"><?php esc_html_e( 'Instagram', 'shiro' ); ?></span>
 							<?php wmf_show_icon( 'social-instagram' ); ?>
 						</a>
 						<?php endif ?>

@@ -2,7 +2,7 @@
 /**
  * Class to capture and store requested images during page load.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Images;

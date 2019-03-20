@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $facts     = get_post_meta( get_the_ID(), 'sidebar_facts', true );

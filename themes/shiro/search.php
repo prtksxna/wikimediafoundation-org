@@ -3,7 +3,7 @@
  *
  * Template for displaying search results
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 get_header(); ?>
@@ -11,7 +11,7 @@ get_header(); ?>
 <?php
 $template_args = array(
 	/* translators: Query that is currently being searched */
-	'h1_title' => sprintf( __( 'Search results for %s', 'wmfoundation' ), get_search_query() ),
+	'h1_title' => sprintf( __( 'Search results for %s', 'shiro' ), get_search_query() ),
 );
 
 wmf_get_template_part( 'template-parts/header/page-noimage', $template_args );

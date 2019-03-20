@@ -2,7 +2,7 @@
 /**
  * Handles simple text CTA module.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $images = wmf_get_template_data();
@@ -11,7 +11,7 @@ if ( empty( $images ) ) {
 	return;
 }
 
-$header = get_theme_mod( 'wmf_image_credit_header', __( 'Photo credits', 'wmfoundation' ) );
+$header = get_theme_mod( 'wmf_image_credit_header', __( 'Photo credits', 'shiro' ) );
 
 ?>
 

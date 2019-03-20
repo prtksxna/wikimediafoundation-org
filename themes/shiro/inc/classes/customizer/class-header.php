@@ -2,7 +2,7 @@
 /**
  * Header Customizer.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Customizer;
@@ -21,7 +21,7 @@ class Header extends Base {
 
 		$header_image_title = $header_section->title;
 
-		$header_section->title = __( 'Header', 'wmfoundation' );
+		$header_section->title = __( 'Header', 'shiro' );
 
 		$this->customize->add_panel( 'header_image', (array) $header_section );
 
@@ -31,7 +31,7 @@ class Header extends Base {
 		$section_id = 'wmf_header_content';
 		$this->customize->add_section(
 			$section_id, array(
-				'title'    => __( 'Content', 'wmfoundation' ),
+				'title'    => __( 'Content', 'shiro' ),
 				'priority' => 70,
 				'panel'    => 'header_image',
 			)
@@ -40,13 +40,13 @@ class Header extends Base {
 		$control_id = 'wmf_selected_translation_copy';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Languages', 'wmfoundation' ),
+				'default' => __( 'Languages', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Languages Translations Copy', 'wmfoundation' ),
-				'description' => __( 'This changes the languages label copy found in the translation bar at the top of the page.', 'wmfoundation' ),
+				'label'       => __( 'Languages Translations Copy', 'shiro' ),
+				'description' => __( 'This changes the languages label copy found in the translation bar at the top of the page.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -55,13 +55,13 @@ class Header extends Base {
 		$control_id = 'wmf_search_button_copy';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Search', 'wmfoundation' ),
+				'default' => __( 'Search', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Search Button Copy', 'wmfoundation' ),
-				'description' => __( 'This changes the search button copy. This can be set in each translation to localize the button.', 'wmfoundation' ),
+				'label'       => __( 'Search Button Copy', 'shiro' ),
+				'description' => __( 'This changes the search button copy. This can be set in each translation to localize the button.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -70,13 +70,13 @@ class Header extends Base {
 		$control_id = 'wmf_search_placeholder_copy';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Enter search terms', 'wmfoundation' ),
+				'default' => __( 'Enter search terms', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Search Placeholder Copy', 'wmfoundation' ),
-				'description' => __( 'This changes the search placeholder copy. This can be set in each translation to localize the button.', 'wmfoundation' ),
+				'label'       => __( 'Search Placeholder Copy', 'shiro' ),
+				'description' => __( 'This changes the search placeholder copy. This can be set in each translation to localize the button.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -85,13 +85,13 @@ class Header extends Base {
 		$control_id = 'wmf_donate_now_copy';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'Donate Now', 'wmfoundation' ),
+				'default' => __( 'Donate Now', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Donate button Copy', 'wmfoundation' ),
-				'description' => __( 'This changes the donate copy. This can be set in each translation to localize the button.', 'wmfoundation' ),
+				'label'       => __( 'Donate button Copy', 'shiro' ),
+				'description' => __( 'This changes the donate copy. This can be set in each translation to localize the button.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)
@@ -100,12 +100,12 @@ class Header extends Base {
 		$control_id = 'wmf_donate_now_uri';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( '#', 'wmfoundation' ),
+				'default' => __( '#', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'   => __( 'Donate button URI', 'wmfoundation' ),
+				'label'   => __( 'Donate button URI', 'shiro' ),
 				'section' => $section_id,
 				'type'    => 'text',
 			)
@@ -114,13 +114,13 @@ class Header extends Base {
 		$control_id = 'wmf_menu_button_copy';
 		$this->customize->add_setting(
 			$control_id, array(
-				'default' => __( 'MENU', 'wmfoundation' ),
+				'default' => __( 'MENU', 'shiro' ),
 			)
 		);
 		$this->customize->add_control(
 			$control_id, array(
-				'label'       => __( 'Menu button copy', 'wmfoundation' ),
-				'description' => __( 'This changes the button copy for mobile devices. This can be set in each translation to localize the button.', 'wmfoundation' ),
+				'label'       => __( 'Menu button copy', 'shiro' ),
+				'description' => __( 'This changes the button copy for mobile devices. This can be set in each translation to localize the button.', 'shiro' ),
 				'section'     => $section_id,
 				'type'        => 'text',
 			)

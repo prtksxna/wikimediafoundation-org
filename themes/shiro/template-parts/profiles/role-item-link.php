@@ -2,7 +2,7 @@
 /**
  * Adds a link inside of a list item
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $post_data = wmf_get_template_data();

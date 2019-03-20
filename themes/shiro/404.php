@@ -4,20 +4,20 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 get_header();
 
 $template_args = array(
-	'h2_title' => get_theme_mod( 'wmf_404_message', __( '404 Error', 'wmfoundation' ) ),
-	'h1_title' => get_theme_mod( 'wmf_404_title', __( 'Imagine a world in which there is a page here', 'wmfoundation' ) ),
+	'h2_title' => get_theme_mod( 'wmf_404_message', __( '404 Error', 'shiro' ) ),
+	'h1_title' => get_theme_mod( 'wmf_404_title', __( 'Imagine a world in which there is a page here', 'shiro' ) ),
 );
 
-$wmf_search_button      = get_theme_mod( 'wmf_search_button_copy', __( 'Search', 'wmfoundation' ) );
-$wmf_search_placeholder = get_theme_mod( 'wmf_search_placeholder_copy', __( 'Enter search terms', 'wmfoundation' ) );
+$wmf_search_button      = get_theme_mod( 'wmf_search_button_copy', __( 'Search', 'shiro' ) );
+$wmf_search_placeholder = get_theme_mod( 'wmf_search_placeholder_copy', __( 'Enter search terms', 'shiro' ) );
 $wmf_404_copy           = get_theme_mod( 'wmf_404_copy' );
-$wmf_404_search_text    = get_theme_mod( 'wmf_404_search_text', __( 'Or try a search instead', 'wmfoundation' ) );
+$wmf_404_search_text    = get_theme_mod( 'wmf_404_search_text', __( 'Or try a search instead', 'shiro' ) );
 
 wmf_get_template_part( 'template-parts/header/page-noimage', $template_args );
 

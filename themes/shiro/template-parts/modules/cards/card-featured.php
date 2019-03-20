@@ -2,7 +2,7 @@
 /**
  * Featured Post card
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $card_data = wmf_get_template_data();

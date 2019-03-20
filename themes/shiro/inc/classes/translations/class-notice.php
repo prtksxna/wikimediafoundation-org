@@ -2,7 +2,7 @@
 /**
  * Adds publish actions and controls translation status.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Translations;
@@ -115,7 +115,7 @@ class Notice {
 		if ( $this->has_post_in_progress ) {
 			printf(
 				'<div class="notice notice-warning"><p>%s</p></div>',
-				esc_html__( 'There is a translation in progress for this content.', 'wmfoundation' )
+				esc_html__( 'There is a translation in progress for this content.', 'shiro' )
 			);
 		}
 	}
@@ -129,7 +129,7 @@ class Notice {
 	 */
 	public static function cpt_columns( $columns ) {
 		if ( wmf_is_main_site() ) {
-			$columns['translation_progress'] = __( 'Translation Status', 'wmfoundation' );
+			$columns['translation_progress'] = __( 'Translation Status', 'shiro' );
 		}
 		return $columns;
 	}
@@ -155,12 +155,12 @@ class Notice {
 		if ( $this->has_post_in_progress ) {
 			printf(
 				'<abbr title="%1%s"><span class="dashicons dashicons-lock" style="color: #ff0000;"><span class="screen-reader-text">%1$s</span></span></abbr>',
-				esc_html__( 'There is a translation in progress for this content.', 'wmfoundation' )
+				esc_html__( 'There is a translation in progress for this content.', 'shiro' )
 			);
 		} else {
 			printf(
 				'<abbr title="%1$s"><span class="dashicons dashicons-unlock" style="color: #008000;"><span class="screen-reader-text">%1$s</span></span></abbr>',
-				esc_html__( 'No translations in progress for this content.', 'wmfoundation' )
+				esc_html__( 'No translations in progress for this content.', 'shiro' )
 			);
 		}
 	}

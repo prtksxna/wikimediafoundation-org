@@ -2,7 +2,7 @@
 /**
  * Common Header partial
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $page_header_data = wmf_get_template_data();

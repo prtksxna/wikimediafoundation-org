@@ -2,7 +2,7 @@
 /**
  * Adds Header for single profile pages.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 $profile_header_data = wmf_get_template_data();

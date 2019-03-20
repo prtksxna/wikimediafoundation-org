@@ -2,7 +2,7 @@
 /**
  * Fieldmanager Fields for Profile Post Type
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**
@@ -11,43 +11,43 @@
 function wmf_profile_fields() {
 	$last_name = new Fieldmanager_Textfield(
 		array(
-			'label'       => __( 'Last Name', 'wmfoundation' ),
-			'description' => __( 'This field is required to enable correct sorting via last name.', 'wmfoundation' ),
+			'label'       => __( 'Last Name', 'shiro' ),
+			'description' => __( 'This field is required to enable correct sorting via last name.', 'shiro' ),
 			'name'        => 'last_name',
 		)
 	);
 
-	$last_name->add_meta_box( __( 'Sorting', 'wmfoundation' ), 'profile', 'normal', 'high' );
+	$last_name->add_meta_box( __( 'Sorting', 'shiro' ), 'profile', 'normal', 'high' );
 
 	$contact_links = new Fieldmanager_Group(
 		array(
-			'label'          => __( 'Contact Link', 'wmfoundation' ),
+			'label'          => __( 'Contact Link', 'shiro' ),
 			'name'           => 'contact_links',
-			'add_more_label' => __( 'Add Contact Link', 'wmfoundation' ),
+			'add_more_label' => __( 'Add Contact Link', 'shiro' ),
 			'sortable'       => true,
 			'limit'          => 0,
 			'children'       => array(
-				'title' => new Fieldmanager_Textfield( __( 'Link Title', 'wmfoundation' ) ),
-				'link'  => new Fieldmanager_Link( __( 'Link', 'wmfoundation' ) ),
+				'title' => new Fieldmanager_Textfield( __( 'Link Title', 'shiro' ) ),
+				'link'  => new Fieldmanager_Link( __( 'Link', 'shiro' ) ),
 			),
 		)
 	);
 
-	$contact_links->add_meta_box( __( 'List of Contact Links', 'wmfoundation' ), 'profile' );
+	$contact_links->add_meta_box( __( 'List of Contact Links', 'shiro' ), 'profile' );
 
 	$info = new Fieldmanager_Group(
 		array(
 			'name'           => 'profile_info',
-			'label'          => __( 'Profile Info', 'wmfoundation' ),
+			'label'          => __( 'Profile Info', 'shiro' ),
 			'serialize_data' => false,
 			'add_to_prefix'  => false,
 			'children'       => array(
-				'profile_role'     => new Fieldmanager_Textfield( __( 'Role', 'wmfoundation' ) ),
-				'profile_featured' => new Fieldmanager_Checkbox( __( 'Featured?', 'wmfoundation' ) ),
+				'profile_role'     => new Fieldmanager_Textfield( __( 'Role', 'shiro' ) ),
+				'profile_featured' => new Fieldmanager_Checkbox( __( 'Featured?', 'shiro' ) ),
 			),
 		)
 	);
-	$info->add_meta_box( __( 'Profile Info', 'wmfoundation' ), 'profile' );
+	$info->add_meta_box( __( 'Profile Info', 'shiro' ), 'profile' );
 
 	$user = new Fieldmanager_Autocomplete(
 		array(
@@ -61,7 +61,7 @@ function wmf_profile_fields() {
 			),
 		)
 	);
-	$user->add_meta_box( __( 'Connected User', 'wmfoundation' ), 'profile' );
+	$user->add_meta_box( __( 'Connected User', 'shiro' ), 'profile' );
 }
 add_action( 'fm_post_profile', 'wmf_profile_fields' );
 
@@ -96,10 +96,10 @@ function wmf_role_fields() {
 	$button = new Fieldmanager_Group(
 		array(
 			'name'     => 'role_button',
-			'label'    => __( 'Button', 'wmfoundation' ),
+			'label'    => __( 'Button', 'shiro' ),
 			'children' => array(
-				'text' => new Fieldmanager_Textfield( __( 'Button Text', 'wmfoundation' ) ),
-				'link' => new Fieldmanager_Link( __( 'Button Link', 'wmfoundation' ) ),
+				'text' => new Fieldmanager_Textfield( __( 'Button Text', 'shiro' ) ),
+				'link' => new Fieldmanager_Link( __( 'Button Link', 'shiro' ) ),
 			),
 		)
 	);

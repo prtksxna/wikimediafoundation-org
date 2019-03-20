@@ -2,7 +2,7 @@
 /**
  * Walker class for making span only output.
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 namespace WMF\Walkers;

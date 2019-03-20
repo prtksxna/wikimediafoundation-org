@@ -2,7 +2,7 @@
 /**
  * Fieldmanager Fields for Off Site Links Module
  *
- * @package wmfoundation
+ * @package shiro
  */
 
 /**
@@ -17,18 +17,18 @@ function wmf_links_fields() {
 		array(
 			'name'     => 'off_site_links',
 			'children' => array(
-				'heading' => new Fieldmanager_Textfield( __( 'Section Heading', 'wmfoundation' ) ),
+				'heading' => new Fieldmanager_Textfield( __( 'Section Heading', 'shiro' ) ),
 				'links'   => new Fieldmanager_Group(
 					array(
-						'add_more_label' => __( 'Add Link', 'wmfoundation' ),
+						'add_more_label' => __( 'Add Link', 'shiro' ),
 						'sortable'       => true,
 						'limit'          => 0,
 						'children'       => array(
-							'heading' => new Fieldmanager_Textfield( __( 'Heading', 'wmfoundation' ) ),
-							'uri'     => new Fieldmanager_Link( __( 'URI', 'wmfoundation' ) ),
+							'heading' => new Fieldmanager_Textfield( __( 'Heading', 'shiro' ) ),
+							'uri'     => new Fieldmanager_Link( __( 'URI', 'shiro' ) ),
 							'content' => new Fieldmanager_RichTextArea(
 								array(
-									'label'           => __( 'Content', 'wmfoundation' ),
+									'label'           => __( 'Content', 'shiro' ),
 									'buttons_1'       => array( 'bold', 'italic', 'strikethrough', 'underline' ),
 									'buttons_2'       => array(),
 									'editor_settings' => array(
@@ -44,7 +44,7 @@ function wmf_links_fields() {
 			),
 		)
 	);
-	$links->add_meta_box( __( 'Off Site Links', 'wmfoundation' ), array( 'page', 'post', 'profile' ) );
+	$links->add_meta_box( __( 'Off Site Links', 'shiro' ), array( 'page', 'post', 'profile' ) );
 }
 add_action( 'fm_post_post', 'wmf_links_fields' );
 add_action( 'fm_post_page', 'wmf_links_fields' );
