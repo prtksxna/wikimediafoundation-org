@@ -32,7 +32,7 @@ $wmf_translations         = wmf_get_translations();
 
 		<!-- TODO This is the texture on the header -->
 		<!-- <?php get_template_part( 'template-parts/header/background' ); ?> -->
-		<?php if ( false !== $wmf_translations ) : ?>
+		<?php if ( false !== $wmf_translations && false ) : ?>
 			<div class="translation-bar">
 			<div class="translation-bar-inner mw-1360">
 				<div class="translation-icon">

@@ -99,7 +99,7 @@ $header-bp-mw: 1049px;
 
 		&--short {
 			min-height: auto;
-			padding-bottom: rem(340);
+			//padding-bottom: rem(340);
 
 			// TODO: Take header height and header-inner height to auto.
 			.header-inner {
@@ -188,7 +188,6 @@ $header-bp-mw: 1049px;
 			.header-content {
 				position: relative;
 				z-index: 9;
-				margin-top: 150px;
 
 				h2 {
 					border-bottom: 3px solid $wmui-color-base0;
@@ -302,6 +301,7 @@ $header-bp-mw: 1049px;
 	.header-content {
 		position: relative;
 		z-index: 2;
+		margin-top: 150px;
 	}
 
 	.eyebrow {

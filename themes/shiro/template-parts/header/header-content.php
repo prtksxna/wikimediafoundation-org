@@ -56,7 +56,7 @@ $allowed_tags['time'] = true;
 				<h1><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
 			</div>
 			<div class="page-intro-text module-mu w-50p">
-				<?php the_content(); ?>
+				<!-- <?php the_content(); ?> -->
 			</div>
 		</div>
 	<?php } ?>
