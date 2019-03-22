@@ -17,6 +17,10 @@ $meta                 = ! empty( $page_header_data['page_meta'] ) ? $page_header
 $allowed_tags         = wp_kses_allowed_html( 'post' );
 $allowed_tags['time'] = true;
 
+$wmf_translation_selected = get_theme_mod( 'wmf_selected_translation_copy', __( 'Languages', 'shiro' ) );
+$wmf_translations         = wmf_get_translations();
+
+
 ?>
 
 <div class="header-content mar-bottom_lg">
@@ -84,3 +88,40 @@ $allowed_tags['time'] = true;
 		</div>
 	<?php endif; ?>
 </div>
+
+<?php if ( is_front_page() ) : ?>
+	<?php if ( false !== $wmf_translations ) : ?>
+		<div class="translation-bar">
+		<div class="translation-bar-inner mw-980">
+			<ul class="list-inline">
+			<?php foreach ( $wmf_translations as $wmf_index => $wmf_translation ) : ?>
+				<?php
+				if ( false !== strpos( $wmf_translation['uri'], '/master-translation/' ) ) {
+					continue; // This site shouldn't show. It's for admin functionality only.
+				}
+				?>
+				<?php if ( 0 !== $wmf_index ) : ?>
+				<li class="divider">&middot;</li>
+				<?php endif; ?>
+				<li>
+					<?php if ( $wmf_translation['selected'] ) : ?>
+					<span><?php echo esc_html( $wmf_translation['name'] ); ?></span>
+					<?php else : ?>
+					<a href="<?php echo esc_url( $wmf_translation['uri'] ); ?>"><?php echo esc_html( $wmf_translation['name'] ); ?></a>
+					<?php endif; ?>
+				</li>
+			<?php endforeach; ?>
+			</ul>
+
+			<?php if ( count( $wmf_translations ) > 10 ) : ?>
+			<div class="arrow-wrap">
+				<span>
+					<span class="elipsis">...</span>
+					<?php wmf_show_icon( 'trending', 'icon-turquoise material' ); ?>
+				</span>
+			</div>
+			<?php endif; ?>
+		</div>
+	</div>
+	<?php endif; ?>
+<?php endif; ?>

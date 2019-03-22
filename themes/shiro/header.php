@@ -32,40 +32,6 @@ $wmf_translations         = wmf_get_translations();
 
 		<!-- TODO This is the texture on the header -->
 		<!-- <?php get_template_part( 'template-parts/header/background' ); ?> -->
-		<?php if ( false !== $wmf_translations ) : ?>
-			<div class="translation-bar">
-			<div class="translation-bar-inner mw-980">
-				<ul class="list-inline">
-				<?php foreach ( $wmf_translations as $wmf_index => $wmf_translation ) : ?>
-					<?php
-					if ( false !== strpos( $wmf_translation['uri'], '/master-translation/' ) ) {
-						continue; // This site shouldn't show. It's for admin functionality only.
-					}
-					?>
-					<?php if ( 0 !== $wmf_index ) : ?>
-					<li class="divider">&middot;</li>
-					<?php endif; ?>
-					<li>
-						<?php if ( $wmf_translation['selected'] ) : ?>
-						<span><?php echo esc_html( $wmf_translation['name'] ); ?></span>
-						<?php else : ?>
-						<a href="<?php echo esc_url( $wmf_translation['uri'] ); ?>"><?php echo esc_html( $wmf_translation['name'] ); ?></a>
-						<?php endif; ?>
-					</li>
-				<?php endforeach; ?>
-				</ul>
-
-				<?php if ( count( $wmf_translations ) > 10 ) : ?>
-				<div class="arrow-wrap">
-					<span>
-						<span class="elipsis">...</span>
-						<?php wmf_show_icon( 'trending', 'icon-turquoise material' ); ?>
-					</span>
-				</div>
-				<?php endif; ?>
-			</div>
-		</div>
-		<?php endif; ?>
 
 		<div class="top-nav">
 			<div class="site-main-nav flex flex-medium flex-align-center mw-980">

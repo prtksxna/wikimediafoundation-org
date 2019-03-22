@@ -10,8 +10,16 @@ $translation-label-width: rem(180);
 	z-index: 9;
   // box-shadow: 1px 1px 9px rgba(0,0,0,0.2);
 	height: 45px;
-	border-top: 1px solid $wmui-color-base30;
-	border-bottom: 1px solid $wmui-color-base70;
+	border-top: 1px solid $wmui-color-base70;
+	border-bottom: 1px solid $wmui-color-base80;
+	margin-bottom: 5rem;
+
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
 
 	@media (min-width: $medium-bp) {
 		height: $translation-height;
