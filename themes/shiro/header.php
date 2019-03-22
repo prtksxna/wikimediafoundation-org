@@ -32,14 +32,9 @@ $wmf_translations         = wmf_get_translations();
 
 		<!-- TODO This is the texture on the header -->
 		<!-- <?php get_template_part( 'template-parts/header/background' ); ?> -->
-		<?php if ( false !== $wmf_translations && false ) : ?>
+		<?php if ( false !== $wmf_translations ) : ?>
 			<div class="translation-bar">
-			<div class="translation-bar-inner mw-1360">
-				<div class="translation-icon">
-					<?php wmf_show_icon( 'translate', 'material icon-turquoise' ); ?>
-					<span class="bold"><?php echo esc_html( $wmf_translation_selected ); ?>:</span>
-				</div>
-
+			<div class="translation-bar-inner mw-980">
 				<ul class="list-inline">
 				<?php foreach ( $wmf_translations as $wmf_index => $wmf_translation ) : ?>
 					<?php

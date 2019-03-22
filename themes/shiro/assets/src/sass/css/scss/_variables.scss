@@ -17,6 +17,7 @@ $color-black: #212025;
 $color-white: #fff;
 
 $wmui-color-base0: #000;
+$wmui-color-base20: #54595d;
 $wmui-color-base30: #72777d;
 $wmui-color-base70: #c8ccd1;
 $wmui-color-base80: #eaecf0;
@@ -24,7 +25,7 @@ $wmui-color-base90: #f8f9fa;
 $link-highlight-color: #c1bffa;
 $cta-bg-color: #fdf3f8;
 $cta-color: #e33a72;
-$footer-gray: #54595d;
+$footer-gray: $wmui-color-base20;
 
 // Grid
 $xlarge-bp: 1400px;

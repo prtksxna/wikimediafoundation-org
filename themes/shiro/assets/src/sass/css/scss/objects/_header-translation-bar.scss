@@ -1,16 +1,17 @@
 // Header translation bar
 
 $translation-height: rem(60);
-$translation-font: rem(22);
+$translation-font: rem(14);
 $translation-label-width: rem(180);
 
 .translation-bar {
 	position: relative;
 	color: $color-turquoise;
 	z-index: 9;
-	background: $color-dark-dark-blue;
   // box-shadow: 1px 1px 9px rgba(0,0,0,0.2);
 	height: 45px;
+	border-top: 1px solid $wmui-color-base30;
+	border-bottom: 1px solid $wmui-color-base70;
 
 	@media (min-width: $medium-bp) {
 		height: $translation-height;
@@ -28,7 +29,6 @@ $translation-label-width: rem(180);
 
 	ul {
 		overflow: hidden;
-		padding-left: $translation-label-width;
 		@include paddingTop(11, 17, $medium-bp);
 
 		&:focus {
@@ -41,12 +41,15 @@ $translation-label-width: rem(180);
 
 	li {
 		white-space: nowrap;
-		@include paddingBottom(7, 13, $medium-bp);
+		@include paddingBottom(7, 7, $medium-bp);
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
 		margin-bottom: 0;
 		margin-right: 2rem;
-		border-bottom: 4px solid rgba(0,0,0,0);
+		border-bottom: 3px solid rgba(0,0,0,0);
 		transition: 0.3s all;
-		color: $color-white;
+		font-weight: bold;
+		color: $wmui-color-base20;
 		@media (min-width: $header-bp) {
 			font-size: $translation-font;
 		}
@@ -56,15 +59,15 @@ $translation-label-width: rem(180);
 		}
 
 		&.hover-underline {
-			border-color: $color-white;
+			border-color: $color-blue;
 		}
 
 		&.is-selected {
-			font-weight: bold;
-			border-color: $color-white;
+			color: $color-blue;
+			border-color: $color-blue;
 
 			&.hover-underline {
-				border-color: $color-white;
+				border-color: $color-blue;
 			}
 		}
 	}
