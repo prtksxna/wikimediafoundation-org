@@ -57,19 +57,19 @@ $image = wp_get_attachment_image_src( $image_id, 'image_16x19_large' );
 			<?php endif; ?>
 
 			<div class="post-meta ">
-				<?php if ( ! empty( $authors ) ) : ?>
-				<span>
-					<?php echo wp_kses_post( $authors ); ?>
-				</span>
-				<?php endif; ?>
-
 				<?php if ( ! empty( $date ) ) : ?>
 				<time>
 					<?php echo esc_html( $date ); ?>
 				</time>
 				<?php endif; ?>
+				<?php if ( ! empty( $authors ) ) : ?>
+				<span>
+					<?php echo wp_kses_post( $authors ); ?>
+				</span>
+				<?php endif; ?>
 			</div>
 
+			<a href="<?php echo esc_url( $link ); ?>" class="arrow-link">Read more</a>
 
 		</div>
 

@@ -24,8 +24,15 @@
   }
 
   .post-meta {
-
     color: $color-gray;
+    @include marginBottom(16, 24, $medium-bp);
+    @include font-size( 13, 13 );
+    font-weight: bold;
+
+    span, time {
+      display: block;
+      margin: 0;
+    }
 
     a {
       color: $color-blue;
