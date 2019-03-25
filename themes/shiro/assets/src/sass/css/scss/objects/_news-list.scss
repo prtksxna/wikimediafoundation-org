@@ -96,7 +96,8 @@
   }
 
   .h3 {
-    @include marginBottom(8, 16, $medium-bp);
+    @include marginBottom(4, 4, $medium-bp);
+    @include font-size( 20, 18 );
 
     a {
       transition: 0.3s all;
@@ -113,6 +114,13 @@
 
   .post-meta {
     @include marginBottom(16, 24, $medium-bp);
+    @include font-size( 13, 13 );
+    font-weight: bold;
+
+    span, time {
+      display: block;
+      margin: 0;
+    }
   }
 }
 
