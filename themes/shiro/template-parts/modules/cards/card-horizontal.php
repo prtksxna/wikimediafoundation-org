@@ -24,13 +24,21 @@ $image_size = true === $sidebar ? 'image_4x5_large' : 'image_4x3_large';
 ?>
 <div class="card card-horizontal <?php echo esc_attr( $sidebar ? 'w-75p' : '' ); ?>">
 	<?php if ( ! empty( $image_id ) ) : ?>
-		<a href="<?php echo esc_url( $link ); ?>" class="w-50p img-container">
+		<a href="<?php echo esc_url( $link ); ?>" class="w-50p img-container rounded shadow">
 			<?php echo wp_get_attachment_image( $image_id, $image_size ); ?>
 		</a>
 	<?php endif; ?>
 
 	<div class="card-content <?php echo esc_attr( $image_id ? 'w-50p' : '' ); ?>">
 		<div class="module-mu">
+			<?php if ( ! empty( $title ) ) : ?>
+			<h3 class="h3">
+				<a href="<?php echo esc_url( $link ); ?>">
+					<?php echo esc_html( $title ); ?>
+				</a>
+			</h3>
+			<?php endif; ?>
+
 			<?php if ( ! empty( $categories ) ) : ?>
 			<h4>
 				<?php
@@ -41,12 +49,10 @@ $image_size = true === $sidebar ? 'image_4x5_large' : 'image_4x3_large';
 			</h4>
 			<?php endif; ?>
 
-			<?php if ( ! empty( $title ) ) : ?>
-			<h3 class="h3">
-				<a href="<?php echo esc_url( $link ); ?>">
-					<?php echo esc_html( $title ); ?>
-				</a>
-			</h3>
+			<?php if ( ! empty( $excerpt ) ) : ?>
+			<div class="wysiwyg">
+				<?php echo wp_kses_post( wpautop( $excerpt ) ); ?>
+			</div>
 			<?php endif; ?>
 
 			<div class="post-meta ">
@@ -62,12 +68,6 @@ $image_size = true === $sidebar ? 'image_4x5_large' : 'image_4x3_large';
 				</time>
 				<?php endif; ?>
 			</div>
-
-			<?php if ( ! empty( $excerpt ) ) : ?>
-			<div class="wysiwyg">
-				<?php echo wp_kses_post( wpautop( $excerpt ) ); ?>
-			</div>
-			<?php endif; ?>
 		</div>
 	</div>
 </div>

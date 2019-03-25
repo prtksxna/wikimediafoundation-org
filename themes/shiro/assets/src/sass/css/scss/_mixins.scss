@@ -30,12 +30,13 @@
 
 @mixin category() {
 	text-transform: uppercase;
-	background: $color-turquoise;
-	color: #000;
+	background: $color-blue;
+	color: $color-white;
 	display: inline-block;
+	border-radius: 5px;
 	padding: 5px;
-	box-shadow: 5px 0 0 $color-turquoise, -5px 0 0 $color-turquoise;
-	@include font-size(18, 14);
+	@include font-size(12, 10);
+	font-weight: 500;
 	margin-bottom: 10px;
 }
 

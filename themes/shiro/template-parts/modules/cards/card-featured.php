@@ -25,21 +25,11 @@ $image = wp_get_attachment_image_src( $image_id, 'image_16x19_large' );
 <div class="card">
 	<?php if ( ! empty( $image_id ) ) : ?>
 		<div class="bg-img-container">
-			<div class="bg-img" style="background-image: url(<?php echo esc_url( $image[0] ); ?>);"></div>
+			<div class="bg-img rounded" style="background-image: url(<?php echo esc_url( $image[0] ); ?>);"></div>
 		</div>
 	<?php endif; ?>
 
 	<div class="card-content w-55p module-mu">
-		<?php if ( ! empty( $categories ) ) : ?>
-		<h4 class="category-container">
-			<?php
-			foreach ( $categories as $category ) {
-				printf( '<a class="category mar-right" href="%1$s">%2$s</a> ', esc_url( get_category_link( $category->term_id ) ), esc_html( $category->name ) );
-			}
-			?>
-		</h4>
-		<?php endif; ?>
-
 		<div class="card-content-text">
 
 			<?php if ( ! empty( $title ) ) : ?>
@@ -48,6 +38,22 @@ $image = wp_get_attachment_image_src( $image_id, 'image_16x19_large' );
 					<?php echo esc_html( $title ); ?>
 				</a>
 			</h3>
+			<?php endif; ?>
+
+			<?php if ( ! empty( $categories ) ) : ?>
+			<h4 class="category-container">
+				<?php
+				foreach ( $categories as $category ) {
+					printf( '<a class="category mar-right" href="%1$s">%2$s</a> ', esc_url( get_category_link( $category->term_id ) ), esc_html( $category->name ) );
+				}
+				?>
+			</h4>
+			<?php endif; ?>
+
+			<?php if ( ! empty( $excerpt ) ) : ?>
+			<div class="cta-footer">
+				<?php echo wp_kses_post( wpautop( $excerpt ) ); ?>
+			</div>
 			<?php endif; ?>
 
 			<div class="post-meta ">
@@ -64,11 +70,6 @@ $image = wp_get_attachment_image_src( $image_id, 'image_16x19_large' );
 				<?php endif; ?>
 			</div>
 
-			<?php if ( ! empty( $excerpt ) ) : ?>
-			<div class="cta-footer">
-				<?php echo wp_kses_post( wpautop( $excerpt ) ); ?>
-			</div>
-			<?php endif; ?>
 
 		</div>
 
