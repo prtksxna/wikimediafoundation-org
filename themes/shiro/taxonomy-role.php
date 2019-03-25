@@ -52,7 +52,7 @@ $post_list = wmf_get_posts_by_child_roles( $current_term_id );
 
 	?>
 
-<div class="mw-1360 mod-margin-bottom flex flex-medium">
+<div class="mw-980 mod-margin-bottom flex flex-medium">
 	<div class="w-68p">
 		<?php if ( ! empty( $display_intro ) ) : ?>
 		<div class="page-intro mod-margin-bottom wysiwyg">
