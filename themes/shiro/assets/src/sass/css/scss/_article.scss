@@ -181,6 +181,7 @@ article {
 	&.article-img-main {
 		position: relative;
 		overflow: hidden;
+		max-height: 75vh;
 
 		@media (min-width: 640px) {
 			margin-top: -125px;
