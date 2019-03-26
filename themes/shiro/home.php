@@ -26,7 +26,7 @@ wmf_get_template_part( 'template-parts/header/page-noimage', $template_args );
 ?>
 
 <div class="w-100p cta mod-margin-bottom cta-secondary img-left-content-right cta-news header-featured-news no-duotone">
-	<div class="mw-1360">
+	<div class="mw-980">
 
 	<?php
 	$post = get_post( $featured_post_id );
@@ -54,7 +54,7 @@ wmf_get_template_part( 'template-parts/header/page-noimage', $template_args );
 <?php get_template_part( 'template-parts/category-list' ); ?>
 
 <div class="w-100p news-list-container news-card-list mod-margin-bottom">
-	<div class="mw-1360">
+	<div class="mw-980">
 		<?php if ( have_posts() ) : ?>
 			<div class="card-list-container">
 			<?php
