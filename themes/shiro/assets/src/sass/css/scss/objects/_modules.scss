@@ -375,6 +375,8 @@ a.hover-img-zoom {
 	width: 120px;
 	margin-left: -120px;
 	float: left;
+	position: sticky;
+	top: 120px;
 
 	ul {
 		list-style: none;
