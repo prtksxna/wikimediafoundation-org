@@ -28,15 +28,17 @@ $meta                 = ! empty( $page_header_data['page_meta'] ) ? $page_header
       </h2>
     <?php endif; ?>
 
-    <?php if ( ! empty( $title ) ) : ?>
-      <h1><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
-    <?php endif; ?>
+    <div class="mw-784">
+      <?php if ( ! empty( $title ) ) : ?>
+        <h1><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
+      <?php endif; ?>
 
-    <?php if ( ! empty( $meta ) ) : ?>
-      <div class="post-meta h4">
-        <?php echo wp_kses( $meta, $allowed_tags ); ?>
-      </div>
-    <?php endif; ?>
+      <?php if ( ! empty( $meta ) ) : ?>
+        <div class="post-meta h4">
+          <?php echo wp_kses( $meta, $allowed_tags ); ?>
+        </div>
+      <?php endif; ?>
+    </div>
   </div>
 </div>
 

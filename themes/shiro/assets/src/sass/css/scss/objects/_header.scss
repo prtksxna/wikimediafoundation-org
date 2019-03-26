@@ -390,6 +390,7 @@ $header-bp-mw: 1049px;
 
 .header-single {
 	margin-top: 150px;
+	width: 100%;
 
 	h1 {
 		@include font-size(38, 32);

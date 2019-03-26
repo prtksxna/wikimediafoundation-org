@@ -31,12 +31,12 @@ while ( have_posts() ) {
 	?>
 
 	<?php if ( ! empty( $intro ) ) : ?>
-	<div class="article-title mw-980">
+	<div class="article-title mw-784">
 		<h3 class="h3"><?php echo wp_kses_post( $intro ); ?></h3>
 	</div>
 	<?php endif; ?>
 
-	<article class="mw-980 wysiwyg">
+	<article class="mw-784 wysiwyg">
 		<?php get_template_part( 'template-parts/header/social-aside' ); ?>
 		<?php the_content(); ?>
 	</article>
