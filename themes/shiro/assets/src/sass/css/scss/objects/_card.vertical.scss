@@ -61,3 +61,20 @@
 
   }
 }
+
+.card-vertical {
+  &.card-blog {
+    .img-container {
+      max-height: 18rem;
+      margin-bottom: 2rem;
+    }
+
+    .card-content {
+      margin-right: 0;
+    }
+
+    .post-meta {
+      margin-top: 1rem;
+    }
+  }
+}

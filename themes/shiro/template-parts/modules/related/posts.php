@@ -18,9 +18,9 @@ $description      = ! empty( $template_data['description'] ) ? $template_data['d
 ?>
 
 <div class="w-100p news-list-container mod-margin-bottom">
-	<div class="mw-1360">
+	<div class="mw-980">
 		<?php if ( ! empty( $title ) ) : ?>
-		<h3 class="h3 color-gray">
+		<h3 class="h3 color-gray uppercase">
 			<?php echo esc_html( $title ); ?>
 			<?php if ( ! empty( $translated_title ) ) : ?>
 				— <span><?php echo esc_html( $translated_title ); ?></span>
@@ -35,12 +35,12 @@ $description      = ! empty( $template_data['description'] ) ? $template_data['d
 		<?php endif; ?>
 
 
-		<div class="card-list-container alternate-img">
+		<div class="flex flex-medium flex-wrap-reverse">
 			<?php
 			foreach ( $template_data['posts'] as $post ) :
 				setup_postdata( $post );
 				wmf_get_template_part(
-					'template-parts/modules/cards/card-horizontal', array(
+					'template-parts/modules/cards/card-vertical', array(
 						'title'      => get_the_title(),
 						'link'       => get_the_permalink(),
 						'image_id'   => get_post_thumbnail_id(),

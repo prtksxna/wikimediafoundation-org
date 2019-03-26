@@ -109,6 +109,10 @@
 		flex-wrap: wrap;
 	}
 
+	&.flex-wrap-reverse {
+		flex-wrap: wrap-reverse;
+	}
+
 	&.flex-space-between {
 		justify-content: space-between;
 	}
