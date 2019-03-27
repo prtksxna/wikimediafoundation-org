@@ -389,6 +389,59 @@ $header-bp-mw: 1049px;
 			}
 		}
 	}
+
+	.ungrid {
+		background: #fffd33;
+		padding: 2.5rem 0;
+		width: 100vw;
+		position: relative;
+		left: 50%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+		max-height: 24rem;
+
+		.fifty-fifty {
+			min-height: 17rem;
+		}
+
+		.h2.eyebrow {
+			text-transform: uppercase;
+			border: none;
+			color: $color-blue;
+			@include font-size( 24, 22);
+		}
+
+		h1 {
+			font-weight: bold;
+			@include font-size( 40, 36);
+		}
+
+		.bg-img {
+			height: 100%;
+			background-size: cover;
+		}
+
+		.content {
+			position: relative;
+			background: #fff;
+			padding: 1.5rem 2rem;
+			width: 50%;
+			margin-left: 40%;
+			margin-top: -5rem;
+			p {
+				@include font-size(20, 20);
+			}
+		}
+	}
+
+	&.header-pink .ungrid {
+		background: #fbe9f1;
+
+		.h2.eyebrow {
+			color: #f61971;
+		}
+	}
 }
 
 .header-single {
