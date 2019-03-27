@@ -17,13 +17,22 @@ $meta                 = ! empty( $page_header_data['page_meta'] ) ? $page_header
 $allowed_tags         = wp_kses_allowed_html( 'post' );
 $allowed_tags['time'] = true;
 
+$image            = ! empty( $page_header_data['image'] ) ? $page_header_data['image'] : '';
+$bg_opts          = wmf_get_background_image();
+$bg_color         = $bg_opts['color'] ? 'pink' : 'blue';
+
 $wmf_translation_selected = get_theme_mod( 'wmf_selected_translation_copy', __( 'Languages', 'shiro' ) );
 $wmf_translations         = wmf_get_translations();
 
-
+$single_title = '';
+if ( ! empty( $h2_title ) xor ! empty( $title )) {
+	$single_title = ! empty( $h2_title ) ? $h2_title : $title;
+}
 ?>
 
-<div class="header-content mar-bottom_lg">
+<div class="header-content">
+
+	<!-- Top back link -->
 	<?php if ( ! empty( $h4_title ) ) : ?>
 	<h2 class="h4 eyebrow">
 		<?php if ( ! empty( $h4_link ) ) : ?>
@@ -36,33 +45,59 @@ $wmf_translations         = wmf_get_translations();
 	</h2>
 	<?php endif; ?>
 
-	<?php if ( is_home() && ! empty( $h2_title ) ) : ?>
+	<!-- Blog home  -->
+	<?php if ( is_home() && ! empty( $h2_title ) ) { ?>
 		<h2 class="h1 eyebrow"><?php echo esc_html( $h2_title ); ?></h2>
-	<?php elseif ( ! empty( $h2_title ) ) : ?>
-		<h2 class="h2 eyebrow">
-			<?php if ( ! empty( $h2_link ) ) : ?>
-			<a href="<?php echo esc_url( $h2_link ); ?>">
-				<?php endif; ?>
-				<?php echo esc_html( $h2_title ); ?>
-				<?php if ( ! empty( $h2_link ) ) : ?>
-			</a>
-		<?php endif; ?>
-		</h2>
-	<?php endif; ?>
+	<?php } ?>
 
+	<!-- Site front page -->
 	<?php if ( is_front_page() ) { ?>
 		<?php if ( ! empty( $title ) ) : ?>
 			<h1 class="mar-bottom w-50p"><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
 		<?php endif; ?>
-	<?php } else { ?>
-		<div class="flex flex-medium page-landing fifty-fifty">
-			<div class="module-mu w-50p">
-				<h1><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
+	<?php } ?>
+
+	<?php if ( ! is_front_page() && ! is_home() ) { ?>
+		<!-- h2 or title as heading -->
+		<?php if ( ! empty( $single_title ) ) { ?>
+			<h2 class="h2 eyebrow">
+				<?php echo esc_html( $single_title ); ?>
+			</h2>
+			<!-- TODO: Use $image here if available, profile page? -->
+		<?php } ?>
+
+		<!-- h2 and title, without image -->
+		<?php if ( empty( $image) && !empty($h2_title) && !empty($title)) { ?>
+			<h2 class="h2 eyebrow">
+				<?php echo esc_html( $h2_title ); ?>
+			</h2>
+			<div class="flex flex-medium page-landing fifty-fifty">
+				<div class="module-mu w-50p">
+					<h1><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
+				</div>
+				<div class="page-intro-text module-mu w-50p">
+					<!-- No content here -->
+				</div>
 			</div>
-			<div class="page-intro-text module-mu w-50p">
-				<!-- <?php the_content(); ?> -->
+		<?php } ?>
+
+		<!-- h2 and title, with image -->
+		<?php if ( !empty( $image) && !empty($h2_title) && !empty($title)) { ?>
+			<h2 class="h2 eyebrow">
+				<?php echo esc_html( $h2_title ); ?>
+			</h2>
+			<div class="flex flex-medium page-landing fifty-fifty">
+				<div class="module-mu w-50p">
+					<h1><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
+				</div>
+				<div class="page-intro-text module-mu w-50p">
+					<div class="bg-img" style="background-image: url(<?php echo esc_url( $image ); ?>);">
+						<h1>fixme</h1>
+					</div>
+					<?php the_content(); ?>
+				</div>
 			</div>
-		</div>
+		<?php } ?>
 	<?php } ?>
 
 	<?php if ( ! empty( $alt_title ) ) : ?>

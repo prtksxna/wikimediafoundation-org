@@ -59,6 +59,11 @@ p {
 	line-height: 1.466;
 }
 
+.article-main p {
+	@include font-size(18, 13);
+	line-height: 1.72;
+}
+
 .p {
 	@extend p;
 }

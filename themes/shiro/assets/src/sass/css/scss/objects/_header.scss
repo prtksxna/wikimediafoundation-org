@@ -12,7 +12,7 @@ $header-bp-mw: 1049px;
 
 .header-default {
 	position: relative;
-	@include marginBottom(40, 80, $medium-bp);
+	@include marginBottom(0, 0, $medium-bp);
 
 	@media (min-width: $header-bp) and (max-height: 930px) {
 		// TODO remove all min-heights in this stylesheet?
@@ -204,13 +204,13 @@ $header-bp-mw: 1049px;
 
 
 		&--photo-centered {
-			margin-bottom: rem(75);
+			//margin-bottom: rem(75);
 			@media (min-width: $large-bp) {
-        margin-bottom: rem(400);
+        //margin-bottom: rem(400);
 	  }
 
 			@media (min-width: $medium-bp) {
-				margin-bottom: rem(100);
+				//margin-bottom: rem(100);
 			}
 
 			.photo-aspect-ratio  {
@@ -302,6 +302,7 @@ $header-bp-mw: 1049px;
 		position: relative;
 		z-index: 2;
 		margin-top: 150px;
+		width: 100%;
 	}
 
 	.eyebrow {
@@ -423,7 +424,7 @@ $header-bp-mw: 1049px;
 
 .header-default.header-pink {
   position: relative;
-  @include marginBottom(40, 80, $medium-bp);
+  @include marginBottom(0, 0, $medium-bp);
 
   .header-inner.nav-open {
     background: $color-pink;

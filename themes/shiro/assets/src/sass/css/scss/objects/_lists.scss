@@ -61,6 +61,7 @@
 }
 .toc-link-item {
 	list-style-type: none;
+	margin-left: 0;
 }
 .toc-link {
 	@include font-size(16, 14);
