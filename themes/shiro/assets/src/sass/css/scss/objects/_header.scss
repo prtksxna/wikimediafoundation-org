@@ -421,6 +421,8 @@ $header-bp-mw: 1049px;
 		.bg-img {
 			height: 100%;
 			background-size: cover;
+			background-color: #ffb0dd;
+			background-blend-mode: multiply;
 		}
 
 		.content {
