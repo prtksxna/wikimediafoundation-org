@@ -15,6 +15,8 @@ $rand_translation_title = empty( $template_args['rand_translation_title'] ) ? ''
 
 $has_title = ! empty( $template_args['pre_heading'] ) && ! empty( $template_args['heading'] );
 
+$bg_opts = get_post_meta( get_the_ID(), 'page_header_background', true );
+$ungrid_line_color = isset( $bg_opts['color'] ) && 'pink' === $bg_opts['color'] ? 'pink' : '';
 ?>
 
 <?php if ( $has_title ) : ?>
@@ -28,6 +30,47 @@ $has_title = ! empty( $template_args['pre_heading'] ) && ! empty( $template_args
 		<?php endif; ?>
 	</div>
 <?php endif; ?>
+
+<div class="framing-copy-ungrid mw-980">
+	<div class="ungrid-line <?php echo $ungrid_line_color; ?>"></div>
+	<?php $no_of_modules = count($template_args['modules']); ?>
+
+	<div class="ungrid-top-3">
+		<?php for ($i = 0; $i < 3; $i++) { ?>
+			<div class="ungrid-top-box ungrid-top-box-<?php echo $i; ?>">
+				<code>0<?php echo $i+1; ?></code>
+				<?php wmf_get_template_part( 'template-parts/modules/mu/ungrid', $template_args['modules'][$i] ); ?>
+			</div>
+		<?php } ?>
+	</div>
+
+	<?php if ($no_of_modules === 4) { ?>
+		<h1>dosomething</h1>
+	<?php } ?>
+
+	<?php if ($no_of_modules === 5) { ?>
+		<div class="ungrid-bottom-2">
+			<?php for ($i = 3; $i < 5; $i++) { ?>
+				<div class="ungrid-bottom-box ungrid-bottom-box-<?php echo $i; ?>">
+					<code>0<?php echo $i+1; ?></code>
+					<?php wmf_get_template_part( 'template-parts/modules/mu/ungrid', $template_args['modules'][$i] ); ?>
+				</div>
+			<?php } ?>
+		</div>
+	<?php } ?>
+
+	<?php if ($no_of_modules === 6) { ?>
+		<div class="ungrid-bottom-3">
+			<?php for ($i = 3; $i < 6; $i++) { ?>
+				<div class="ungrid-bottom-box ungrid-bottom-box-<?php echo $i; ?>">
+					<code>0<?php echo $i+1; ?></code>
+					<?php wmf_get_template_part( 'template-parts/modules/mu/ungrid', $template_args['modules'][$i] ); ?>
+				</div>
+			<?php } ?>
+		</div>
+	<?php } ?>
+</div>
+<hr><hr>
 
 	<div class="flex flex-medium flex-wrap mw-980 fifty-fifty mod-margin-bottom">
 	<?php
