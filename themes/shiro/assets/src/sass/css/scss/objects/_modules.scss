@@ -498,6 +498,27 @@ a.hover-img-zoom {
 		}
 	}
 
+	.ungrid-bottom-1 {
+		margin-top: 3rem;
+
+		.ungrid-bottom-box-4 {
+			> div {
+				display: flex;
+				justify-content: space-between;
+
+				.img-container {
+					width: 56%;
+					height: 20rem;
+					margin: 0;
+				}
+
+				.details-container {
+					width: 42%;
+				}
+			}
+		}
+	}
+
 	.ungrid-bottom-2 {
 		display: flex;
 		justify-content: space-between;
