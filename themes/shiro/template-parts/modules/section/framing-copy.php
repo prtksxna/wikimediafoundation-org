@@ -35,7 +35,7 @@ $has_image = get_the_post_thumbnail_url();
 	</div>
 <?php endif; ?>
 
-<?php if ( $has_many_modules && $has_image ) { ?>
+<?php if ( $has_many_modules && $has_image && !is_front_page() ) { ?>
 	<div class="framing-copy-ungrid mw-980">
 		<div class="ungrid-line <?php echo $ungrid_line_color; ?>"></div>
 		<?php $no_of_modules = count($template_args['modules']); ?>
@@ -82,7 +82,7 @@ $has_image = get_the_post_thumbnail_url();
 	</div>
 <?php } ?>
 
-<?php if ( $has_modules && empty( $has_image) ) { ?>
+<?php if ( $has_modules && (empty( $has_image) || is_front_page())) { ?>
 	<div class="flex flex-medium flex-wrap mw-980 fifty-fifty mod-margin-bottom">
 		<?php
 			foreach ( $template_args['modules'] as $module ) {
