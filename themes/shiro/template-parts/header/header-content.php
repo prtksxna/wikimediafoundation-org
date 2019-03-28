@@ -63,7 +63,9 @@ if ( ! empty( $h2_title ) xor ! empty( $title )) {
 			<h2 class="h2 eyebrow">
 				<?php echo esc_html( $single_title ); ?>
 			</h2>
-			<!-- TODO: Use $image here if available, profile page? -->
+			<?php if ( !empty( $image ) ) { ?>
+				<img src="<?php echo esc_url($image)?>" alt="">
+			<?php } ?>
 		<?php } ?>
 
 		<!-- h2 and title, without image -->
