@@ -88,11 +88,11 @@ if ( ! empty( $h2_title ) xor ! empty( $title )) {
 			<div class="ungrid">
 				<div class="mw-980">
 					<?php if ( !empty( $image) && !empty($h2_title) && !empty($title)) { ?>
-						<h2 class="h2 eyebrow">
-							<?php echo esc_html( $h2_title ); ?>
-						</h2>
 						<div class="flex flex-medium page-landing fifty-fifty">
 							<div class="module-mu w-50p">
+								<h2 class="h2 eyebrow">
+									<?php echo esc_html( $h2_title ); ?>
+								</h2>
 								<h1><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
 							</div>
 							<div class="page-intro-text module-mu w-50p" >
