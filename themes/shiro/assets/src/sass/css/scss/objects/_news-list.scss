@@ -1,5 +1,9 @@
 .related-news-container {
-  padding: 4rem 0;
+  padding: 3rem 0;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
 }
 
 .news-categories {
@@ -276,11 +280,14 @@
         margin: 0 auto;
       }
 
+      .card-content {
+        padding-bottom: rem(30);
+      }
+
       .card-heading {
         position: relative;
         z-index: 99;
         transition: 0.3s all;
-        padding-bottom: rem(20);
 
         h3 {
           display: flex;
@@ -302,6 +309,8 @@
         font-weight: bold;
         color: $wmui-color-base30;
         @include font-size(14, 12);
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
       }
     }
   }
