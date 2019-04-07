@@ -264,8 +264,22 @@ $highlight-width: 10px;
   background-color: #ffffff;
   overflow: hidden;
 
+  .card,
+  .card-content {
+    height: 100%;
+  }
+
   .card-content {
     padding: 1.5rem;
+  }
+
+  .stick-to-bottom {
+    position: absolute;
+    bottom: 22px;
+  }
+
+  .mar-bottom {
+    margin-bottom: 2.5rem;
   }
 
   .h2 {

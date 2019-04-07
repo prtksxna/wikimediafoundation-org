@@ -19,7 +19,6 @@ $class = empty( $template_args['class'] ) ? 'img-right-content-left' : $template
 ?>
 <a href="<?php echo esc_url( $template_args['link_uri'] ); ?>">
 	<div class="w-32p mod-margin-bottom_sm focus-block rounded shadow">
-		<div class="">
 			<div class="card">
 				<?php if ( ! empty( $image ) ) : ?>
 				<div class="bg-img-container">
@@ -40,11 +39,10 @@ $class = empty( $template_args['class'] ) ? 'img-right-content-left' : $template
 					<?php endif; ?>
 
 					<?php if ( ! empty( $template_args['link_uri'] ) && ! empty( $template_args['link_text'] ) ) : ?>
-						<a class="arrow-link" href="<?php echo esc_url( $template_args['link_uri'] ); ?>"><?php echo esc_html( $template_args['link_text'] ); ?></a>
+						<a class="arrow-link stick-to-bottom" href="<?php echo esc_url( $template_args['link_uri'] ); ?>"><?php echo esc_html( $template_args['link_text'] ); ?></a>
 					<?php endif; ?>
 
 				</div>
 			</div>
-		</div>
 	</div>
 </a>
