@@ -9,8 +9,7 @@ h1,
 
 h2,
 .h2 {
-	margin-bottom: 3.5rem;
-	@include marginBottom(40, 56, $medium-bp);
+	@include marginBottom(32, 32, $medium-bp);
 	@include font-size(22, 18);
 
 	&.small {
