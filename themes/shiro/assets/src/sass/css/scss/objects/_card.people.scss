@@ -25,7 +25,7 @@
     text-transform: none;
     color: #000;
     @include marginBottom(4, 8, $medium-bp);
-    @include font-size(15, 13);
+    font-size: 1rem;
   }
 
   .person-title {
