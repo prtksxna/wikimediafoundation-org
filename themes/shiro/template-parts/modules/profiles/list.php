@@ -64,16 +64,16 @@ $rand_translation_title               = ! empty( $template_data['rand_translatio
 		</div>
 	</div>
 
-	<div class="mw-980 join-movement">
+	<div class="mw-980">
 		<?php if ( ! empty( $description ) ) : ?>
-		<p class="h3 color-gray mar-bottom_lg join-movement w-68p">
+		<div class="h3 color-gray mar-bottom_lg join-movement w-68p">
 			<?php echo wp_kses_post( $description ); ?>
 			<?php if ( ! empty( $button_label ) && ! empty( $button_link ) ) : ?>
 			<a class="btn btn-blue" href="<?php echo esc_url( $button_link ); ?>">
 				<?php echo esc_html( $button_label ); ?>
 			</a>
 			<?php endif; ?>
-		</p>
+		</div>
 		<?php endif; ?>
 	</div>
 </div>

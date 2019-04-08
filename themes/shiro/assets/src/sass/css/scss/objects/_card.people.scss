@@ -8,10 +8,13 @@
 
 .join-movement {
   text-align: center;
-  @include font-size(18, 16);
-  line-height: 1.6;
   margin: 0 auto;
   color: $color-black;
+
+  p {
+    @include font-size(17, 16);
+    line-height: 1.6;
+  }
 
   .btn {
     margin-top: 1rem;
