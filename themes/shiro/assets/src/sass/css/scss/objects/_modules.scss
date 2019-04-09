@@ -452,12 +452,13 @@ a.hover-img-zoom {
 	margin-bottom: 6rem;
 
 	.ungrid-line {
-		margin-top: -2rem;
+		transition: 333ms margin-top ease, 333ms height ease;
+		margin-top: -32px;
 		margin-left: 7px;
 		margin-bottom: 1rem;
 		z-index: 1000;
 		position: relative;
-		height: 14rem;
+		height: 224px;
 		width: 1px;
 		background: $color-blue;
 

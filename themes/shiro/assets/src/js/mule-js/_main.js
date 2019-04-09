@@ -103,4 +103,34 @@ jQuery(document).ready(function($) {
     }, 2000);
   });
 
+  // Move blocks in the ungrid
+  if ( $('.ungrid').length > 0 ) {
+    var maxHeight = 235;
+    var h1Height = $('.ungrid h1').height();
+    var diffHeight = maxHeight - h1Height;
+    $('.ungrid-line').css( 'margin-top', ( -32 - diffHeight ) );
+
+    var contentHeight = $('.ungrid .content').height() - 80;
+    var ungridLineHeight = 224 + ( -32 - diffHeight );
+    var amountToReduce = 50 - ungridLineHeight;
+
+    if ( contentHeight > 200 ) {
+        amountToReduce += contentHeight - 200;
+    }
+
+
+    $('.ungrid-line').css( 'height', ( 224 + amountToReduce ) );
+  }
+
+  // Pinning nav on scrollTop
+  /* eslint-disable */
+  jQuery(window).on('scroll', function () {
+    if ( jQuery(this).scrollTop() > 0 ) {
+      jQuery('.top-nav').addClass('pinned');
+    } else {
+      jQuery('.top-nav').removeClass('pinned');
+    }
+  })
+  /* eslint-enable */
+
 });
