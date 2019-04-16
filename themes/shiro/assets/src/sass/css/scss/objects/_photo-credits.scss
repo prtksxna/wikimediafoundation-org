@@ -58,6 +58,12 @@
   background-size: cover;
   background-position: center;
   border-radius: 5px;
+
+  @media (max-width: $medium-bp) {
+    width: 5rem;
+    height: 4rem;
+  }
+
 }
 .photo-credit-img {
   height: 100%;
