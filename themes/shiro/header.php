@@ -29,10 +29,6 @@ $wmf_translations         = wmf_get_translations();
 	<a class="skip-link screen-reader-text" href="#menu-header-menu"><?php esc_html_e( 'Skip to navigation', 'shiro' ); ?></a>
 
 	<header class="<?php echo esc_attr( wmf_get_header_container_class() ); ?>" role="banner">
-
-		<!-- TODO This is the texture on the header -->
-		<!-- <?php get_template_part( 'template-parts/header/background' ); ?> -->
-
 		<div class="top-nav">
 			<div class="site-main-nav flex flex-medium flex-align-center mw-980">
 				<div class="logo-container logo-container_lg">
