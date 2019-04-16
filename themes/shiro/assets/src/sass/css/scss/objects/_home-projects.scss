@@ -13,13 +13,6 @@
 .home-project-list-container {
 }
 
-.home-project-list {
-  @media (max-width: $medium-bp) {
-    margin-left: -40px;
-    margin-right: -40px;
-  }
-}
-
 .home-project-list-item {
   position: relative;
 
@@ -31,6 +24,11 @@
 
 .home-project-list-item--gray {
   background: $wmui-color-base90;
+
+  @media (max-width: $medium-bp) {
+    margin-top: 2rem;
+    padding: 2rem;
+  }
 
   .h3 {
     margin-bottom: 0;
