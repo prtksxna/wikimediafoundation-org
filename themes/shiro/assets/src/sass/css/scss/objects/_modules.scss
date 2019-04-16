@@ -378,6 +378,11 @@ a.hover-img-zoom {
 	position: sticky;
 	top: 120px;
 
+	@media (max-width: $medium-bp) {
+		display: none;
+	}
+
+
 	ul {
 		list-style: none;
 
