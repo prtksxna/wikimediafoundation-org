@@ -153,8 +153,12 @@
           margin-right: 0;
           margin-bottom: 0;
           margin-left: 0;
-          padding: 1rem;
           border-bottom: 1px solid $color-dark-blue;
+
+          a {
+            padding: 1rem;
+            display: block;
+          }
         }
       }
     }
