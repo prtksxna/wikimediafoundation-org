@@ -437,6 +437,11 @@ $header-bp-mw: 1049px;
 			p {
 				@include font-size(20, 20);
 			}
+
+			@media (max-width: $medium-bp) {
+				margin-left: 0;
+				width: 100%;
+			}
 		}
 	}
 

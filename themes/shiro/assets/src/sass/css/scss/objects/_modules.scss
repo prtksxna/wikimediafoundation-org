@@ -465,6 +465,10 @@ a.hover-img-zoom {
 		&.pink {
 			background: $color-pink;
 		}
+
+		@media (max-width: $medium-bp) {
+			display: none;
+		}
 	}
 
 	code {
@@ -489,14 +493,30 @@ a.hover-img-zoom {
 		display: flex;
 		justify-content: space-between;
 
+		@media (max-width: $medium-bp) {
+			flex-direction: column;
+		}
+
 		.ungrid-top-box {
 			width: 32%;
+
+			@media (max-width: $medium-bp) {
+				width: 100%;
+			}
 		}
 		.ungrid-top-box-1 {
 			margin-top: 8rem;
+
+			@media (max-width: $medium-bp) {
+				margin-top: 4rem;
+			}
 		}
 		.ungrid-top-box-2 {
 			margin-top: 15rem;
+
+			@media (max-width: $medium-bp) {
+				margin-top: 4rem;
+			}
 		}
 	}
 
@@ -515,6 +535,19 @@ a.hover-img-zoom {
 
 				.details-container {
 					width: 42%;
+				}
+
+				@media(max-width: $medium-bp) {
+					flex-direction: column;
+
+					.img-container,
+					.details-container {
+						width: 100%;
+					}
+
+					.img-container {
+						height: 12rem;
+					}
 				}
 			}
 		}
@@ -538,6 +571,20 @@ a.hover-img-zoom {
 				height: 16rem;
 			}
 		}
+
+		@media(max-width: $medium-bp) {
+			flex-direction: column;
+
+			.ungrid-bottom-box-3,
+			.ungrid-bottom-box-4 {
+				width: 100%;
+				margin-top: 4rem;
+
+				.img-container {
+					height: 12rem;
+				}
+			}
+		}
 	}
 
 	.ungrid-bottom-3 {
@@ -545,8 +592,17 @@ a.hover-img-zoom {
 		justify-content: space-between;
 		margin-top: 3rem;
 
+		@media (max-width: $medium-bp) {
+			flex-direction: column;
+		}
+
 		.ungrid-bottom-box {
 			width: 32%;
+
+			@media (max-width: $medium-bp) {
+				width: 100%;
+				margin-top: 4rem;
+			}
 		}
 	}
 }
