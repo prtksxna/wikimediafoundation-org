@@ -91,6 +91,10 @@ blockquote {
 	@media (min-width: $blockquote-bp) {
 		margin: 5rem -100px;
 	}
+
+	@media (max-width: $medium-bp) {
+		margin: 5rem 2rem;
+	}
 }
 
 .blockquote-container blockquote,
