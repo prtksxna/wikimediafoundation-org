@@ -421,8 +421,10 @@ a.hover-img-zoom {
 .elsewhere-wikimedia {
 	@include padding(0, 20, 0, 40);
 
-	.mw-1360 {
-		@include padding(0, 0, 0, 0);
+	.mw-980 {
+		@media (max-width: $medium-bp) {
+			@include padding(0, 0, 0, 0);
+		}
 	}
 
 	.h4 {
