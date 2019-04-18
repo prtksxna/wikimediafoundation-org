@@ -56,7 +56,14 @@ if ( ! empty( $h2_title ) xor ! empty( $title )) {
 	<!-- Site front page -->
 	<?php if ( is_front_page() ) { ?>
 		<?php if ( ! empty( $title ) ) : ?>
-			<h1 class="mar-bottom w-50p"><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
+			<div class="flex flex-medium">
+				<div class="w-45p">
+					<img src="<?php echo $image;?>" alt="">
+				</div>
+				<div class="w-55p">
+					<h1><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
+				</div>
+			</div>
 		<?php endif; ?>
 	<?php } ?>
 
@@ -125,13 +132,18 @@ if ( ! empty( $h2_title ) xor ! empty( $title )) {
 	<?php endif; ?>
 
 	<?php if ( is_front_page() ) : ?>
-		<div class="page-intro mod-margin-bottom wysiwyg w-75p alignright">
+		<div class="page-intro wysiwyg alignright">
 			<div>
 				<!-- TODO This is the german text -->
 				<!-- <h2><?php echo esc_html( get_post_meta( get_the_ID(), 'sub_title', true ) ); ?></h2> -->
 
-				<div class="page-intro-text">
-					<?php the_content(); ?>
+				<div class="page-intro-text flex flex-medium">
+					<div class="w-68p">
+						<?php the_content(); ?>
+					</div>
+					<div class="w-32p img-container">
+						<img src="<?php echo esc_url( wp_get_attachment_url( $bg_opts['image'] ) ); ?>" alt="">
+					</div>
 				</div>
 
 			</div>
@@ -139,7 +151,7 @@ if ( ! empty( $h2_title ) xor ! empty( $title )) {
 	<?php endif; ?>
 </div>
 
-<?php if ( is_front_page() ) : ?>
+<?php if ( is_front_page()  && false) : ?>
 	<?php if ( false !== $wmf_translations ) : ?>
 		<div class="translation-bar">
 		<div class="translation-bar-inner mw-980">

@@ -120,7 +120,7 @@ $header-bp-mw: 1023px;
         margin-top: 150px;
 
         @media (min-width: $header-bp) {
-          margin-bottom: rem(200);
+          margin-bottom: rem(150);
         }
       }
 
@@ -129,8 +129,22 @@ $header-bp-mw: 1023px;
       }
 
       h1 {
-        @include font-size(38,28);
-        color: $color-blue;
+        @include font-size(43,38);
+        margin-top: 6rem;
+        margin-left: 1rem;
+
+        span {
+          background: #fffd33;
+        }
+      }
+
+      .page-intro-text {
+        .btn {
+          text-transform: none;
+        }
+        .img-container {
+          margin-top: -6rem;
+        }
       }
     }
 
