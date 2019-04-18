@@ -53,7 +53,7 @@
 
     a {
       //$highlightColor, $highlightTextColor, $underlineThicknessMobile, $underlineThicknessDesktop, $highlightHeightMobile, $highlightHeightDesktop, $desktopBreakpoint
-      @include linkHighlight($color-turquoise, $color-blue, 0, 0, 27, 27, $medium-bp);
+      @include linkHighlight(#eeeaff, $color-blue, 0, 0, 27, 27, $medium-bp);
       font-weight: normal;
       z-index: 1;
 
