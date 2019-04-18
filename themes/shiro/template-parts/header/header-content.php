@@ -16,6 +16,9 @@ $alt_title            = ! empty( $page_header_data['h1_alt_title'] ) ? $page_hea
 $meta                 = ! empty( $page_header_data['page_meta'] ) ? $page_header_data['page_meta'] : '';
 $allowed_tags         = wp_kses_allowed_html( 'post' );
 $allowed_tags['time'] = true;
+$button = ! empty( get_post_meta( get_the_ID(), 'intro_button', true ) ) ? get_post_meta( get_the_ID(), 'intro_button', true ) : '';
+$extra_height_class = empty($button['title']) ? '' : 'ungrid-extra-height';
+
 
 $image            = ! empty( $page_header_data['image'] ) ? $page_header_data['image'] : '';
 $bg_opts          = wmf_get_background_image();
@@ -85,7 +88,7 @@ if ( ! empty( $h2_title ) xor ! empty( $title )) {
 
 		<!-- h2 and title, with image -->
 		<?php if ( !empty( $image) && !empty($h2_title) && !empty($title)) { ?>
-			<div class="ungrid">
+			<div class="ungrid <?php echo $extra_height_class; ?>">
 				<div class="mw-980">
 					<?php if ( !empty( $image) && !empty($h2_title) && !empty($title)) { ?>
 						<div class="flex flex-medium page-landing fifty-fifty">
@@ -94,6 +97,7 @@ if ( ! empty( $h2_title ) xor ! empty( $title )) {
 									<?php echo esc_html( $h2_title ); ?>
 								</h2>
 								<h1><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
+								<?php wmf_get_template_part( 'template-parts/modules/intro/button', $button ); ?>
 							</div>
 							<div class="page-intro-text module-mu w-50p" >
 								<div class="bg-img" style="background-image: url(<?php echo esc_url( $image ); ?>);">

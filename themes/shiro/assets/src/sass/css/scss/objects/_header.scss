@@ -402,6 +402,10 @@ $header-bp-mw: 1049px;
 		margin-top: -2rem;
 		max-height: 24rem;
 
+		&.ungrid-extra-height {
+			max-height: 28rem;
+		}
+
 		.fifty-fifty {
 			min-height: 17rem;
 		}
@@ -411,6 +415,10 @@ $header-bp-mw: 1049px;
 			border: none;
 			color: $color-blue;
 			@include font-size( 24, 22);
+		}
+
+		.btn-pink {
+			margin-top: 1rem;
 		}
 
 		h1 {
