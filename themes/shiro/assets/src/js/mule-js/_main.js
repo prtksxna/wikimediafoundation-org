@@ -100,7 +100,7 @@ jQuery(document).ready(function($) {
       event.preventDefault();
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 2000);
+    }, 1000);
   });
 
   // Move blocks in the ungrid
