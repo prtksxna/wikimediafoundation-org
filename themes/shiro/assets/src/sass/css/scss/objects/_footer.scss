@@ -1,7 +1,7 @@
 
 // Footer
 footer {
-  @include padding(64, 0, 96, 0);
+  @include padding(64, 0, 16, 0);
 
   .footer-row {
     padding-bottom: 2rem;
@@ -17,7 +17,7 @@ footer {
 
   .logo-container {
     svg {
-      max-width: rem(290);
+      width: rem(180);
       fill: #fff;
     }
 
