@@ -20,7 +20,7 @@ if ( empty( $name ) ) {
 ?>
 <li class="toc-link-item">
 	<a class="toc-link niceScroll" href="#section-<?php echo absint( $term_id ); ?>">
-		<span class="bold uppercase color-gray">
+		<span>
 			<?php echo esc_html( $name ); ?>
 		</span>
 	</a>
