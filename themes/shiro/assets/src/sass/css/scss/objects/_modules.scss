@@ -482,6 +482,10 @@ a.hover-img-zoom {
 		color: $color-blue;
 		font-family: PTMono, Monaco, monospace;
 		font-size: 0.8rem;
+
+		&.pink {
+			color: $color-pink;
+		}
 	}
 
 	.img-container {

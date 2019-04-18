@@ -16,7 +16,7 @@ $rand_translation_title = empty( $template_args['rand_translation_title'] ) ? ''
 $has_title = ! empty( $template_args['pre_heading'] ) && ! empty( $template_args['heading'] );
 
 $bg_opts = get_post_meta( get_the_ID(), 'page_header_background', true );
-$ungrid_line_color = isset( $bg_opts['color'] ) && 'pink' === $bg_opts['color'] ? 'pink' : '';
+$ungrid_color = isset( $bg_opts['color'] ) && 'pink' === $bg_opts['color'] ? 'pink' : '';
 
 $has_modules = isset($template_args['modules']) && count($template_args['modules']) > 0;
 $has_many_modules = count($template_args['modules']) > 2;
@@ -37,13 +37,13 @@ $has_image = get_the_post_thumbnail_url();
 
 <?php if ( $has_many_modules && $has_image && !is_front_page() ) { ?>
 	<div class="framing-copy-ungrid mw-980">
-		<div class="ungrid-line <?php echo $ungrid_line_color; ?>"></div>
+		<div class="ungrid-line <?php echo $ungrid_color; ?>"></div>
 		<?php $no_of_modules = count($template_args['modules']); ?>
 
 		<div class="ungrid-top-3">
 			<?php for ($i = 0; $i < 3; $i++) { ?>
 				<div class="ungrid-top-box ungrid-top-box-<?php echo $i; ?>">
-					<code>0<?php echo $i+1; ?></code>
+					<code class="<?php echo $ungrid_color; ?>">0<?php echo $i+1; ?></code>
 					<?php wmf_get_template_part( 'template-parts/modules/mu/ungrid', $template_args['modules'][$i] ); ?>
 				</div>
 			<?php } ?>
