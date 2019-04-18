@@ -117,7 +117,7 @@ $header-bp-mw: 1023px;
       .header-content {
         position: relative;
         z-index: 9;
-        margin-top: 150px;
+        margin-top: 140px;
 
         @media (min-width: $header-bp) {
           margin-bottom: rem(150);
