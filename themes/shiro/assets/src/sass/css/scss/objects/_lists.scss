@@ -62,6 +62,8 @@
 .toc-link-item {
 	list-style-type: none;
 	margin-left: 0;
+	margin-bottom: 0;
+	font-weight: 600;
 }
 .toc-link {
 	@include font-size(16, 14);
@@ -72,6 +74,11 @@
 
   &.-active {
     color: #000;
+		margin-left: -21px;
+
+		&::before {
+			content: "\b7\a0\a0\a0";
+		}
   }
 }
 
