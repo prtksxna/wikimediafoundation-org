@@ -60,7 +60,7 @@
       padding-right: 0;
       margin-bottom: 3.5rem;
 
-      & + .w-32p {
+      & + .w-48p {
         padding-left: 0;
         width: 50%;
 
@@ -77,7 +77,7 @@
 
   @media (max-width: 767px) {
 
-    .w-32p {
+    .w-48p {
       margin-bottom: 3.5rem;
 
       & + .w-18p {
