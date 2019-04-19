@@ -4,6 +4,7 @@
   position: fixed;
   top: 0;
   background: #fff;
+  transition: top 250ms ease;
 
   &.pinned {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
@@ -12,6 +13,12 @@
       transition: all 250ms ease;
       padding-top: 0;
       padding-bottom: 0;
+    }
+  }
+
+  &.headroom--unpinned {
+    @media (max-width: $medium-bp) {
+      top: -70px;
     }
   }
 }
