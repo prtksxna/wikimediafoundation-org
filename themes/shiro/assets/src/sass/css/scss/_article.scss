@@ -1,4 +1,5 @@
 article {
+	width: 40rem;
 
 	& + .article-footer {
 		@include marginTop(40, 80, $medium-bp);
@@ -16,6 +17,18 @@ article {
 		.sidebar-float {
 			order: 2;
 		}
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	h3 {
+		font-size: 1.3rem;
+		font-family: sans-serif;
+		font-weight: bolder;
+		margin-bottom: 5px;
+		margin-top: 45px;
 	}
 }
 
@@ -155,6 +168,11 @@ article {
 
 		a {
 			color: $color-blue;
+			font-weight: bold;
+
+			.icon {
+				height: 20px;
+			}
 
 			i {
 				transition: 0.3s all;

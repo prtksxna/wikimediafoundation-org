@@ -343,6 +343,7 @@ $header-bp-mw: 1049px;
 		a {
 			color: $color-turquoise;
 			border-bottom: 2px solid rgba(0,0,0,0);
+			font-weight: bold;
 
 			&:hover {
 				color: $color-light-turquoise;
@@ -468,7 +469,11 @@ $header-bp-mw: 1049px;
 
 	h1 {
 		@include font-size(38, 32);
-		font-weight: 500;
+		font-weight: bold;
+	}
+
+	.post-meta {
+		margin-top: 0.5rem;
 	}
 }
 
