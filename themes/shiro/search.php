@@ -18,8 +18,8 @@ wmf_get_template_part( 'template-parts/header/page-noimage', $template_args );
 
 ?>
 
-<div class="mw-1360 mod-margin-bottom flex flex-medium news-card-list">
-	<div id="search-results" class="card-list-container w-68p">
+<div class="mw-980 mod-margin-bottom flex flex-medium news-card-list">
+	<div id="search-results" class="card-list-container">
 		<?php if ( have_posts() ) : ?>
 			<?php
 			while ( have_posts() ) :
@@ -34,7 +34,7 @@ wmf_get_template_part( 'template-parts/header/page-noimage', $template_args );
 						'date'       => get_the_date(),
 						'excerpt'    => get_the_excerpt(),
 						'categories' => get_the_category(),
-						'sidebar'    => true,
+						'sidebar'    => false,
 					)
 				);
 			endwhile;
@@ -49,7 +49,8 @@ wmf_get_template_part( 'template-parts/header/page-noimage', $template_args );
 
 	<?php
 	if ( have_posts() ) {
-		get_sidebar( 'search' );
+		# TODO: Filters are hidden for now
+		# get_sidebar( 'search' );
 	}
 	?>
 </div>
