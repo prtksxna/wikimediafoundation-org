@@ -132,7 +132,7 @@ if ( ! empty( $h2_title ) xor ! empty( $title )) {
 	<?php endif; ?>
 
 	<?php if ( is_front_page() ) : ?>
-		<div class="page-intro wysiwyg alignright">
+		<div class="page-intro wysiwyg">
 			<div>
 				<!-- TODO This is the german text -->
 				<!-- <h2><?php echo esc_html( get_post_meta( get_the_ID(), 'sub_title', true ) ); ?></h2> -->
