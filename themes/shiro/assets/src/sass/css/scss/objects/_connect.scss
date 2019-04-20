@@ -31,7 +31,8 @@
   .email-signup .btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    padding: 1rem;
+    box-sizing: border-box;
+    padding: 1.03rem;
   }
 
   .social-list {
