@@ -97,9 +97,10 @@ jQuery(document).ready(function($) {
   });
 
   $('a.niceScroll').on('click', function(event){
-      event.preventDefault();
+    event.preventDefault();
+    var TOP_MARGIN = 100;
     $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
+        scrollTop: $( $.attr(this, 'href') ).offset().top - TOP_MARGIN
     }, 1000);
   });
 
