@@ -41,6 +41,10 @@
 
 			&.no-border {
 				border-top: none;
+
+				small {
+					@include font-size( 15,14 );
+				}
 			}
 		}
 	}

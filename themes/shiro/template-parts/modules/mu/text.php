@@ -27,7 +27,10 @@ $h3_class = is_front_page() ? 'no-border' : '';
 	<img src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $image_alt ); ?>" class="mar-bottom">
 	<?php endif; ?>
 	<?php if ( ! empty( $template_args['heading'] ) ) : ?>
-	<h3 class="h2 <?php echo $h3_class; ?>"><?php echo esc_html( $template_args['heading'] ); ?></h3>
+	<h3 class="h2 <?php echo $h3_class; ?>">
+		<small>0<?php echo ($template_args['index']+1); ?></small><br>
+		<?php echo esc_html( $template_args['heading'] ); ?>
+	</h3>
 	<?php endif; ?>
 	<?php if ( ! empty( $template_args['copy'] ) ) : ?>
 	<div class="wysiwyg">

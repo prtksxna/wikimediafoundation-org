@@ -52,7 +52,7 @@ $has_image = get_the_post_thumbnail_url();
 		<?php if ($no_of_modules === 4) { ?>
 			<div class="ungrid-bottom-1">
 				<div class="ungrid-bottom-box ungrid-bottom-box-4">
-					<code>04</code>
+					<code class="<?php echo $ungrid_color; ?>">04</code>
 					<?php wmf_get_template_part( 'template-parts/modules/mu/ungrid', $template_args['modules'][3] ); ?>
 				</div>
 			</div>
@@ -62,7 +62,7 @@ $has_image = get_the_post_thumbnail_url();
 			<div class="ungrid-bottom-2">
 				<?php for ($i = 3; $i < 5; $i++) { ?>
 					<div class="ungrid-bottom-box ungrid-bottom-box-<?php echo $i; ?>">
-						<code>0<?php echo $i+1; ?></code>
+						<code class="<?php echo $ungrid_color; ?>">0<?php echo $i+1; ?></code>
 						<?php wmf_get_template_part( 'template-parts/modules/mu/ungrid', $template_args['modules'][$i] ); ?>
 					</div>
 				<?php } ?>
@@ -73,7 +73,7 @@ $has_image = get_the_post_thumbnail_url();
 			<div class="ungrid-bottom-3">
 				<?php for ($i = 3; $i < 6; $i++) { ?>
 					<div class="ungrid-bottom-box ungrid-bottom-box-<?php echo $i; ?>">
-						<code>0<?php echo $i+1; ?></code>
+						<code class="<?php echo $ungrid_color; ?>">0<?php echo $i+1; ?></code>
 						<?php wmf_get_template_part( 'template-parts/modules/mu/ungrid', $template_args['modules'][$i] ); ?>
 					</div>
 				<?php } ?>
@@ -85,7 +85,8 @@ $has_image = get_the_post_thumbnail_url();
 <?php if ( $has_modules && (empty( $has_image) || is_front_page())) { ?>
 	<div class="flex flex-medium flex-wrap mw-980 fifty-fifty mod-margin-bottom">
 		<?php
-			foreach ( $template_args['modules'] as $module ) {
+			foreach ( $template_args['modules'] as $key=>$module ) {
+				$module["index"] = $key;
 				wmf_get_template_part( 'template-parts/modules/mu/text', $module );
 			}
 		?>
