@@ -17,6 +17,7 @@
   p {
     @include font-size(13, 11);
     line-height: 1.2;
+    margin-bottom: 4px;
   }
 
   a {
@@ -40,6 +41,7 @@
 
   .photo-credit-container {
     @include marginBottom(16, 40, $medium-bp);
+    margin-right: 8px;
   }
 
   .credit {
@@ -51,13 +53,14 @@
 }
 
 .photo-credit-img_container {
-  width: rem(85);
-  height: rem(85);
+  width: 4rem;
+  height: 4rem;
   overflow: hidden;
   margin-right: rem(15);
   background-size: cover;
   background-position: center;
   border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.12);
 
   @media (max-width: $medium-bp) {
     width: 5rem;
