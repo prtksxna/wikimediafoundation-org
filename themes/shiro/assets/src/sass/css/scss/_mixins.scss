@@ -30,7 +30,7 @@
 
 @mixin category() {
 	text-transform: uppercase;
-	background: #eeeaff;
+	background: $color-periwinkle;
 	color: $color-blue;
 	display: inline-block;
 	border-radius: 5px;

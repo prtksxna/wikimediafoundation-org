@@ -106,9 +106,9 @@
   position: relative;
   z-index: 99;
   color: $color-blue;
-  background: #eeeaff;
+  background: $color-periwinkle;
   border-radius: 2px;
-  border: 1px solid #eeeaff;
+  border: 1px solid $color-periwinkle;
   align-items: center;
   @include padding(4, 7, 4, 7);
   margin-left: 1rem;

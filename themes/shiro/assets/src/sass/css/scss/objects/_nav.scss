@@ -60,7 +60,7 @@
 
     a {
       //$highlightColor, $highlightTextColor, $underlineThicknessMobile, $underlineThicknessDesktop, $highlightHeightMobile, $highlightHeightDesktop, $desktopBreakpoint
-      @include linkHighlight(#eeeaff, $color-blue, 0, 0, 27, 27, $medium-bp);
+      @include linkHighlight($color-periwinkle, $color-blue, 0, 0, 27, 27, $medium-bp);
       font-weight: normal;
       z-index: 1;
 
