@@ -485,6 +485,7 @@ a.hover-img-zoom {
 	}
 
 	.img-container {
+		display: none;
 		min-height: 12rem;
 		background: $wmui-color-base80;
 		background-size: cover;
