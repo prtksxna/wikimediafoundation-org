@@ -45,6 +45,7 @@
 .toc {
   top: 75px;
   bottom: 0;
+	padding-right: 20px;
 
   // Terrible hack to make sure fixed width stays relative to parent
   @media (min-width: $medium-bp) {
@@ -70,14 +71,16 @@
 	display:block;
 	margin-bottom: 15px;
 	color: $color-blue;
+	padding-left: 18px;
 
 
   &.-active {
     color: #000;
-		margin-left: -21px;
 
 		&::before {
-			content: "\b7\a0\a0\a0";
+			content: "\b7";
+			position: absolute;
+			left: 0;
 		}
   }
 }
