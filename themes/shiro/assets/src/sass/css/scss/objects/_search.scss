@@ -3,12 +3,43 @@
   position: fixed;
   height: 100%;
   width: 100%;
-  background: rgba($color-black,0.8);
+  background: rgba($color-periwinkle,0.95);
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 3000;
+}
+
+.search-container {
+  width: 550px;
+  margin: 140px auto;
+
+  @media (max-width: $medium-bp) {
+    width: 300px;
+  }
+
+
+  form {
+    width: 100%;
+    display: flex;
+  }
+
+  input {
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  button.btn.btn-blue {
+    padding: 0;
+    border-radius: 7px;
+    height: 40px;
+    width: 46px;
+    margin-top: 5px;
+    margin-left: -51px;
+  }
 }
 
 .search-cta-container {
@@ -24,7 +55,7 @@
     z-index: 0;
   }
   .search-bar-container {
-    z-index: 2000;
+    z-index: 3000;
     @media (min-width: 1024px) {
       height: 43px;
       top: 25px;

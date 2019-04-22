@@ -170,7 +170,14 @@ $wmf_footer_copyright               = get_theme_mod( 'wmf_footer_copyright', __(
 	</div><!-- End .footer-legal -->
 
 </footer>
-<div class="search-overlay"></div>
+<div class="search-overlay">
+	<div class="search-container">
+		<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<input type="search" placeholder="<?php echo esc_attr( $wmf_search_placeholder ); ?>" value="<?php echo esc_attr( get_search_query() ); ?>" name="s">
+			<button class="btn btn-blue" type="submit"><?php wmf_show_icon( 'search', 'material icon-white' ); ?></button>
+		</form>
+	</div>
+</div>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

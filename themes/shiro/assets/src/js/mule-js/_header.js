@@ -36,13 +36,18 @@ jQuery(document).ready(function($) {
   }
 
   function openSearch() {
-
     $('.search-overlay').fadeIn(500, function(){
       $('.nav-container, .search-overlay').addClass('search-open');
       $('.search-bar-container').addClass('is-open');
       toggleSearch();
     })
   }
+
+  $(document).keyup(function(e) {
+     if (e.key === "Escape") {
+        closeSearch();
+    }
+});
 
   function closeSearch() {
     $( '.search-bar-container' ).removeClass('is-open');
@@ -89,7 +94,7 @@ jQuery(document).ready(function($) {
 
   // Hide search bar container if mouse is clicked outside of search div or search toggle and search div is open
   $('.search-overlay').on('click', function(e) {
-    if ($(this).hasClass('search-open')) {
+    if ($(e.target).hasClass('search-open')) {
       closeSearch();
     }
   });
