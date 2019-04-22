@@ -104,6 +104,11 @@
     @include font-size( 20, 18 );
 
     a {
+      font-size: 1.3rem;
+      font-family: sans-serif;
+      font-weight: bolder;
+      margin-bottom: 5px;
+      margin-top: 45px;
       transition: 0.3s all;
 
       &:hover {
