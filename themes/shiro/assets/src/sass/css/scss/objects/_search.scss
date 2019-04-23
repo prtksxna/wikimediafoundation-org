@@ -38,7 +38,24 @@
     height: 40px;
     width: 46px;
     margin-top: 5px;
-    margin-left: -51px;
+    margin-left: -48px;
+  }
+
+  .search-close-esc {
+    opacity: 0.5;
+    margin-left: 10px;
+    font-variant: small-caps;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+
+    img {
+      width: 23px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 

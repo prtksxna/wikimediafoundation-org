@@ -99,4 +99,6 @@ jQuery(document).ready(function($) {
     }
   });
 
+  $('.search-close-esc').on('click', closeSearch);
+
  });
