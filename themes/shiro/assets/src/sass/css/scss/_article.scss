@@ -225,9 +225,12 @@ article {
 }
 
 .article-title .h3 {
+	font-size: 1.3rem;
+	font-family: sans-serif;
+	font-weight: bolder;
+	margin-bottom: 5px;
+	margin-top: 45px;
 	color: $color-gray;
 	line-height: 1.8;
-	font-weight: 600;
-	font-weight: 300;
 	@include marginBottom(30, 60, $medium-bp);
 }
