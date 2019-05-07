@@ -149,6 +149,20 @@ $wmf_footer_copyright               = get_theme_mod( 'wmf_footer_copyright', __(
 					}
 					?>
 				</div>
+				<br>
+				<div class="lists-wrap">
+					<?php
+					if ( has_nav_menu( 'footer-under-text' ) ) {
+						wp_nav_menu(
+							array(
+								'menu'       => 'footer-under-text',
+								'menu_class' => '',
+								'container'  => '',
+							)
+						);
+					}
+					?>
+				</div>
 			</div>
 
 		</div>
