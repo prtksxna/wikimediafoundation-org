@@ -1,6 +1,10 @@
 article {
 	width: 40rem;
 
+	@media (max-width: $medium-bp) {
+		width: 100%;
+	}
+
 	& + .article-footer {
 		@include marginTop(40, 80, $medium-bp);
 	}
@@ -229,6 +233,12 @@ article {
 
 	span {
 
+	}
+}
+
+.article-title {
+	@media (max-width: $medium-bp) {
+		padding: 0 1.25rem;
 	}
 }
 
