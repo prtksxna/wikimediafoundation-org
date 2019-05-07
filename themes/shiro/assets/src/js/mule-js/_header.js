@@ -37,6 +37,7 @@ jQuery(document).ready(function($) {
 
   function openSearch() {
     $('.search-overlay').fadeIn(500, function(){
+      $('.search-form input').focus();
       $('.nav-container, .search-overlay').addClass('search-open');
       $('.search-bar-container').addClass('is-open');
       toggleSearch();
