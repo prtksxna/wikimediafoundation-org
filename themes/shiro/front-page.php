@@ -32,8 +32,8 @@ while ( have_posts() ) {
 
 	$modules = array(
 		'focus-blocks',
-		'featured-posts',
 		'projects',
+		'featured-posts',
 		'profiles',
 		'facts',
 		'framing-copy',
