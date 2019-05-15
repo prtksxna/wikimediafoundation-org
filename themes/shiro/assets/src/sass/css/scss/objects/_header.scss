@@ -321,7 +321,7 @@ $header-bp-mw: 1049px;
 
 		&.h2 {
 			border-bottom: 3px solid $wmui-color-base0;
-			text-transform: lowercase;
+			text-transform: none;
 			@include font-size(38, 32);
 			font-weight: 500;
 		}
