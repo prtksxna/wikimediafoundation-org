@@ -18,3 +18,11 @@
 	@include font-size(18, 14);
 	line-height: 31px;
 }
+
+.single-post .wysiwyg h3 {
+	font-family: sans-serif;
+	font-size: 1.3rem;
+	font-weight: bolder;
+	margin-bottom: 5px;
+	margin-top: 45px;
+}
