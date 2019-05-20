@@ -5,6 +5,19 @@ $header-bp-mw: 1023px;
   text-shadow: 0 2px 2px $color-blue;
 }
 
+.header-flex {
+  display: flex;
+
+  @media (max-width: $medium-bp) {
+    flex-direction: column-reverse !important;
+
+    h1 {
+      margin-bottom: 2rem !important;
+      margin-top: 0 !important;
+    }
+  }
+}
+
 .header-home {
   position: relative;
   background: $color-white;

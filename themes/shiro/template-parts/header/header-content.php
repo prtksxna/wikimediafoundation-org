@@ -56,7 +56,7 @@ if ( ! empty( $h2_title ) xor ! empty( $title )) {
 	<!-- Site front page -->
 	<?php if ( is_front_page() ) { ?>
 		<?php if ( ! empty( $title ) ) : ?>
-			<div class="flex flex-medium">
+			<div class="flex flex-medium header-flex">
 				<div class="w-45p">
 					<img src="<?php echo $image;?>" alt="">
 				</div>
@@ -140,8 +140,9 @@ if ( ! empty( $h2_title ) xor ! empty( $title )) {
 				<div class="page-intro-text flex flex-medium">
 					<div class="w-68p">
 						<?php the_content(); ?>
+						<br>
 					</div>
-					<div class="w-32p img-container">
+					<div class="w-32p img-container hide-sm">
 						<img src="<?php echo esc_url( wp_get_attachment_url( $bg_opts['image'] ) ); ?>" alt="">
 					</div>
 				</div>
