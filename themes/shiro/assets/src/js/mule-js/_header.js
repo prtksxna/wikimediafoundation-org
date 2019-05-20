@@ -67,7 +67,6 @@ jQuery(document).ready(function($) {
     }
   });
 
-
   $('.search-toggle').on('click', function() {
     // If mobile nav is open, close it.
     if ($('.nav-open').length) {
@@ -78,7 +77,6 @@ jQuery(document).ready(function($) {
       openSearch();
     }
   });
-
 
   // On resize, remove any open nav classes if desktop size, otheriwise, blue overlay behind nav will still be there.
   $(window).on('resize', function() {
@@ -91,8 +89,6 @@ jQuery(document).ready(function($) {
     }
   });
 
-
-
   // Hide search bar container if mouse is clicked outside of search div or search toggle and search div is open
   $('.search-overlay').on('click', function(e) {
     if ($(e.target).hasClass('search-open')) {
@@ -101,5 +97,26 @@ jQuery(document).ready(function($) {
   });
 
   $('.search-close-esc').on('click', closeSearch);
+
+  // Cycle the visions
+  var visions = $('.vision');
+  var currentVision = 0;
+
+  function cycleVision() {
+    var prevVision = currentVision;
+    if ( currentVision === (visions.length-1) ) {
+      currentVision = 0;
+    } else {
+      currentVision += 1;
+    }
+    $(visions[prevVision]).fadeOut(200, function () {
+      $(visions[currentVision]).fadeIn(300);
+    });
+
+    window.setTimeout( cycleVision, 4000);
+  }
+  if (visions.length > 1) {
+    window.setTimeout( cycleVision, 4000);
+  }
 
  });

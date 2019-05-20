@@ -61,7 +61,7 @@ if ( ! empty( $h2_title ) xor ! empty( $title )) {
 					<img src="<?php echo $image;?>" alt="">
 				</div>
 				<div class="w-55p">
-					<h1><?php echo wp_kses( $title, array( 'span' => array( 'class' ) ) ); ?></h1>
+					<?php get_template_part( 'template-parts/header/vision'); ?>
 				</div>
 			</div>
 		<?php endif; ?>

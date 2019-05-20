@@ -125,6 +125,76 @@ class Header extends Base {
 				'type'        => 'text',
 			)
 		);
+
+		$control_id = 'wmf_vision_lang1';
+		$this->customize->add_setting(
+			$control_id, array(
+				'default' => __( 'Imagine a world in which every single human being can freely share in the sum of all knowledge.', 'shiro' ),
+			)
+		);
+		$this->customize->add_control(
+			$control_id, array(
+				'label'       => __( 'Vision Language 1', 'shiro' ),
+				'section'     => $section_id,
+				'type'        => 'textarea',
+			)
+		);
+
+		$control_id = 'wmf_vision_lang2';
+		$this->customize->add_setting(
+			$control_id, array(
+				'default' => __( '', 'shiro' ),
+			)
+		);
+		$this->customize->add_control(
+			$control_id, array(
+				'label'       => __( 'Vision Language 2', 'shiro' ),
+				'section'     => $section_id,
+				'type'        => 'textarea',
+			)
+		);
+
+		$control_id = 'wmf_vision_lang3';
+		$this->customize->add_setting(
+			$control_id, array(
+				'default' => __( '', 'shiro' ),
+			)
+		);
+		$this->customize->add_control(
+			$control_id, array(
+				'label'       => __( 'Vision Language 3', 'shiro' ),
+				'section'     => $section_id,
+				'type'        => 'textarea',
+			)
+		);
+
+		$control_id = 'wmf_vision_lang4';
+		$this->customize->add_setting(
+			$control_id, array(
+				'default' => __( '', 'shiro' ),
+			)
+		);
+		$this->customize->add_control(
+			$control_id, array(
+				'label'       => __( 'Vision Language 4', 'shiro' ),
+				'section'     => $section_id,
+				'type'        => 'textarea',
+			)
+		);
+
+		$control_id = 'wmf_vision_lang5';
+		$this->customize->add_setting(
+			$control_id, array(
+				'default' => __( '', 'shiro' ),
+			)
+		);
+		$this->customize->add_control(
+			$control_id, array(
+				'label'       => __( 'Vision Language 5', 'shiro' ),
+				'section'     => $section_id,
+				'type'        => 'textarea',
+			)
+		);
 	}
 
 }

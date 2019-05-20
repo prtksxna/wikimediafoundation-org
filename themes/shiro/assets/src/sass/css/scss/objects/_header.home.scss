@@ -16,6 +16,14 @@ $header-bp-mw: 1023px;
       margin-top: 0 !important;
     }
   }
+
+  .vision {
+    display: none;
+
+    &.is_visible {
+      display: block;
+    }
+  }
 }
 
 .header-home {
