@@ -109,14 +109,14 @@ jQuery(document).ready(function($) {
     } else {
       currentVision += 1;
     }
-    $(visions[prevVision]).fadeOut(200, function () {
-      $(visions[currentVision]).fadeIn(300);
+    $(visions[prevVision]).fadeOut(750, function () {
+      $(visions[currentVision]).fadeIn(750);
     });
 
-    window.setTimeout( cycleVision, 4000);
+    window.setTimeout( cycleVision, 5000);
   }
   if (visions.length > 1) {
-    window.setTimeout( cycleVision, 4000);
+    window.setTimeout( cycleVision, 5000);
   }
 
  });

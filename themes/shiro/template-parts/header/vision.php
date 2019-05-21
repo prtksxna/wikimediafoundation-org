@@ -13,6 +13,11 @@ $visions = [
   get_theme_mod('wmf_vision_lang5')
 ];
 $visions = array_filter($visions);
+
+if (empty($visions)) {
+  $visions[] = '<span>Imagine a world</span> in which every single human being can freely share in the sum of all knowledge.';
+}
+
 $is_visible = 'is_visible';
 foreach( $visions as $vision ) {
   echo '<h1 class="vision '. $is_visible .'">' . $vision . '</h1>';
