@@ -35,7 +35,9 @@ $header-bp-mw: 1049px;
 		}
 
 		&.current_page_item {
-			border-bottom: 2px solid $color-blue;
+			a {
+				border-bottom: 2px solid $color-blue;
+			}
 		}
 
 		a {
