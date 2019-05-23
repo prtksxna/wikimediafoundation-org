@@ -15,7 +15,7 @@ $wmf_menu_button = get_theme_mod( 'wmf_menu_button_copy', __( 'MENU', 'shiro' ) 
 
 <nav class="main-nav flex flex-medium flex-align-center">
 
-	<button class="mobile-nav-toggle bold"><?php wmf_show_icon( 'menu', 'material' ); ?><?php echo esc_html( $wmf_menu_button ); ?></button>
+	<button class="mobile-nav-toggle bold"><?php wmf_show_icon( 'menu', 'material' ); ?></button>
 
 	<?php
 	if ( has_nav_menu( 'header' ) ) {
