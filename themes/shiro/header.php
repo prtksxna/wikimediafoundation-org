@@ -19,7 +19,6 @@ $wmf_translations         = wmf_get_translations();
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<script src="https://unpkg.com/headroom.js@0.9.4/dist/headroom.min.js" charset="utf-8"></script>
 <?php wp_head(); ?>
 </head>
 

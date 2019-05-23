@@ -134,7 +134,4 @@ jQuery(document).ready(function($) {
   })
   /* eslint-enable */
 
-  var headroom  = new Headroom(document.querySelector(".top-nav"));
-  headroom.init();
-
 });
