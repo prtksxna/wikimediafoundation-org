@@ -131,6 +131,12 @@
         text-align: center;
         transition: 0.3s all;
         background: #f0f0f0;
+        min-width: 46px;
+
+        .icon-close {
+          display: none;
+          margin: 3px auto;
+        }
       }
 
       ul.list-inline {
