@@ -52,26 +52,28 @@ $post_list = wmf_get_posts_by_child_roles( $current_term_id );
 
 	?>
 
-<div class="mw-980 mod-margin-bottom flex flex-medium">
-	<?php wmf_get_template_part( 'template-parts/profiles/role-sidebar', $post_list ); ?>
-	
-	<div class="w-68p">
-		<?php if ( ! empty( $display_intro ) ) : ?>
-		<div class="page-intro mod-margin-bottom wysiwyg">
-			<?php if ( ! empty( $description ) ) : ?>
-			<p class="h3 color-gray">
-				<?php echo esc_html( $description ); ?>
-			</p>
-			<?php endif; ?>
-
-			<?php if ( ! empty( $button_label ) ) : ?>
-				<a href="<?php echo esc_url( isset( $button_link ) ? $button_link : '#' ); ?>" class="btn btn-pink search-btn">
-					<?php echo esc_html( $button_label ); ?>
-				</a>
-			<?php endif; ?>
-		</div>
+<div class="mw-980 mod-margin-bottom_sm">
+	<?php if ( ! empty( $display_intro ) ) : ?>
+	<div class="page-intro wysiwyg">
+		<?php if ( ! empty( $description ) ) : ?>
+		<p class="h2">
+			<?php echo esc_html( $description ); ?>
+		</p>
 		<?php endif; ?>
 
+		<?php if ( ! empty( $button_label ) ) : ?>
+			<a href="<?php echo esc_url( isset( $button_link ) ? $button_link : '#' ); ?>" class="btn btn-pink search-btn">
+				<?php echo esc_html( $button_label ); ?>
+			</a>
+		<?php endif; ?>
+	</div>
+	<?php endif; ?>
+</div>
+
+<div class="mw-980 mod-margin-bottom flex flex-medium">
+	<?php wmf_get_template_part( 'template-parts/profiles/role-sidebar', $post_list ); ?>
+
+	<div class="w-68p">
 		<div class="mod-margin-bottom">
 			<?php wmf_get_template_part( 'template-parts/profiles/role-list', $post_list ); ?>
 		</div>

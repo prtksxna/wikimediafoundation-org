@@ -21,10 +21,10 @@ if ( ! $post ) {
 ?>
 
 <a class="staff-list-item mar-bottom_lg" href="<?php echo esc_url( get_the_permalink( $post_id ) ); ?>">
-	<?php echo get_the_post_thumbnail( $post_id, 'profile_thumb' ); ?>
-	<h4 class="mar-bottom_sm">
+	<div class="staff-photo" style="background-image: url('<?php echo the_post_thumbnail_url( $post_id, 'profile_thumb' ); ?>')"></div>
+	<h4>
 		<?php echo esc_html( get_the_title( $post_id ) ); ?>
 	</h4>
 
-	<span class="color-gray"><?php echo esc_html( get_post_meta( $post_id, 'profile_role', true ) ); ?></span>
+	<span><?php echo esc_html( get_post_meta( $post_id, 'profile_role', true ) ); ?></span>
 </a>
