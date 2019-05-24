@@ -176,6 +176,10 @@ footer.bg-black {
 	}
 }
 
+.fade-20 {
+	transition: opacity 200ms ease;
+	opacity: 0.2;
+}
 
 // ** FUNCTIONAL STYLES **
 

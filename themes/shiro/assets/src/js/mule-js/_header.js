@@ -28,8 +28,12 @@ jQuery(document).ready(function($) {
   function toggleNav() {
     $('.nav-links').toggleClass('open');
     $('.header-inner').toggleClass('nav-open');
+
     $('.mobile-nav-toggle .icon-close').toggle();
     $('.mobile-nav-toggle .icon-menu').toggle();
+
+    $('.logo-container_sm').toggleClass('fade-20');
+    $('.search-toggle').toggleClass('fade-20');
 
     if ($('.top-nav').hasClass('pinned')) {
       jQuery('.list-inline.open').css('top','50px');
