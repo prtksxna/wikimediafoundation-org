@@ -152,7 +152,7 @@ if ( ! empty( $h2_title ) xor ! empty( $title )) {
 	<?php endif; ?>
 </div>
 
-<?php if ( is_front_page()  && false) : ?>
+<?php if ( is_front_page() ) : ?>
 	<?php if ( false !== $wmf_translations ) : ?>
 		<div class="translation-bar">
 		<div class="translation-bar-inner mw-980">
