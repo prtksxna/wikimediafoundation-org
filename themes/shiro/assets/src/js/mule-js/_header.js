@@ -31,8 +31,9 @@ jQuery(document).ready(function($) {
 
     $('.mobile-nav-toggle .icon-close').toggle();
     $('.mobile-nav-toggle .icon-menu').toggle();
+    $('.mobile-cover').toggle().on('click', toggleNav);
 
-    $('.logo-container_sm').toggleClass('fade-20');
+    $('.logo-container_sm .icon-logo-horizontal').toggleClass('fade-20');
     $('.search-toggle').toggleClass('fade-20');
 
     if ($('.top-nav').hasClass('pinned')) {

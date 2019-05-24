@@ -23,6 +23,9 @@ $wmf_translations         = wmf_get_translations();
 </head>
 
 <body <?php body_class(); ?>>
+<div class="mobile-cover">
+
+</div>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'shiro' ); ?></a>
 	<a class="skip-link screen-reader-text" href="#menu-header-menu"><?php esc_html_e( 'Skip to navigation', 'shiro' ); ?></a>
@@ -34,6 +37,10 @@ $wmf_translations         = wmf_get_translations();
 					<?php get_template_part( 'template-parts/header/logo' ); ?>
 				</div>
 				<div class="logo-container logo-container_sm">
+					<button class="mobile-nav-toggle bold">
+						<?php wmf_show_icon( 'menu', 'material' ); ?>
+						<img src="/wp-content/themes/shiro/assets/src/svg/close.svg" alt="" class="icon-close">
+					</button>
 					<?php get_template_part( 'template-parts/header/logo' ); ?>
 				</div>
 				<!-- <?php get_template_part( 'template-parts/header/nav-container' ); ?> -->
