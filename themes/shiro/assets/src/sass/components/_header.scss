@@ -4,7 +4,7 @@
   &.minimal {
 
 	&--short:not(.featured-photo--content-left):not(.featured-photo--photo-centered) {
-	  padding-bottom: rem(34);
+	  padding-bottom: 0;
 	}
   }
 }

@@ -52,9 +52,9 @@ $post_list = wmf_get_posts_by_child_roles( $current_term_id );
 
 	?>
 
-<div class="mw-980 mod-margin-bottom_sm">
+<div class="mw-980 mod-margin-bottom_xs">
 	<?php if ( ! empty( $display_intro ) ) : ?>
-	<div class="page-intro wysiwyg">
+	<div class="page-intro wysiwyg taxonomy-role">
 		<?php if ( ! empty( $description ) ) : ?>
 		<p class="h2">
 			<?php echo esc_html( $description ); ?>
