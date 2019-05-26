@@ -19,7 +19,7 @@ $link        = ! empty( $template_data['link'] ) ? $template_data['link'] : '';
 
 
 ?>
-<li class="mar-bottom_lg flex flex-medium">
+<li class="flex flex-medium">
 	<?php if ( ! empty( $image ) ) : ?>
 	<div class="mar-right">
 		<?php echo wp_get_attachment_image( $image, 'image_square_medium' ); ?>
