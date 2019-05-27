@@ -197,10 +197,7 @@ article {
 		position: relative;
 		overflow: hidden;
 		max-height: 75vh;
-
-		@media (min-width: 640px) {
-			margin-top: 0px;
-		}
+		margin-top: 0;
 	}
 
 	.img-caption {
