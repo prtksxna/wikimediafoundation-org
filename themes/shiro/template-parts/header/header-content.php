@@ -71,7 +71,7 @@ if ( ! empty( $h2_title ) xor ! empty( $title )) {
 		<!-- h2 or title as heading -->
 		<?php if ( ! empty( $single_title ) ) { ?>
 			<h2 class="h2 eyebrow">
-				<?php echo esc_html( $single_title ); ?>
+				<?php echo $single_title; ?>
 			</h2>
 			<?php if ( !empty( $image ) ) { ?>
 				<img src="<?php echo esc_url($image)?>" alt="">
