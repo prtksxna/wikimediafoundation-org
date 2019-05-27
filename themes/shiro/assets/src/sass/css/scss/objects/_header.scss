@@ -343,13 +343,13 @@ $header-bp-mw: 1049px;
 		@include font-size(24, 16);
 
 		a {
+			@include linkHighlight($color-periwinkle, $color-blue, 0, 0, 27, 27, $medium-bp);
 			color: $color-black;
 			border-bottom: 2px solid rgba(57, 36, 255, 0.3);
 			font-weight: normal;
 
 			&:hover {
-				color: $color-light-turquoise;
-				border-color: $color-light-turquoise;
+				color: $color-black;
 			}
 		}
 	}
