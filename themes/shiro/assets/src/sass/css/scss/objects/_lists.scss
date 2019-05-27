@@ -96,13 +96,7 @@
     margin-left: -20px;
     padding-right: 20px;
     padding-left: 20px;
-    border-bottom: 1px solid $color-ltgray;
     margin-bottom: 0;
-  }
-}
-.static-list-item:first-of-type {
-  @media (max-width: 767px) {
-    border-top: 1px solid $color-ltgray;
   }
 }
 .static-list-heading {
