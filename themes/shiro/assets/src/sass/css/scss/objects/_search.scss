@@ -158,7 +158,7 @@
   border-radius: 2px;
   border: 1px solid $color-periwinkle;
   align-items: center;
-  @include padding(4, 7, 4, 7);
+  @include padding(4, 3, 4, 3);
   margin-left: 1rem;
   transition: 0.4s all;
   &:hover {
