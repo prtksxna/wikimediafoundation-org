@@ -10,8 +10,12 @@
   text-align: center;
   margin: 0 auto;
   color: $color-black;
-  @include font-size(18, 16);
   line-height: 1.6;
+  @include font-size(18, 16);
+
+  p {
+    @include font-size(18, 16);
+  }
 
   .btn {
     margin-top: 1rem;
