@@ -343,9 +343,9 @@ $header-bp-mw: 1049px;
 		@include font-size(24, 16);
 
 		a {
-			color: $color-turquoise;
-			border-bottom: 2px solid rgba(0,0,0,0);
-			font-weight: bold;
+			color: $color-black;
+			border-bottom: 2px solid rgba(57, 36, 255, 0.3);
+			font-weight: normal;
 
 			&:hover {
 				color: $color-light-turquoise;
