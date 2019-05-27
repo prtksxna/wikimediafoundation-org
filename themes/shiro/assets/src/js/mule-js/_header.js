@@ -110,6 +110,7 @@ jQuery(document).ready(function($) {
   });
 
   $('.search-close-esc').on('click', closeSearch);
+  $('.search-close-mobile').on('click', closeSearch);
 
   // Cycle the visions
   var visions = $('.vision');

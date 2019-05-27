@@ -194,6 +194,9 @@ $wmf_footer_copyright               = get_theme_mod( 'wmf_footer_copyright', __(
 				esc
 			</a>
 		</form>
+		<a href="#" class="search-close-mobile">
+			<img src="./wp-content/themes/shiro/assets/src/svg/close.svg" alt="">
+		</a>
 	</div>
 </div>
 </div><!-- #page -->
