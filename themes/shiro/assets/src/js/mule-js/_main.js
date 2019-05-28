@@ -119,8 +119,17 @@ jQuery(document).ready(function($) {
         amountToReduce += contentHeight - 200;
     }
 
-
     $('.ungrid-line').css( 'height', ( 224 + amountToReduce ) );
+
+    if ($(window).width() < 762) { // On mobile
+      // Shift the content down so that its visible under the main ungrid content
+      $('#content').css('margin-top', (
+        // Usually a negative value of how inside it is the yellow box
+        parseInt($('.content').css('margin-top')) +
+        // Total height plus a magic number to add some extra margin
+        $('.content').height() + 25
+      ));
+    }
   }
 
   // Pinning nav on scrollTop
