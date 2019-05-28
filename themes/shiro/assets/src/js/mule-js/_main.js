@@ -122,13 +122,9 @@ jQuery(document).ready(function($) {
     $('.ungrid-line').css( 'height', ( 224 + amountToReduce ) );
 
     if ($(window).width() < 762) { // On mobile
-      // Shift the content down so that its visible under the main ungrid content
-      $('#content').css('margin-top', (
-        // Usually a negative value of how inside it is the yellow box
-        parseInt($('.content').css('margin-top')) +
-        // Total height plus a magic number to add some extra margin
-        $('.content').height() + 25
-      ));
+      var contentBottom = $('.content').position().top + $('.content').outerHeight();
+      var ungridTop = $('.ungrid-top-box').position().top;
+      $('#content').css('margin-top', contentBottom - ungridTop + 50);
     }
   }
 
