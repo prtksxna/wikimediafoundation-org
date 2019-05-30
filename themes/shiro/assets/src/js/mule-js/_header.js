@@ -60,7 +60,7 @@ jQuery(document).ready(function($) {
 
   function toggleSearch() {
     $('.search-toggle').blur();
-    $('.search-bar-container input').focus();
+    $('.search-form input').focus();
   }
 
   function openSearch() {
