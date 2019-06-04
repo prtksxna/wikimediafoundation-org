@@ -49,9 +49,9 @@ $wmf_translations = wmf_get_translations();
 		?>
 		<div class="language-dropdown">
 			<button>
-				<img src="./wp-content/themes/shiro/assets/src/svg/language.svg" alt="" class="language-icon">
+				<img src="/wp-content/themes/shiro/assets/src/svg/language.svg" alt="" class="language-icon">
 				<span><?php echo $lang_code; ?></span>
-				<img src="./wp-content/themes/shiro/assets/src/svg/down.svg" alt="" class="down-indicator">
+				<img src="/wp-content/themes/shiro/assets/src/svg/down.svg" alt="" class="down-indicator">
 			</button>
 
 			<div class="language-list">
