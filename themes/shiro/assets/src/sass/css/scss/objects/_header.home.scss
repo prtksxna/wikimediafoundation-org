@@ -234,6 +234,21 @@ $header-bp-mw: 1023px;
         .img-container {
           margin-top: -6rem;
         }
+
+        .secure {
+          display: block;
+          color: #adadad;
+          text-transform: uppercase;
+          font-size: 12px;
+          display: flex;
+          margin-top: 0.5rem;
+
+          img {
+            height: 16px;
+            margin-top: 5px;
+            margin-right: 5px;
+          }
+        }
       }
     }
 
