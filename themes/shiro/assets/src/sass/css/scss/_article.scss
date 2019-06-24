@@ -201,8 +201,10 @@ article {
 	}
 
 	.img-caption {
-		color: $color-ltgray;
-		margin-top: 1rem;
+		color: #666;
+		margin-top: 0.5rem;
+		font-style: italic;
+		font-size: 13px;
 
 		a {
 			transition: 0.3s all;
@@ -210,10 +212,6 @@ article {
 				color: $color-blue;
 			}
 		}
-	}
-
-	.photo-caption {
-		font-weight: bold;
 	}
 
 	a {
