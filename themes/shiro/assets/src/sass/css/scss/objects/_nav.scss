@@ -121,13 +121,13 @@
     }
 
     @media (max-width: $medium-landscape) {
+      display: none !important;
+
       &.flex.flex-medium {
         flex-direction: row;
       }
 
       ul.list-inline {
-
-        display: none;
 
         &.open {
           display: block;
@@ -212,6 +212,10 @@
   font-size: 15px;
   height: 34px;
   margin-left: 5px;
+
+  @media (max-width: $medium-landscape) {
+    display: none;
+  }
 
   &:focus,
   &:hover {
